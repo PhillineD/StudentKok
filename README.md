@@ -14,3 +14,4 @@ Minimale eisen:
 Extra:
 -	De benodigdheden veranderen afhankelijk van het aantal personen dat mee eet.
 
+![ontwerp](https://user-images.githubusercontent.com/43133057/48567161-b3c16a00-e8fc-11e8-968d-9a40754e775c.png)
