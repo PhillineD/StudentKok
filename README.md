@@ -18,8 +18,9 @@ Minimale eisen:
 -	De kookgeschiedenis staat op volgorde van beoordeling.
 
 Extra:
--	De benodigdheden veranderen afhankelijk van het aantal personen dat mee eet.
-- Extra gerechten. 
+-	De benodigdheden veranderen afhankelijk van het aantal personen dat mee eet;
+- Extra gerechten; 
+- Stopwatch functie. 
 
 
 ![ontwerp](https://user-images.githubusercontent.com/43133057/48567161-b3c16a00-e8fc-11e8-968d-9a40754e775c.png)
@@ -27,6 +28,7 @@ Extra:
 # Voorwaarden 
 
 Data:
+
 De gerechten zullen gehaald worden van de open API database: https://www.themealdb.com. Hier staan allerlei gerechten in. Door er zelf een filter op te zetten ga ik er voor zorgen dat die alleen de goedkope, makkelijke en voedzame eruit haalt. 
 Hiernaast komt er een SQL-database waarin de recent gemaakte gerechten worden opgeslagen (wanneer, welke rating). Ook gaat moet een een formule komen die kan berekenen voor hoeveel personen het gerecht is, dit staat namelijk niet in de database. 
 
@@ -35,7 +37,9 @@ Libery's:
 - SQL 
 
 Reviews: 
-
+- Receptenmaker: Je kunt je eigen recepten beheren en recepten toevoegen van de bekende receptensites. Je kunt je recept sorteren op categorie, bereidingstijd, ingredient, receptnaam en bereiding. Ook hebben ze een stopwatch functie. 
+    - Ik zou ook een stopwatcher kunnen toevoegen, maar aangezien elke telefoon ook een stopwatch functie heeft lijkt me dit niet nodig. In mijn app kun je ook zoeken naar ingredienten en recepten, ik zou kunnen toevoegen dat je ook ku
+     
 
 
 
