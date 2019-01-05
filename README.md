@@ -8,21 +8,24 @@ Studenten willen goedkoop, makkelijk en voedzame avondmaaltijden, alleen ontbree
 
 Minimale eisen:
 -	Bieden van 2 opties: kookgeschiedenis en nieuwe gerechten proberen;
--   Kookgeschiedenis geeft 
+-   Kookgeschiedenis geeft de gemaakte gerechten met datum van maken gesorteerd op rating die tijden het maken is gegeven;
+-   Als het recept in de kookgeschiedenis vaker is gemaakt dan staat de meeste recente datum erin;
+-   Kookgeschiedenis heeft ook een zoekfunctie waarmee gezocht kan worden naar producten en receptnamen; 
 -	App gebruiker moet kunnen kiezen tussen de 3 V’s: vegetarisch, vis of vlees
 -	Afhankelijk van de gekozen V moeten er gerechten verschijnen waar de gebruiker uit kan kiezen;
 -	De gebruiker moet door de gerechten kunnen zoeken;
 -	Door op een gerecht te klikken verschijnt het recept, de benodigdheden en een ratingbar;
 -   De gebruiker kan een rating geven aan een bepaald gerecht door de ratingbar;
+-   Als het gerecht al een keer is gemaakt, staat de rating van de vorige keer er nog, deze kun je weer aanpassen;
 -	De kookgeschiedenis wordt weergegeven met de datum waarop het gerecht het laatst is gemaakt met de beoordeling;
 -	Door de kookgeschiedenis kan gezocht worden;
 -	De kookgeschiedenis staat op volgorde van beoordeling.
 
 Extra:
 -	De benodigdheden veranderen afhankelijk van het aantal personen dat mee eet;
-- Extra gerechten; 
-- Stopwatch functie;
-- "geen idee" knop. 
+-   Stopwatch functie, hiermee je tijd bijhouden voor bijvoorbeeld een oven-recept;
+-   Notitie optie, wanneer er punten zijn die belangrijk zijn om te onthouden zie je die volgende keer als je dit gerecht maakt weer;
+-   "geen idee" knop, die kiest een random gerecht. 
 
 
 ![ontwerp](https://user-images.githubusercontent.com/43133057/48567161-b3c16a00-e8fc-11e8-968d-9a40754e775c.png)
