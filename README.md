@@ -25,7 +25,7 @@ Extra:
 ![ontwerp](https://user-images.githubusercontent.com/43133057/48567161-b3c16a00-e8fc-11e8-968d-9a40754e775c.png)
 
 # Voorwaarden 
-De gerechten zullen gehaald worden van de open API database: https://www.themealdb.com. Hier staan allerlei gerechten in. Door er zelf een filter op te zetten ga ik er voor zorgen dat die alleen de makkelijke gerechten eruit haalt. 
+De gerechten zullen gehaald worden van de open API database: https://www.themealdb.com. Hier staan allerlei gerechten in. Door er zelf een filter op te zetten ga ik er voor zorgen dat die alleen de goedkope, makkelijke en voedzame eruit haalt. 
 
 
 
