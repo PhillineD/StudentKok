@@ -6,7 +6,7 @@ De kookapp voor studenten met gevarieede, goedkope, makkelijke en voedzame avond
 # Solution 
 Studenten willen goedkoop, makkelijk en voedzame avondmaaltijden, alleen ontbreek de kennis en vaardigheid. Vaak kost het te veel tijd om dit op te zoeken op internet. Daarnaast vergeten studenten ook wat ze hebben gemaakt. Ook hebben ze geen smaken van andere cuturen. Er is nog geen oplossing in vorm van een app. De Studentisdekok-app biedt de oplossing. In deze app worden studenten-gerechten (goedkoop, makkelijk en voedzame avondmaaltijden) weergeven en is er een optie om te zien wat je al een keer hebt gemaakt en welke beoordeling je hieraan gegeven hebt. Ook kun je zoeken naar retjes die je nog in je koelkast hebt liggen om er voor te zorgen dat de kosten nog lager zijn. 
 
-Minimale eisen:
+<b>Minimale eisen:</b>
 -	Bieden van 2 opties: kookgeschiedenis en nieuwe gerechten proberen;
 -   Kookgeschiedenis geeft de gemaakte gerechten met datum van maken gesorteerd op rating die tijden het maken is gegeven;
 -   Als het recept in de kookgeschiedenis vaker is gemaakt dan staat de meeste recente datum erin;
