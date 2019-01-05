@@ -8,6 +8,7 @@ Studenten willen goedkoop, makkelijk en voedzame avondmaaltijden, alleen ontbree
 
 Minimale eisen:
 -	Bieden van 2 opties: kookgeschiedenis en nieuwe gerechten proberen;
+-   Kookgeschiedenis geeft 
 -	App gebruiker moet kunnen kiezen tussen de 3 V’s: vegetarisch, vis of vlees
 -	Afhankelijk van de gekozen V moeten er gerechten verschijnen waar de gebruiker uit kan kiezen;
 -	De gebruiker moet door de gerechten kunnen zoeken;
