@@ -47,7 +47,7 @@ Ik ben opzoek gegaan naar speciaal een app voor studenten om te kijken, maar die
 
 - Receptenmaker: Je kunt je eigen recepten beheren en recepten toevoegen van de bekende receptensites. Je kunt je recept sorteren op categorie, bereidingstijd, ingredient, receptnaam en bereiding. Ook hebben ze een kookwekker functie en een geen idee knop.  
     - Ik zou ook een kookwekker kunnen toevoegen, maar aangezien elke telefoon ook een stopwatch functie heeft lijkt me dit niet nodig. In mijn app kun je ook zoeken naar ingredienten en recepten, zoeken naar bereidingstijd lijkt me onnodig omdat ik alleen recepten sorteer uit mijn database die snel zijn. Ik heb geen "geen idee knop", dit lijkt me wel een goed idee als extra.
-    <img src="https://user-images.githubusercontent.com/43133057/50723956-98e1c980-10e5-11e9-94b0-f51d2f0be018.png" width="40%" height="40%"/>
+    <img src="https://user-images.githubusercontent.com/43133057/50723956-98e1c980-10e5-11e9-94b0-f51d2f0be018.png" width="20%" height="20%"/>
 
      
 
