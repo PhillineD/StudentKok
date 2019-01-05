@@ -21,7 +21,7 @@ Studenten willen goedkoop, makkelijk en voedzame avondmaaltijden, alleen ontbree
 -	Door de kookgeschiedenis kan gezocht worden;
 -	De kookgeschiedenis staat op volgorde van beoordeling.
 
-Extra:
+<b>Extra:</b>
 -	De benodigdheden veranderen afhankelijk van het aantal personen dat mee eet;
 -   Stopwatch functie, hiermee je tijd bijhouden voor bijvoorbeeld een oven-recept;
 -   Notitie optie, wanneer er punten zijn die belangrijk zijn om te onthouden zie je die volgende keer als je dit gerecht maakt weer;
@@ -32,16 +32,16 @@ Extra:
 
 # Voorwaarden 
 
-Data:
+<b>Data:</b>
 
 De gerechten zullen gehaald worden van de open API database: https://www.themealdb.com. Hier staan allerlei gerechten in. Door er zelf een filter op te zetten ga ik er voor zorgen dat die alleen de goedkope, makkelijke en voedzame eruit haalt. 
 Hiernaast komt er een SQL-database waarin de recent gemaakte gerechten worden opgeslagen (wanneer, welke rating). Ook gaat moet een een formule komen die kan berekenen voor hoeveel personen het gerecht is, dit staat namelijk niet in de database. 
 
-Libery's:
+<b>Libery's:</b>
 - API
 - SQL 
 
-Reviews: 
+<b>Reviews:</b> 
 
 Ik ben opzoek gegaan naar speciaal een app voor studenten om te kijken, maar die heb ik niet kunnen vinden. Daarnaast bestaan er wel veel kookapps die makkelijk in gebruik zijn, die studenten dus eventueel zouden kunnen gebruiken.
 
@@ -60,7 +60,7 @@ Ik ben opzoek gegaan naar speciaal een app voor studenten om te kijken, maar die
 
 
     
-Moeilijkheden:
+<b>Moeilijkheden:</b>
  - Het filteren van de database op goedkoop, makkelijk en voedzame avondmaaltijden. Ik wil dit gaan doen door het aantal ingredienten  en aantal kookstappen te tellen, als dit te lang is dan deze niet kiezen. 
  - 
     
