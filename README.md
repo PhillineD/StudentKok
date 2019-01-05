@@ -1,9 +1,13 @@
 # StudentIsDeKok 
 Philline Dikker 12317608
+Native App Studio
+Minor Programmeren 
+Universiteit van Amsterdam 
+
+# Solution 
 
 De kookapp voor studenten met gevarieede, goedkope, makkelijke en voedzame avondmaaltijden. 
 
-# Solution 
 Studenten willen goedkoop, makkelijk en voedzame avondmaaltijden, alleen ontbreek de kennis en vaardigheid. Vaak kost het te veel tijd om dit op te zoeken op internet. Daarnaast vergeten studenten ook wat ze hebben gemaakt. Ook hebben ze geen smaken van andere cuturen. Er is nog geen oplossing in vorm van een app. De Studentisdekok-app biedt de oplossing. In deze app worden studenten-gerechten (goedkoop, makkelijk en voedzame avondmaaltijden) weergeven en is er een optie om te zien wat je al een keer hebt gemaakt en welke beoordeling je hieraan gegeven hebt. Ook kun je zoeken naar retjes die je nog in je koelkast hebt liggen om er voor te zorgen dat de kosten nog lager zijn. 
 
 <b>Minimale eisen:</b>
@@ -27,7 +31,7 @@ Studenten willen goedkoop, makkelijk en voedzame avondmaaltijden, alleen ontbree
 -   Notitie optie, wanneer er punten zijn die belangrijk zijn om te onthouden zie je die volgende keer als je dit gerecht maakt weer;
 -   "geen idee" knop, die kiest een random gerecht. 
 
-
+<b>Schets:</b>
 ![ontwerp](https://user-images.githubusercontent.com/43133057/48567161-b3c16a00-e8fc-11e8-968d-9a40754e775c.png)
 
 # Voorwaarden 
