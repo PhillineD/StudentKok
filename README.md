@@ -49,6 +49,8 @@ Ik ben opzoek gegaan naar speciaal een app voor studenten om te kijken, maar die
 -  Fotokookboek: Fotokookboek is een app die aanvoelt als een kookcursus. Grote foto’s en begrijpelijke teksten laten je stap voor stap duidelijk zien welke ingrediënten je nodig hebt en hoe je ze bereidt. Fotokookboek leert je recepten uit de receptenverzameling Snel & simpel. Hier staan 60 recepten in die in 30 minuten of minder bereid kunnen worden. De app biedt nog negen andere kookboeken met ieder minimaal 60 recepten, zoals Italiaans, Aziatisch of Eenvoudig & lekker. Deze zijn niet gratis, maar wel per kookboek aan te schaffen in de app. De ingrediëntenlijst kan gedeeld worden met anderen.De lievelingsrecepten kan je bewaren als favoriet en ook kan je gemakkelijk notities toevoegen aan recepten. 
     - In vergelijking met mijn app is het start concept hetzelfde namelijk makelijk in gebruik. Bij mij kun je recepten ook als favoriet bewaren door ze een hoge rating te geven, maar ik heb geen notities. Ik zou aan mijn app nog notities kunnen toevoegen. 
     
+    ![image](https://user-images.githubusercontent.com/43133057/50724079-b879f180-10e7-11e9-9217-3e1d7bd90fa2.png)
+    
     
     
 
