@@ -12,7 +12,7 @@ Minimale eisen:
 -	Afhankelijk van de gekozen V moeten er gerechten verschijnen waar de gebruiker uit kan kiezen;
 -	De gebruiker moet door de gerechten kunnen zoeken;
 -	Door op een gerecht te klikken verschijnt het recept, de benodigdheden en een ratingbar;
-- De gebruiker kan een rating geven aan een bepaald gerecht door de ratingbar;
+-   De gebruiker kan een rating geven aan een bepaald gerecht door de ratingbar;
 -	De kookgeschiedenis wordt weergegeven met de datum waarop het gerecht het laatst is gemaakt met de beoordeling;
 -	Door de kookgeschiedenis kan gezocht worden;
 -	De kookgeschiedenis staat op volgorde van beoordeling.
@@ -20,7 +20,8 @@ Minimale eisen:
 Extra:
 -	De benodigdheden veranderen afhankelijk van het aantal personen dat mee eet;
 - Extra gerechten; 
-- Stopwatch functie. 
+- Stopwatch functie;
+- "geen idee" knop. 
 
 
 ![ontwerp](https://user-images.githubusercontent.com/43133057/48567161-b3c16a00-e8fc-11e8-968d-9a40754e775c.png)
@@ -50,6 +51,11 @@ Ik ben opzoek gegaan naar speciaal een app voor studenten om te kijken, maar die
     - In vergelijking met mijn app is het start concept hetzelfde namelijk makelijk in gebruik. Bij mij kun je recepten ook als favoriet bewaren door ze een hoge rating te geven, maar ik heb geen notities. Ik zou aan mijn app nog notities kunnen toevoegen. 
     
     ![image](https://user-images.githubusercontent.com/43133057/50724079-b879f180-10e7-11e9-9217-3e1d7bd90fa2.png)
+    
+    
+Moeilijkheden:
+ - Het filteren van de database op goedkoop, makkelijk en voedzame avondmaaltijden. Ik wil dit gaan doen door het aantal ingredienten  en aantal kookstappen te tellen, als dit te lang is dan deze niet kiezen. 
+ - 
     
     
     
