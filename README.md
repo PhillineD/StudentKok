@@ -75,7 +75,7 @@ Ik ben opzoek gegaan naar speciaal een app voor studenten , maar die heb ik niet
 
     
 <b>Moeilijkheden:</b>
- - Het filteren van de database op goedkoop, makkelijk en voedzame avondmaaltijden. Ik wil dit gaan doen door het aantal ingredienten  en aantal kookstappen te tellen, als dit te lang is dan deze niet kiezen. Als dit niet lukt ga ik opzoek naar een andere data-base, of maak ik er zelf een aan. De concenquentie zal dan wel zijn dat ik weinig gerechten heb omdat ik ze zelf allemaal in de data-base moet zetten;
+ - Het filteren van de database op goedkoop, makkelijk en voedzame avondmaaltijden. Ik wil dit gaan doen door het aantal ingredienten  en aantal kookstappen te tellen, als dit te lang is dan deze niet kiezen. Ook wil ik kijken naar de ingredienten, als er een duur ingeredient in staat, word dit recept niet gebruikt. Als dit niet lukt ga ik opzoek naar een andere data-base, of maak ik er zelf een aan. De concenquentie zal dan wel zijn dat ik weinig gerechten heb omdat ik ze zelf allemaal in de data-base moet zetten;
  - Het berekenen van het aantal personen wat van een gerecht kan eten;
  - De tijd van het laatst gemaakte gerecht onthouden en overschrijden; 
  - Kookgeschiedenis moet nog aanwezig zijn bij het opnieuw opstarten van de app. 
