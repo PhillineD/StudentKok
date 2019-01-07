@@ -52,8 +52,8 @@ De gerechten zullen gehaald worden van de open API database: https://www.themeal
 Hiernaast komt er een SQL-database waarin de recent gemaakte gerechten worden opgeslagen (wanneer, welke rating). Ook gaat moet een een formule komen die kan berekenen voor hoeveel personen het gerecht is, dit staat namelijk niet in de database. 
 
 <b>Libery's:</b>
-- API
-- SQL 
+- API themealdb
+- SQLite database
 
 <b>Reviews:</b> 
 
