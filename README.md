@@ -32,11 +32,12 @@ Probeer iets nieuws
 Kookgeschiedenis
 -   Kookgeschiedenis geeft de gemaakte gerechten met datum van maken gesorteerd op rating die tijdends het maken is gegeven;
 -   Als het recept in de kookgeschiedenis vaker is gemaakt dan staat de meeste recente datum erin;
--   Kookgeschiedenis heeft ook een zoekfunctie waarmee gezocht kan worden naar producten of receptnamen; 
+-   Kookgeschiedenis heeft ook een zoekfunctie waarmee gezocht kan worden naar receptnamen; 
 
 
 <b>Extra:</b>
 -	De benodigdheden veranderen afhankelijk van het aantal personen dat mee eet;
+-   Als je op een item in de geschiedenis klikt, ga je naar het recept;
 -   Stopwatch functie, hiermee je tijd bijhouden voor bijvoorbeeld een oven-recept;
 -   Notitie optie, wanneer er punten zijn die belangrijk zijn om te onthouden zie je die volgende keer als je dit gerecht maakt weer;
 -   "geen idee" knop toevoegen aan startscherm, die een random gerecht kiest. 
