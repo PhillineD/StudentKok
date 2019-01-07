@@ -57,7 +57,7 @@ Hiernaast komt er een SQL-database waarin de recent gemaakte gerechten worden op
 
 <b>Reviews:</b> 
 
-Ik ben opzoek gegaan naar speciaal een app voor studenten om te kijken, maar die heb ik niet kunnen vinden. Daarnaast bestaan er wel veel kookapps die makkelijk in gebruik zijn, die studenten dus eventueel zouden kunnen gebruiken.
+Ik ben opzoek gegaan naar speciaal een app voor studenten , maar die heb ik niet kunnen vinden. Er bestaan er wel veel kookapps die makkelijk in gebruik zijn, die studenten dus eventueel zouden kunnen gebruiken.
 
 - Receptenmaker: Je kunt je eigen recepten beheren en recepten toevoegen van de bekende receptensites. Je kunt je recept sorteren op categorie, bereidingstijd, ingredient, receptnaam en bereiding. Ook hebben ze een kookwekker functie en een geen idee knop.  
     - Ik zou ook een kookwekker kunnen toevoegen, maar aangezien elke telefoon ook een stopwatch functie heeft lijkt me dit niet nodig. In mijn app kun je ook zoeken naar ingredienten en recepten, zoeken naar bereidingstijd lijkt me onnodig omdat ik alleen recepten sorteer uit mijn database die snel zijn. Ik heb geen "geen idee knop", dit lijkt me wel een goed idee als extra.
