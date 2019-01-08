@@ -1,6 +1,8 @@
 # Design document 
 
-Op basis van het voorstel een meer technische uitwerking van de StudentIsDeKok. De afzonderlijke delen van de oplossing in kaart, API's, database en een diagram van gebruikersmodules, klassen en functies. Alle onderdelen zijn nu in het Nederlands uitgewerkt maar de uiteindelijk versie zal in het engels zijn. Hiervoor heb ik gekozen omdat de data ook in Engels is. De app zal dan ook geen StudentIsDeKok heten maar Studentchef. 
+Op basis van het voorstel een meer technische uitwerking van de StudentIsDeKok. De afzonderlijke delen van de oplossing in kaart, API's, database en een diagram van gebruikersmodules, klassen en functies. 
+
+Alle onderdelen zijn nu in het Nederlands uitgewerkt maar de uiteindelijk versie zal in het Engels zijn. Hiervoor heb ik gekozen omdat de data ook in Engels is. De app zal dan ook geen StudentIsDeKok heten maar Studentchef. 
 
 
 # Geavanceerde schetsen van de gebruikersinterface
