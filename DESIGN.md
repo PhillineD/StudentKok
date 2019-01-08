@@ -11,15 +11,15 @@
 
 Afhankelijk van de gekozen catergorie worden deze API’s gebruikt. Uit deze lijst wordt een gerecht met een bepaald id gekozen.
 
-(*Vis*)  
+*Vis*
   - https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood
 
-(*Vlees*)  
+*Vlees*  
  - https://www.themealdb.com/api/json/v1/1/filter.php?c=Beef
  - https://www.themealdb.com/api/json/v1/1/filter.php?c=Chicken
  - https://www.themealdb.com/api/json/v1/1/filter.php?c=Lamb
 
-(*Vega*)  
+*Vega*  
  - https://www.themealdb.com/api/json/v1/1/filter.php?c=Vega
  - https://www.themealdb.com/api/json/v1/1/filter.php?c=Vegaterain
 
@@ -42,9 +42,9 @@ Ik heb getest in CS50 IDE of the API toegankelijk was. Ik vroeg het gerecht Arri
 		<th>Date </th>
 	</tr>
 	<tr>
-		<td> (*12345*)      </td>
-		<td> (*3*)          </td>
-		<td> (*7-1-2019*)   </td>
+		<td> *12345*      </td>
+		<td> *3*          </td>
+		<td> *7-1-2019*   </td>
 	</tr>
 	<tr>
 		<td>   </td>
