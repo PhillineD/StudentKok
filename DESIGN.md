@@ -37,7 +37,7 @@ Het id wordt hieronder ingevuld.
 Ik heb getest in CS50 IDE of the API toegankelijk was. Ik vroeg het gerecht Arribata of en ontving de juiste informatie.
 ![testing api](https://user-images.githubusercontent.com/43133057/50821626-f8331a00-132f-11e9-81a0-bec080b8025a.png)
 Ook heb ik gegeken of de plaatjes goed waren, zo gaf de link: https://www.themealdb.com//images//media//meals//xutquv1505330523.jpg
-![voorbeeld plaatje](https://user-images.githubusercontent.com/43133057/50823459-56fa9280-1334-11e9-9c17-af86a440684b.jpg)
+<img src="https://user-images.githubusercontent.com/43133057/50823459-56fa9280-1334-11e9-9c17-af86a440684b.jpg" width="20%" height="20%"/>
 
 # Database tabellen 
 
