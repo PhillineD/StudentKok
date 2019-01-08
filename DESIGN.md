@@ -90,3 +90,7 @@ Om de gebruikersgeschiedenis op te slaan gaan we een SQLite Database aanmaken in
 		<td> 4-1-2019   </td>
 	</tr>
 </table>
+
+- Meal id als string;
+- Rating als integer; 
+- Date als string.
