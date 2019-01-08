@@ -37,24 +37,24 @@ Ik heb getest in CS50 IDE of the API toegankelijk was. Ik vroeg het gerecht Arri
 
 <table>
 	<tr>
-		<th>1 </th>
-		<th>2</th>
-		<th>3</th>
+		<th>Meal id </th>
+		<th>Rating </th>
+		<th>Date </th>
 	</tr>
 	<tr>
-		<td>Singlefamily</td>
-		<td>€285.000</td>
-		<td>12</td>
-	</tr>
-	<tr>
-		<td>Bungalow</td>
-		<td>€399.000</td>
-		<td>5</td>
-	</tr>
-	<tr>
-		<td>Maison</td>
-		<td>€610.000</td>
+		<td>12345</td>
 		<td>3</td>
+		<td>7-1-2019</td>
+	</tr>
+	<tr>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+	</tr>
+	<tr>
+		<td> </td>
+		<td> </td>
+		<td> </td>
 	</tr>
 	<tr>
 		<td> </td>
