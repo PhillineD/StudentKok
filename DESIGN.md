@@ -47,18 +47,18 @@ Ik heb getest in CS50 IDE of the API toegankelijk was. Ik vroeg het gerecht Arri
 		<td>7-1-2019</td>
 	</tr>
 	<tr>
-		<td> </td>
-		<td> </td>
-		<td> </td>
+		<td>   </td>
+		<td>   </td>
+		<td>   </td>
 	</tr>
 	<tr>
-		<td> </td>
-		<td> </td>
-		<td> </td>
+		<td>   </td>
+		<td>   </td>
+		<td>   </td>
 	</tr>
 	<tr>
-		<td> </td>
-		<td> </td>
-		<td> </td>
+		<td>   </td>
+		<td>   </td>
+		<td>   </td>
 	</tr>
 </table>
