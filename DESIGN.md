@@ -1,5 +1,8 @@
 # Design document 
 
+Op basis van het voorstel een meer technische uitwerking. De afzonderlijke delen van de oplossing in kaart, API's, database en een diagram van gebruikersmodules, klassen en functies. 
+
+
 # Geavanceerde schetsen van de gebruikersinterface
 
 ![design1](https://user-images.githubusercontent.com/43133057/50820657-878afe00-132d-11e9-8770-fba02b849740.png)
