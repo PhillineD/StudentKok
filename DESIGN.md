@@ -7,7 +7,27 @@
 
 
 - Een diagram van gebruiksmodules, klassen en functies
+
 - Een lijst met API's en frameworks
+
+Afhankelijk van de gekozen catergorie worden deze API’s gebruikt. Uit deze lijst wordt een gerecht met een bepaald id gekozen. 
+
+Vis
+https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood
+
+Vlees
+https://www.themealdb.com/api/json/v1/1/filter.php?c=Beef
+https://www.themealdb.com/api/json/v1/1/filter.php?c=Chicken
+https://www.themealdb.com/api/json/v1/1/filter.php?c=Lamb
+
+Vega
+https://www.themealdb.com/api/json/v1/1/filter.php?c=Vegan
+https://www.themealdb.com/api/json/v1/1/filter.php?c=Vegaterain
+
+Het id wordt hieronder ingevuld. 
+https://www.themealdb.com/api/json/v1/1/lookup.php?=”MealId”
+
+
 
 Ik heb getest in CS50 IDE of the API toegankelijk was. Ik vroeg het gerecht Arribata of en ontving de juiste informatie. 
 ![testing api](https://user-images.githubusercontent.com/43133057/50821626-f8331a00-132f-11e9-81a0-bec080b8025a.png)
