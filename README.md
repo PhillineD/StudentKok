@@ -40,7 +40,8 @@ Kookgeschiedenis
 -   Als je op een item in de geschiedenis klikt, ga je naar het recept;
 -   Stopwatch functie, hiermee je tijd bijhouden voor bijvoorbeeld een oven-recept;
 -   Notitie optie, wanneer er punten zijn die belangrijk zijn om te onthouden zie je die volgende keer als je dit gerecht maakt weer;
--   "geen idee" knop toevoegen aan startscherm, die een random gerecht kiest. 
+-   "geen idee" knop toevoegen aan startscherm, die een random gerecht kiest;
+-   Link naar youtube filmpje.
 
 <b>Schets:</b>
 ![ontwerp](https://user-images.githubusercontent.com/43133057/48567161-b3c16a00-e8fc-11e8-968d-9a40754e775c.png)
