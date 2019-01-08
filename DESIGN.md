@@ -42,23 +42,23 @@ Ik heb getest in CS50 IDE of the API toegankelijk was. Ik vroeg het gerecht Arri
 		<th>Date </th>
 	</tr>
 	<tr>
-		<td> *12345*      </td>
-		<td> *3*          </td>
-		<td> *7-1-2019*   </td>
+		<td> 12345      </td>
+		<td> 3          </td>
+		<td> 7-1-2019   </td>
 	</tr>
 	<tr>
-		<td>   </td>
-		<td>   </td>
-		<td>   </td>
+		<td> 64576      </td>
+		<td> 2          </td>
+		<td> 9-1-2019   </td>
 	</tr>
 	<tr>
-		<td>   </td>
-		<td>   </td>
-		<td>   </td>
+		<td> 92345      </td>
+		<td> 3          </td>
+		<td> 11-1-2019  </td>
 	</tr>
 	<tr>
-		<td>   </td>
-		<td>   </td>
-		<td>   </td>
+		<td> 12775      </td>
+		<td> 5          </td>
+		<td> 4-1-2019   </td>
 	</tr>
 </table>
