@@ -10,7 +10,7 @@
 # Een lijst met API's en frameworks
 
 Afhankelijk van de gekozen catergorie worden deze API’s gebruikt. Uit deze lijst wordt een gerecht met een bepaald id gekozen.
-
+The Meal Database geeft ons verschillende catergorieen (c). Ik heb de bruikbare gekozen per catergorie, zie hieronder. 
 
 *Vis*
   - https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood
