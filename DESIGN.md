@@ -40,7 +40,7 @@ Deze moet ontleedt worden om in een van de bovenstaande V's ingedeeld te worden.
 Het id wordt hieronder ingevuld. 
  - https://www.themealdb.com/api/json/v1/1/lookup.php?=”MealId”
 
-
+De gerechten die niet makkelijk, voedzaam en gevarieerd zijn worden in de code er uit gefilterd. Dit zullen maar een paar gerechten zijn, de meeste voldoen. 
 
 Ik heb getest in CS50 IDE of the API toegankelijk was. Ik vroeg het gerecht Arribata of en ontving de juiste informatie.
 
