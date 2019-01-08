@@ -12,6 +12,8 @@ Alle onderdelen zijn nu in het Nederlands uitgewerkt maar de uiteindelijk versie
 
 # Een diagram van gebruiksmodules, klassen en functies
 
+![diagram](https://user-images.githubusercontent.com/43133057/50828171-e9a12e80-1340-11e9-9334-60012902bb29.png)
+
 # Een lijst met API's en frameworks
 
 Afhankelijk van de gekozen catergorie worden deze API’s gebruikt. Uit deze lijst wordt een gerecht met een bepaald id gekozen.
@@ -56,6 +58,7 @@ In de data staan ook youtube linkjes een filmpje van het recept. "strMeal":"Spic
 
 - https://www.youtube.com/watch?v=1IszT_guI08
 ,dit is het juiste recept. 
+
 # Database tabellen 
 
 Om de gebruikersgeschiedenis op te slaan gaan we een SQLite Database aanmaken in de telefoon. Deze moet er als onderstaande tabel gaan uitzien.
