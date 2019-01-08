@@ -1,13 +1,13 @@
 # Design document 
 
-<b>Geavanceerde schetsen van uw gebruikersinterface</b>
+# Geavanceerde schetsen van uw gebruikersinterface
 
 ![design1](https://user-images.githubusercontent.com/43133057/50820657-878afe00-132d-11e9-8770-fba02b849740.png)
 ![design2](https://user-images.githubusercontent.com/43133057/50820658-878afe00-132d-11e9-9080-9297b46e4106.png)
 
-<b>Een diagram van gebruiksmodules, klassen en functies</b>
+# Een diagram van gebruiksmodules, klassen en functies
 
-<b>Een lijst met API's en frameworks</b>
+# Een lijst met API's en frameworks
 
 Afhankelijk van de gekozen catergorie worden deze API’s gebruikt. Uit deze lijst wordt een gerecht met een bepaald id gekozen. 
 
@@ -31,7 +31,7 @@ https://www.themealdb.com/api/json/v1/1/lookup.php?=”MealId”
 Ik heb getest in CS50 IDE of the API toegankelijk was. Ik vroeg het gerecht Arribata of en ontving de juiste informatie. 
 ![testing api](https://user-images.githubusercontent.com/43133057/50821626-f8331a00-132f-11e9-81a0-bec080b8025a.png)
 
-<b>Database tabellen</b>
+# Database tabellen 
 -
 
-
+<b>Database tabellen</b>
