@@ -34,3 +34,31 @@ Ik heb getest in CS50 IDE of the API toegankelijk was. Ik vroeg het gerecht Arri
 
 # Database tabellen 
 
+
+<table>
+	<tr>
+		<th>1 </th>
+		<th>2</th>
+		<th>3</th>
+	</tr>
+	<tr>
+		<td>Singlefamily</td>
+		<td>€285.000</td>
+		<td>12</td>
+	</tr>
+	<tr>
+		<td>Bungalow</td>
+		<td>€399.000</td>
+		<td>5</td>
+	</tr>
+	<tr>
+		<td>Maison</td>
+		<td>€610.000</td>
+		<td>3</td>
+	</tr>
+	<tr>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+	</tr>
+</table>
