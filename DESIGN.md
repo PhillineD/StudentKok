@@ -8,6 +8,11 @@
 
 - Een diagram van gebruiksmodules, klassen en functies
 - Een lijst met API's en frameworks
+
+Ik heb getest in CS50 IDE of the API toegankelijk was. Ik vroeg het gerecht Arribata of en ontving de juiste informatie. 
+![testing api](https://user-images.githubusercontent.com/43133057/50821626-f8331a00-132f-11e9-81a0-bec080b8025a.png)
+
+
 - A list of database tables and fields
 
 
