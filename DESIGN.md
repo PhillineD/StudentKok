@@ -34,6 +34,7 @@ Ik heb getest in CS50 IDE of the API toegankelijk was. Ik vroeg het gerecht Arri
 
 # Database tabellen 
 
+Om de gebruikersgeschiedenis op te slaan gaan we een SQLite Database aanmaken in de telefoon. Deze moet er als onderstaande tabel gaan uitzien.
 
 <table>
 	<tr>
