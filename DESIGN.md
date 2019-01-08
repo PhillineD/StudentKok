@@ -25,8 +25,9 @@ Afhankelijk van de gekozen catergorie worden deze API’s gebruikt. Uit deze lij
  - https://www.themealdb.com/api/json/v1/1/filter.php?c=Vega
  - https://www.themealdb.com/api/json/v1/1/filter.php?c=Vegaterain
 
-Daarnaast bestaat er ook
+Overig
 - https://www.themealdb.com/api/json/v1/1/filter.php?c=Pasta
+
 Deze moet ontleedt worden om in een van de bovenstaande V's ingedeeld te worden.
 
 Het id wordt hieronder ingevuld. 
