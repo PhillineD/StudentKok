@@ -53,7 +53,7 @@ Dit plaatje:
 In de data staan ook youtube linkjes een filmpje van het recept. "strMeal":"Spicy Arrabiata Penne", geeft deze link:
 
 - https://www.youtube.com/watch?v=1IszT_guI08
-Dit is het juiste recept. 
+,dit is het juiste recept. 
 # Database tabellen 
 
 Om de gebruikersgeschiedenis op te slaan gaan we een SQLite Database aanmaken in de telefoon. Deze moet er als onderstaande tabel gaan uitzien.
