@@ -39,9 +39,9 @@ public class MealsRequest implements Response.Listener<JSONObject>, Response.Err
         this.activity =activity;
 
         RequestQueue queue = Volley.newRequestQueue(this.context);
-
+        Log.d("foutje", "onResponse: ");
         // create a JsonObjectRequest
-        String url = "https://resto.mprog.nl/categories";
+        String url = "https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood";
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(url, null, this, this);
         queue.add(jsonObjectRequest);
 
@@ -57,7 +57,7 @@ public class MealsRequest implements Response.Listener<JSONObject>, Response.Err
         ArrayList<String> mealsview = new ArrayList<String>();
         Log.d("gotmeals", "aaa");
         try {
-            JSONArray meal = response.getJSONArray("");
+            JSONArray meal = response.getJSONArray("meals");
 
 //            Log.d("gotmeals", "npway "+ meal.length());
             for(int i =0;i<meal.length();i++){

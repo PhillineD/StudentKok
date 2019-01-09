@@ -1,59 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <TextView
             android:id="@+id/viewRecipeTitle"
             android:layout_width="match_parent"
             android:layout_height="62dp"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:gravity="center"
             android:text="TextView" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="46dp"
-            android:text="Benodigdheden" />
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="Ingredients" />
 
         <TextView
             android:id="@+id/viewIngredients"
             android:layout_width="match_parent"
             android:layout_height="124dp"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:gravity="center"
             android:text="TextView" />
 
         <TextView
             android:id="@+id/kopje"
             android:layout_width="match_parent"
             android:layout_height="31dp"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:gravity="center"
             android:text="Instructions" />
 
         <TextView
             android:id="@+id/viewinstructions"
             android:layout_width="match_parent"
             android:layout_height="101dp"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:gravity="center"
             android:text="TextView" />
 
         <TextView
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:gravity="center"
             android:text="Add rating" />
 
         <RatingBar
             android:id="@+id/ratingBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
             android:onClick="clickto" />
 
         <TextView
             android:id="@+id/viewyoutube"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:gravity="center"
             android:text="TextView" />
 
         <Button

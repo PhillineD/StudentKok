@@ -28,7 +28,7 @@ public class MealsActivity extends AppCompatActivity implements MealsRequest.Cal
 
     @Override
     public void gotMealsError(String message) {
-        Log.d("gotmealserror", "gotMeals: we zijn er dus niet ");
+        Log.d("gotmealserror", "gotMeals: we zijn er dus niet "+ message);
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 
