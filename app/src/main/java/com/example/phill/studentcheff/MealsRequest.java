@@ -3,6 +3,8 @@ package com.example.phill.studentcheff;
 import android.content.Context;
 import android.content.Context;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -27,7 +29,7 @@ public class MealsRequest implements Response.Listener<JSONObject>, Response.Err
     private Context context;
 
     public interface Callback{
-        void gotMeals(ArrayList<String> meals);
+        void gotMeals(ArrayList<MealItem> meals);
         void gotMealsError(String message);
     }
 
@@ -54,7 +56,7 @@ public class MealsRequest implements Response.Listener<JSONObject>, Response.Err
 
     @Override
     public void onResponse(JSONObject response) {
-        ArrayList<String> mealsview = new ArrayList<String>();
+        ArrayList<MealItem> mealsview = new ArrayList<MealItem>();
         Log.d("gotmeals", "aaa");
         try {
             JSONArray meal = response.getJSONArray("meals");
@@ -62,8 +64,19 @@ public class MealsRequest implements Response.Listener<JSONObject>, Response.Err
 //            Log.d("gotmeals", "npway "+ meal.length());
             for(int i =0;i<meal.length();i++){
                 Log.d("gotmeals", "gotMeals: we zijn er "+ meal.get(i));
-                String MealString = (String) meal.get(i);
-                mealsview.add(MealString);
+
+                JSONObject mealitems = meal.getJSONObject(i);
+
+                // get title, id and picture
+                String titlerecipe = mealitems.getString("strMeal");
+                String id = mealitems.getString("idMeal");
+                String picture = mealitems.getString("strMealThumb");
+
+                // new Mealitem
+                MealItem item = new MealItem(id,picture,titlerecipe);
+
+                Log.d("gotmeals", "joejoe: we zijn er "+ item.getId() + item.getitle() + item.getPicture());
+                mealsview.add(item);
             }
 
             this.activity.gotMeals(mealsview);
