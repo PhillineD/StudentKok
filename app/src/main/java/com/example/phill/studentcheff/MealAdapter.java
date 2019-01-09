@@ -38,6 +38,9 @@ public class MealAdapter extends ArrayAdapter<MealItem> {
 //        recipe.setText(piece.getPicture());
         Log.d("MenuItemAdapter", "Piece = " + piece.getitle());
 
+        DownloadImageTask Image = new DownloadImageTask(picture);
+        Image.execute(piece.getPicture());
+
         return convertView;
 
 

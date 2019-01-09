@@ -2,6 +2,7 @@ package com.example.phill.studentcheff;
 
 import android.content.Context;
 import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -24,6 +25,7 @@ import org.json.JSONObject;
 import javax.security.auth.callback.Callback;
 
 public class MealsRequest implements Response.Listener<JSONObject>, Response.ErrorListener{
+    
 
     private Callback activity;
     private Context context;
@@ -39,6 +41,9 @@ public class MealsRequest implements Response.Listener<JSONObject>, Response.Err
 
     public void getMeals(Callback activity){
         this.activity =activity;
+
+
+
 
         RequestQueue queue = Volley.newRequestQueue(this.context);
         Log.d("foutje", "onResponse: ");

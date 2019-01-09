@@ -21,6 +21,10 @@ public class VActivity extends AppCompatActivity {
     public void clickfish(View view) {
         Intent intent = new Intent(getApplicationContext(), MealsActivity.class);
         intent.putExtra("categorie", "fish");
+
+        Intent Catergorie = new Intent(getApplicationContext(), MealsRequest.class);
+        Catergorie.putExtra("categorie", "fish");
+
         startActivity(intent);
     }
 
