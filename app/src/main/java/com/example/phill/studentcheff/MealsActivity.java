@@ -31,7 +31,6 @@ public class MealsActivity extends AppCompatActivity implements MealsRequest.Cal
         ListView listView =findViewById(R.id.MealsListView);
         listView.setAdapter(adapter);
 
-
     }
 
     @Override

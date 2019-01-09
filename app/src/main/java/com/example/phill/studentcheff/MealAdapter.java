@@ -32,7 +32,10 @@ public class MealAdapter extends ArrayAdapter<MealItem> {
         ImageView picture = convertView.findViewById(R.id.Picture);
         TextView recipe = convertView.findViewById(R.id.Recipe);
 
+
         MealItem piece = getItem(position);
+        recipe.setText(piece.getitle());
+//        recipe.setText(piece.getPicture());
         Log.d("MenuItemAdapter", "Piece = " + piece.getitle());
 
         return convertView;
