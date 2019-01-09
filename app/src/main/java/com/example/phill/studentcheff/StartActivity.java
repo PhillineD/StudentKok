@@ -20,7 +20,8 @@ public class StartActivity extends AppCompatActivity {
 
 
     public void clickhistory(View view) {
-
+        Intent intent = new Intent(getApplicationContext(), HistoryActivity.class);
+        startActivity(intent);
     }
 
 }

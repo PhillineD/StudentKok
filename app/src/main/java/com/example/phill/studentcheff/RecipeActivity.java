@@ -30,7 +30,7 @@ public class RecipeActivity extends AppCompatActivity implements MealsRequest.Ca
     }
 
     public void clicktostart(View view) {
-        Intent intent = new Intent(getApplicationContext(), RecipeActivity.class);
+        Intent intent = new Intent(getApplicationContext(), StartActivity.class);
         startActivity(intent);
     }
 }

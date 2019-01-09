@@ -1,4 +1,9 @@
 package com.example.phill.studentcheff;
 
-public class HistoryActivity {
+import android.support.v7.app.AppCompatActivity;
+
+public class HistoryActivity extends AppCompatActivity {
+
+
+
 }
