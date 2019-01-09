@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="324dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="187dp">
+
+        <Button
+            android:id="@+id/meat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Meat" />
+
+        <Button
+            android:id="@+id/fish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fish" />
+
+        <Button
+            android:id="@+id/vega"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vega" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
