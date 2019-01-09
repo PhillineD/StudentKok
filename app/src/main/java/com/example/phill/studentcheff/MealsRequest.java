@@ -26,6 +26,11 @@ public class MealsRequest implements Response.Listener<JSONObject>, Response.Err
     private Callback activity;
     private Context context;
 
+    public interface Callback{
+        void gotMeals(ArrayList<String> categories);
+        void gotMealsError(String message);
+    }
+
     public MealsRequest(Context context){
         this.context = context;
     }
@@ -36,9 +41,19 @@ public class MealsRequest implements Response.Listener<JSONObject>, Response.Err
         RequestQueue queue = Volley.newRequestQueue(this.context);
 
         // create a JsonObjectRequest
-        String url = "";
+        String url = "https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata";
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(url, null, this, this);
         queue.add(jsonObjectRequest);
+
     }
 
+    @Override
+    public void onErrorResponse(VolleyError error) {
+        this.activity.gotMealsError(error.getMessage());
+    }
+
+    @Override
+    public void onResponse(JSONObject response) {
+
+    }
 }
