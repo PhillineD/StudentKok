@@ -21,6 +21,8 @@
         <activity android:name=".MealsActivity" />
         <activity android:name=".RecipeActivity" />
         <activity android:name=".HistoryActivity" />
+        <activity android:name=".MeatActivity" />
+        <activity android:name=".VegaActivity" />
     </application>
 
 </manifest>

@@ -25,10 +25,11 @@ import org.json.JSONObject;
 import javax.security.auth.callback.Callback;
 
 public class MealsRequest implements Response.Listener<JSONObject>, Response.ErrorListener{
-    
+
 
     private Callback activity;
     private Context context;
+    String add;
 
     public interface Callback{
         void gotMeals(ArrayList<MealItem> meals);
@@ -39,16 +40,28 @@ public class MealsRequest implements Response.Listener<JSONObject>, Response.Err
         this.context = context;
     }
 
-    public void getMeals(Callback activity){
+    public void getMeals(Callback activity, String message){
         this.activity =activity;
 
+//        if (message == "meat"){
+//            add = "beef";
+//            Log.d("beef", "onResponse: " + message);
+//        }
+//        else if(message == "fish"){
+//            add = "Seafood";
+//            Log.d("fish", "onResponse: " + message);
+//        }
+//        else{
+//            add = "Vegaterain";
+//            Log.d("Vega", "onResponse: " + message);
+//        }
 
-
-
+//        add = "beef";
         RequestQueue queue = Volley.newRequestQueue(this.context);
-        Log.d("foutje", "onResponse: ");
+        Log.d("foutje", "onResponse: " + message);
         // create a JsonObjectRequest
-        String url = "https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood";
+        String url = "https://www.themealdb.com/api/json/v1/1/filter.php?c="+ message;
+        Log.d("foutje", "onResponse: " + url);
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(url, null, this, this);
         queue.add(jsonObjectRequest);
 

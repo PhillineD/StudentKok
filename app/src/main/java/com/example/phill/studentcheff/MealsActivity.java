@@ -16,9 +16,11 @@ public class MealsActivity extends AppCompatActivity implements MealsRequest.Cal
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.meals_activity);
+        Intent intent = getIntent();
+        String message = intent.getStringExtra("categorie");
 
         MealsRequest ArrayAdapter = new MealsRequest(this);
-        ArrayAdapter.getMeals(this);
+        ArrayAdapter.getMeals(this, message);
 
     }
 
