@@ -25,7 +25,6 @@ public class MealItem {
         this.title = title;
     }
 
-
     public String getPicture() {
         return Picture;
     }

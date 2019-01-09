@@ -5,10 +5,18 @@
 
     android:orientation="vertical">
 
-    <ListView
+    <EditText
+        android:id="@+id/editText"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/MealsListView">
+        android:layout_height="57dp"
+        android:ems="10"
+        android:hint=" zucchini"
+        android:inputType="textPersonName" />
+
+    <ListView
+        android:id="@+id/MealsListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     </ListView>
 

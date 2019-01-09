@@ -16,57 +16,30 @@ public class Meal {
         return id;
     }
 
-    public void setId(String id) {
-        this.id = id;
-    }
 
     public String getitle() {
         return title;
     }
 
-    public void setTitle(String id) {
-        this.title = title;
-    }
 
     public String getIngredients() {
         return Ingredients;
-    }
-
-    public void setIngredients(String ingredients) {
-        Ingredients = ingredients;
     }
 
     public String getRecipe() {
         return Recipe;
     }
 
-    public void setRecipe(String recipe) {
-        Recipe = recipe;
-    }
-
     public String getInstruction() {
         return Instruction;
-    }
-
-    public void setInstruction(String instruction) {
-        Instruction = instruction;
     }
 
     public String getYoutubelink() {
         return Youtubelink;
     }
 
-    public void setYoutubelink(String youtubelink) {
-        Youtubelink = youtubelink;
-    }
-
     public String getPicture() {
         return Picture;
     }
-
-    public void setPicture(String picture) {
-        Picture = picture;
-    }
-
 
 }

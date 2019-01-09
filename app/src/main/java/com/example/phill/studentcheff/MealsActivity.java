@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -32,6 +33,16 @@ public class MealsActivity extends AppCompatActivity implements MealsRequest.Cal
         MealAdapter adapter = new MealAdapter(this, R.layout.meals_activity, meals);
         ListView listView =findViewById(R.id.MealsListView);
         listView.setAdapter(adapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                MealItem chooserecipe = (MealItem) parent.getItemAtPosition(position);
+                Intent choosen = new Intent(getApplicationContext(),RecipeActivity.class);
+                choosen.putExtra("id", chooserecipe.getId());
+                startActivity(choosen);
+            }
+        });
+
 
     }
 
@@ -45,4 +56,6 @@ public class MealsActivity extends AppCompatActivity implements MealsRequest.Cal
         Intent intent = new Intent(getApplicationContext(), RecipeActivity.class);
         startActivity(intent);
     }
+
+
 }
