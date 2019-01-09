@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.GridView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -31,7 +32,7 @@ public class MealsActivity extends AppCompatActivity implements MealsRequest.Cal
         Log.d("gotmeals", "gotMeals: we zijn er "+ meals);
 
         MealAdapter adapter = new MealAdapter(this, R.layout.meals_activity, meals);
-        ListView listView =findViewById(R.id.MealsListView);
+        GridView listView =findViewById(R.id.MealsListView);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
