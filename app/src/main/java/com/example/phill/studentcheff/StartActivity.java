@@ -1,5 +1,6 @@
 package com.example.phill.studentcheff;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,10 +14,13 @@ public class StartActivity extends AppCompatActivity {
     }
 
     public void clicknew(View view) {
+        Intent intent = new Intent(getApplicationContext(), VActivity.class);
+        startActivity(intent);
     }
 
 
     public void clickhistory(View view) {
+
     }
 
 }

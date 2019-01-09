@@ -15,18 +15,21 @@
             android:id="@+id/meat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="clickmeat"
             android:text="Meat" />
 
         <Button
             android:id="@+id/fish"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="clickfish"
             android:text="Fish" />
 
         <Button
             android:id="@+id/vega"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="clickvega"
             android:text="Vega" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
