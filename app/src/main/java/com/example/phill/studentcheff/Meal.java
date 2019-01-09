@@ -1,14 +1,15 @@
 package com.example.phill.studentcheff;
 
 public class Meal {
-    private String id, Ingredients, Recipe, Instruction, Youtubelink, Picture;
+    private String id, Ingredients, Recipe, Instruction, Youtubelink, Picture,  title;
 
-    public Meal(String id, String Ingredients, String Recipe, String Instruction, String Youtubelink, String Picture){
+    public Meal(String id, String Ingredients, String Recipe, String Instruction, String Youtubelink, String Picture, String title){
         this.id = id;
         this.Ingredients = Ingredients;
         this.Recipe =  Recipe;
         this.Instruction = Instruction;
         this.Youtubelink = Youtubelink;
+        this.title =title;
     }
 
     public String getId() {
@@ -17,6 +18,14 @@ public class Meal {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getitle() {
+        return title;
+    }
+
+    public void setTitle(String id) {
+        this.title = title;
     }
 
     public String getIngredients() {

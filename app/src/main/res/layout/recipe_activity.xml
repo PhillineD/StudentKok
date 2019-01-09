@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/viewRecipeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:text="Benodigdheden" />
+
+        <TextView
+            android:id="@+id/viewIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="124dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/kopje"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:text="Instructions" />
+
+        <TextView
+            android:id="@+id/viewinstructions"
+            android:layout_width="match_parent"
+            android:layout_height="101dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:text="Add rating" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clickto" />
+
+        <TextView
+            android:id="@+id/viewyoutube"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/finishedbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktostart"
+            android:text="Finished" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
