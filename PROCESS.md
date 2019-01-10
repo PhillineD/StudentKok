@@ -14,6 +14,6 @@ veranderd?
 wat heb ik gedaan?
  - recipe activity wordt nu ook weergeven
  - youtube filmpje kan gekeken worden door op de knop "video"te klikken 
- - ik kan een voorbeel in mijn history zetten
+ - ik kan een voorbeeld in mijn history zetten
  
  
