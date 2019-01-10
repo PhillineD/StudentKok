@@ -16,4 +16,10 @@ wat heb ik gedaan?
  - youtube filmpje kan gekeken worden door op de knop "video"te klikken 
  - ik kan een voorbeeld in mijn history zetten
  
+ voor het het prototype:
+ - alle schermen zijn er met knoppen
+ - data kan ingeladen worden
+ - proposal en design document staan op de git
+ 
+ 
  
