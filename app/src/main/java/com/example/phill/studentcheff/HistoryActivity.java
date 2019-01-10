@@ -11,6 +11,8 @@ public class HistoryActivity extends AppCompatActivity {
 
     private EntryDatabase db;
     private EntryAdapter adapter;
+    String id;
+    float stars;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,12 +20,12 @@ public class HistoryActivity extends AppCompatActivity {
         setContentView(R.layout.history_activity);
 
         // get id from de meal you chosen
-        Intent intent = getIntent();
-        String id = intent.getStringExtra("id");
-        float stars = intent.getFloatExtra("rating",0.0f);
-
-
-        Log.d("de id", "history: " + id +" "+ stars);
+//        Intent intent = getIntent();
+//        id = intent.getStringExtra("id");
+//        stars = intent.getFloatExtra("rating",0.0f);
+//
+//
+//        Log.d("de id", "history: " + id +" "+ stars);
 
         ListView history = findViewById(R.id.listviewhistory);
         db = EntryDatabase.getInstance(getApplicationContext());
@@ -35,7 +37,7 @@ public class HistoryActivity extends AppCompatActivity {
     }
 
     // method to update every time we save something
-    private  void updateData(){
+    public void updateData(){
 
         // get new cursor
         Cursor ncursor = EntryDatabase.selectAll(db);

@@ -17,14 +17,23 @@ public class EntryAdapter extends ResourceCursorAdapter {
 
     @Override
     public void bindView(View view, Context context, Cursor cursor) {
+
+        // set title
         TextView title = view.findViewById(R.id.historytitle);
         int indextitle = cursor.getColumnIndex("title");
         String texttitle = cursor.getString(indextitle);
         title.setText(texttitle);
 
+        // set rating
         RatingBar rating = view.findViewById(R.id.historyrating);
         int indexrating = cursor.getColumnIndex("rating");
         Float floatrating = cursor.getFloat(indexrating);
         rating.setRating(floatrating);
+
+        // set date
+//        TextView history = view.findViewById(R.id.historydate);
+//        int indexdate = cursor.getColumnIndex("date");
+//        String date = cursor.getString(indexdate);
+//        history.setText(date);
     }
 }

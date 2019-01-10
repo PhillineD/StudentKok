@@ -15,7 +15,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 public class RecipeActivity extends AppCompatActivity implements RecipeRequest.Callback {
-
+    ArrayList<Meal> meals;
     String url;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,12 +42,13 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         RatingBar rating = findViewById(R.id.ratingBar);
         float stars = rating.getRating();
 
-
         Intent in = new Intent(getApplicationContext(), HistoryActivity.class);
         in.putExtra("id",id);
         in.putExtra("rating", stars);
 
         Log.d("rating", "clicktostart: " + stars + id );
+
+        EntryDatabase.getInstance(this).insert(id, stars);
 
         startActivity(in);
     }

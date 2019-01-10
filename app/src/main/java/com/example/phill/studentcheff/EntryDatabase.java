@@ -60,6 +60,22 @@ public class EntryDatabase extends SQLiteOpenHelper {
     }
 
 
+    public void insert(String title, Float rating ){
+        // open a connection to the database
+        SQLiteDatabase database = instance.getWritableDatabase();
+
+        // create a new ContentValues object
+        ContentValues contentvalue = new ContentValues();
+
+        // add values for title, content and mood.
+        contentvalue.put("title", title);
+        contentvalue.put("rating", rating);
+
+        // call insert and add the right parameters
+        database.insert("Studentcheff", null, contentvalue);
+
+    }
+
 
 
 }
