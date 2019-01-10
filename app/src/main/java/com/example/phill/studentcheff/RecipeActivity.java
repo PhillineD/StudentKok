@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -28,8 +29,24 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
 
 
     public void clicktostart(View view) {
-        Intent intent = new Intent(getApplicationContext(), StartActivity.class);
-        startActivity(intent);
+
+        Intent intent = getIntent();
+
+        // get id
+        String id = intent.getStringExtra("id");
+
+        // get rating
+        RatingBar rating = findViewById(R.id.ratingBar);
+        float stars = rating.getRating();
+
+
+        Intent in = new Intent(getApplicationContext(), HistoryActivity.class);
+        in.putExtra("id",id);
+        in.putExtra("rating", stars);
+
+        Log.d("rating", "clicktostart: " + stars + id );
+
+        startActivity(in);
     }
 
     @Override
@@ -46,11 +63,6 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         ingregients.setText(stukje.getIngredients());
         instructions.setText(stukje.getInstruction());
         youtube.setText(stukje.getYoutubelink());
-
-
-//        Meal piece = getTitle();
-//        meals.getTitle();
-
 
     }
 
