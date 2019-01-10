@@ -29,8 +29,8 @@ The Meal Database geeft ons verschillende catergorieen (c). Ik heb de bruikbare 
  - https://www.themealdb.com/api/json/v1/1/filter.php?c=Pork
 
 *Vega*  
- - https://www.themealdb.com/api/json/v1/1/filter.php?c=Vega
- - https://www.themealdb.com/api/json/v1/1/filter.php?c=Vegaterain
+ - https://www.themealdb.com/api/json/v1/1/filter.php?c=Vegan
+ - https://www.themealdb.com/api/json/v1/1/filter.php?c=Vegeterain
 
 Overig
 - https://www.themealdb.com/api/json/v1/1/filter.php?c=Pasta
