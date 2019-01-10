@@ -9,3 +9,11 @@ veranderd?
 - gekozen om vlees en vega weer op te delen in extra schermen ipv dat je bij vlees bijvoorbeeld kip en lam krijgt. 
 - de youtube link komt in het recept zodat het "makkelijker wordt"
 
+# day 2
+
+wat heb ik gedaan?
+ - recipe activity wordt nu ook weergeven
+ - youtube filmpje kan gekeken worden door op de knop "video"te klikken 
+ - ik kan een voorbeel in mijn history zetten
+ 
+ 
