@@ -40,6 +40,8 @@ public class MealsActivity extends AppCompatActivity implements MealsRequest.Cal
                 MealItem chooserecipe = (MealItem) parent.getItemAtPosition(position);
                 Intent choosen = new Intent(getApplicationContext(),RecipeActivity.class);
                 choosen.putExtra("id", chooserecipe.getId());
+
+                // alle waardes moeten doorgegeven worden, dan hoeven ze alleen geplaatst te worden.
                 startActivity(choosen);
             }
         });
