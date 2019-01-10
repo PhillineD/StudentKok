@@ -10,6 +10,7 @@ import android.widget.TextView;
 import org.w3c.dom.Text;
 
 public class EntryAdapter extends ResourceCursorAdapter {
+
     public EntryAdapter(Context context, int layout, Cursor cursor) {
         super(context, layout, cursor);
     }
@@ -25,7 +26,5 @@ public class EntryAdapter extends ResourceCursorAdapter {
         int indexrating = cursor.getColumnIndex("rating");
         Float floatrating = cursor.getFloat(indexrating);
         rating.setRating(floatrating);
-
-
     }
 }

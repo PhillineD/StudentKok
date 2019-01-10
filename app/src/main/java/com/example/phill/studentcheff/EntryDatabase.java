@@ -15,14 +15,14 @@ public class EntryDatabase extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String  message = "CREATE TABLE " + "Studentchef" + "(id INTEGER PRIMARY KEY , title TEXT, rating FLOAT , " +
+        String  message = "CREATE TABLE " + "Studentchef" + "( _id INTEGER PRIMARY KEY AUTOINCREMENT, title TEXT, rating FLOAT , " +
                 "timestamp DATETIME default (datetime('now','localtime'))) ";
         db.execSQL(message);
 
         // create a new ContentValues object
         ContentValues contentvalue = new ContentValues();
 
-        contentvalue.put("id", "Hallo");
+        contentvalue.put("_id", "Hallo");
         contentvalue.put("title", "Hallo");
         contentvalue.put("rating", 2);
 
@@ -48,12 +48,10 @@ public class EntryDatabase extends SQLiteOpenHelper {
         onCreate(db );
     }
 
-
     // select all info from database
     public static Cursor selectAll(EntryDatabase instance){
         SQLiteDatabase database = instance.getWritableDatabase();
         return database.rawQuery("SELECT * FROM "+ "Studentchef", null );
     }
-
 
 }
