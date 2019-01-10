@@ -61,7 +61,6 @@ public class RecipeRequest implements Response.Listener<JSONObject>, Response.Er
         try {
             JSONArray meal = response.getJSONArray("meals");
 
-//            Log.d("gotmeals", "npway "+ meal.length());
             for(int i =0;i<meal.length();i++){
                 Log.d("gotmeals", "gotMeals: we zijn er "+ meal.get(i));
 

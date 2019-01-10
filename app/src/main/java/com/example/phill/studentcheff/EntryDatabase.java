@@ -24,6 +24,7 @@ public class EntryDatabase extends SQLiteOpenHelper {
         // create a new ContentValues object
         ContentValues contentvalue = new ContentValues();
 
+        // example for history
         contentvalue.put("_id", 1234);
         contentvalue.put("title", "Hallo");
         contentvalue.put("rating", 2);
@@ -59,6 +60,7 @@ public class EntryDatabase extends SQLiteOpenHelper {
     }
 
 
+    // method to insert a history item
     public void insert(String title, Float rating ){
         // open a connection to the database
         SQLiteDatabase db = instance.getWritableDatabase();

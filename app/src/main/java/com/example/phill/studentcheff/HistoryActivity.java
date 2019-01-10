@@ -20,14 +20,6 @@ public class HistoryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.history_activity);
 
-        // get id from de meal you chosen
-//        Intent intent = getIntent();
-//        id = intent.getStringExtra("id");
-//        stars = intent.getFloatExtra("rating",0.0f);
-//
-//
-//        Log.d("de id", "history: " + id +" "+ stars);
-
         ListView history = findViewById(R.id.listviewhistory);
         db = EntryDatabase.getInstance(getApplicationContext());
 
@@ -53,6 +45,7 @@ public class HistoryActivity extends AppCompatActivity {
     }
 
 
+    // when clicked on back, user go to start activity
     public void clickback(View view) {
         Intent intent = new Intent(getApplicationContext(), StartActivity.class);
         startActivity(intent);

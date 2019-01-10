@@ -48,6 +48,7 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
 
         Log.d("rating", "clicktostart: " + stars + id );
 
+        // insert into database
         EntryDatabase.getInstance(this).insert(id, stars);
 
         startActivity(in);

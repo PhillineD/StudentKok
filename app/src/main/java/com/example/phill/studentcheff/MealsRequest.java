@@ -42,21 +42,6 @@ public class MealsRequest implements Response.Listener<JSONObject>, Response.Err
 
     public void getMeals(Callback activity, String message){
         this.activity =activity;
-
-//        if (message == "meat"){
-//            add = "beef";
-//            Log.d("beef", "onResponse: " + message);
-//        }
-//        else if(message == "fish"){
-//            add = "Seafood";
-//            Log.d("fish", "onResponse: " + message);
-//        }
-//        else{
-//            add = "Vegaterain";
-//            Log.d("Vega", "onResponse: " + message);
-//        }
-
-//        add = "beef";
         RequestQueue queue = Volley.newRequestQueue(this.context);
         Log.d("foutje", "onResponse: " + message);
         // create a JsonObjectRequest
@@ -79,7 +64,6 @@ public class MealsRequest implements Response.Listener<JSONObject>, Response.Err
         try {
             JSONArray meal = response.getJSONArray("meals");
 
-//            Log.d("gotmeals", "npway "+ meal.length());
             for(int i =0;i<meal.length();i++){
                 Log.d("gotmeals", "gotMeals: we zijn er "+ meal.get(i));
 

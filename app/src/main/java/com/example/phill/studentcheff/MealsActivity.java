@@ -21,8 +21,8 @@ public class MealsActivity extends AppCompatActivity implements MealsRequest.Cal
         Intent intent = getIntent();
         String message = intent.getStringExtra("categorie");
 
-        MealsRequest ArrayAdapter = new MealsRequest(this);
-        ArrayAdapter.getMeals(this, message);
+        MealsRequest requestmeals = new MealsRequest(this);
+        requestmeals.getMeals(this, message);
 
     }
 
@@ -36,6 +36,8 @@ public class MealsActivity extends AppCompatActivity implements MealsRequest.Cal
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
+
+            // when  clicked on item, go to recipe activity and so recipe
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 MealItem chooserecipe = (MealItem) parent.getItemAtPosition(position);
                 Intent choosen = new Intent(getApplicationContext(),RecipeActivity.class);
@@ -55,10 +57,10 @@ public class MealsActivity extends AppCompatActivity implements MealsRequest.Cal
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 
-    public void clicktorecipe(View view) {
-        Intent intent = new Intent(getApplicationContext(), RecipeActivity.class);
-        startActivity(intent);
-    }
+//    public void clicktorecipe(View view) {
+//        Intent intent = new Intent(getApplicationContext(), RecipeActivity.class);
+//        startActivity(intent);
+//    }
 
 
 }
