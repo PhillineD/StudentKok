@@ -14,7 +14,6 @@ public class EntryDatabase extends SQLiteOpenHelper {
     }
 
     private static EntryDatabase instance;
-
     // elke keer als je iets aanpas de app leeg maken.
     @Override
     public void onCreate(SQLiteDatabase db) {
@@ -62,17 +61,18 @@ public class EntryDatabase extends SQLiteOpenHelper {
 
     public void insert(String title, Float rating ){
         // open a connection to the database
-        SQLiteDatabase database = instance.getWritableDatabase();
+        SQLiteDatabase db = instance.getWritableDatabase();
 
         // create a new ContentValues object
         ContentValues contentvalue = new ContentValues();
 
         // add values for title, content and mood.
+        contentvalue.put("_id", 12334);
         contentvalue.put("title", title);
         contentvalue.put("rating", rating);
 
         // call insert and add the right parameters
-        database.insert("Studentcheff", null, contentvalue);
+        db.insert("Studentcheff", null, contentvalue);
 
     }
 
