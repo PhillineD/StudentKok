@@ -15,20 +15,25 @@
         <TextView
             android:id="@+id/viewRecipeTitle"
             android:layout_width="match_parent"
-            android:layout_height="62dp"
+            android:layout_height="39dp"
             android:layout_gravity="center"
             android:foregroundGravity="center"
             android:gravity="center"
-            android:text="TextView" />
+            android:text="TextView"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
-            android:layout_height="46dp"
+            android:layout_height="30dp"
             android:layout_gravity="center"
             android:foregroundGravity="center"
             android:gravity="center"
-            android:text="Ingredients" />
+            android:text="Ingredients"
+            android:textSize="14sp"
+            android:textStyle="italic" />
 
         <TextView
             android:id="@+id/viewIngredients"
@@ -46,7 +51,8 @@
             android:layout_gravity="center"
             android:foregroundGravity="center"
             android:gravity="center"
-            android:text="Instructions" />
+            android:text="Instructions"
+            android:textStyle="italic" />
 
         <TextView
             android:id="@+id/viewinstructions"
@@ -57,6 +63,13 @@
             android:gravity="center"
             android:text="TextView" />
 
+        <Button
+            android:id="@+id/buttonvideo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clickvideo"
+            android:text="Video" />
+
         <TextView
             android:id="@+id/textView6"
             android:layout_width="match_parent"
@@ -64,7 +77,8 @@
             android:layout_gravity="center"
             android:foregroundGravity="center"
             android:gravity="center"
-            android:text="Add rating" />
+            android:text="Add rating"
+            android:textStyle="italic" />
 
         <RatingBar
             android:id="@+id/ratingBar"
@@ -73,15 +87,6 @@
             android:layout_gravity="center"
             android:foregroundGravity="center"
             android:onClick="clickto" />
-
-        <TextView
-            android:id="@+id/viewyoutube"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:foregroundGravity="center"
-            android:gravity="center"
-            android:text="TextView" />
 
         <Button
             android:id="@+id/finishedbutton"

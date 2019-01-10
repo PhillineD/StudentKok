@@ -1,6 +1,7 @@
 package com.example.phill.studentcheff;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -14,6 +15,8 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 public class RecipeActivity extends AppCompatActivity implements RecipeRequest.Callback {
+
+    String url;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,17 +61,22 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         TextView title = findViewById(R.id.viewRecipeTitle);
         TextView ingregients = findViewById(R.id.viewIngredients);
         TextView instructions = findViewById(R.id.viewinstructions);
-        TextView youtube = findViewById(R.id.viewyoutube);
         title.setText(stukje.getitle());
         ingregients.setText(stukje.getIngredients());
         instructions.setText(stukje.getInstruction());
-        youtube.setText(stukje.getYoutubelink());
 
+        url = stukje.getYoutubelink();
     }
 
     @Override
     public void gotRecipeError(String message) {
         Log.d("gotmealserror", "gotMeals: we zijn er dus niet "+ message);
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+    }
+
+    public void clickvideo(View view) {
+
+        startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse(url)));
+        Log.i("Video", "Video Playing....");
     }
 }
