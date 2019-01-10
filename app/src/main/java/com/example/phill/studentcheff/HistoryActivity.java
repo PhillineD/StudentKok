@@ -5,6 +5,7 @@ import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 import android.widget.ListView;
 
 public class HistoryActivity extends AppCompatActivity {
@@ -52,5 +53,8 @@ public class HistoryActivity extends AppCompatActivity {
     }
 
 
-
+    public void clickback(View view) {
+        Intent intent = new Intent(getApplicationContext(), StartActivity.class);
+        startActivity(intent);
+    }
 }
