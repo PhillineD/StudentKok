@@ -23,7 +23,7 @@ public class HistoryActivity extends AppCompatActivity {
         float stars = intent.getFloatExtra("rating",0.0f);
 
 
-        Log.d("de id", "history: " + id +"" + stars);
+        Log.d("de id", "history: " + id +" "+ stars);
 
         ListView history = findViewById(R.id.listviewhistory);
         db = EntryDatabase.getInstance(getApplicationContext());

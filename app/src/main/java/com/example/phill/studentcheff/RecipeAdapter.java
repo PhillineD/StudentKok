@@ -34,14 +34,12 @@ public class RecipeAdapter extends  ArrayAdapter<Meal> {
         TextView title = convertView.findViewById(R.id.viewRecipeTitle);
         TextView ingregients = convertView.findViewById(R.id.viewIngredients);
         TextView instructions = convertView.findViewById(R.id.viewinstructions);
-        TextView youtube = convertView.findViewById(R.id.viewyoutube);
 
         Meal piece = getItem(position);
 
         title.setText(piece.getitle());
         ingregients.setText(piece.getIngredients());
         instructions.setText(piece.getInstruction());
-        youtube.setText(piece.getYoutubelink());
 //        recipe.setText(piece.getPicture());
         Log.d("MenuItemAdapter", "Piece = " + piece.getitle());
 
