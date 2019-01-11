@@ -16,19 +16,21 @@ public class VActivity extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), MeatActivity.class);
         intent.putExtra("categorie", "meat");
         startActivity(intent);
+        finish();
     }
 
     public void clickfish(View view) {
         Intent intent = new Intent(getApplicationContext(), MealsActivity.class);
         intent.putExtra("categorie", "seafood");
-
         startActivity(intent);
+        finish();
     }
 
     public void clickvega(View view) {
         Intent intent = new Intent(getApplicationContext(), VegaActivity.class);
         intent.putExtra("categorie", "vega");
         startActivity(intent);
+        finish();
     }
 
 }

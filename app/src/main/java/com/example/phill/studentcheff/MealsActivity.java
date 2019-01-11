@@ -46,6 +46,7 @@ public class MealsActivity extends AppCompatActivity implements MealsRequest.Cal
 
                 // alle waardes moeten doorgegeven worden, dan hoeven ze alleen geplaatst te worden.
                 startActivity(choosen);
+                finish();
             }
         });
 

@@ -46,8 +46,8 @@ public class HistoryActivity extends AppCompatActivity {
 
 
     // when clicked on back, user go to start activity
-    public void clickback(View view) {
-        Intent intent = new Intent(getApplicationContext(), StartActivity.class);
-        startActivity(intent);
-    }
+//    public void clickback(View view) {
+//        Intent intent = new Intent(getApplicationContext(), StartActivity.class);
+//        startActivity(intent);
+//    }
 }
