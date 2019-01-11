@@ -42,6 +42,7 @@ public class MealsActivity extends AppCompatActivity implements MealsRequest.Cal
                 MealItem chooserecipe = (MealItem) parent.getItemAtPosition(position);
                 Intent choosen = new Intent(getApplicationContext(),RecipeActivity.class);
                 choosen.putExtra("id", chooserecipe.getId());
+                choosen.putExtra("picture", chooserecipe.getPicture());
 
                 // alle waardes moeten doorgegeven worden, dan hoeven ze alleen geplaatst te worden.
                 startActivity(choosen);
@@ -56,11 +57,5 @@ public class MealsActivity extends AppCompatActivity implements MealsRequest.Cal
         Log.d("gotmealserror", "gotMeals: we zijn er dus niet "+ message);
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
-
-//    public void clicktorecipe(View view) {
-//        Intent intent = new Intent(getApplicationContext(), RecipeActivity.class);
-//        startActivity(intent);
-//    }
-
 
 }

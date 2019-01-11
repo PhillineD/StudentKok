@@ -38,11 +38,13 @@ public class EntryAdapter extends ResourceCursorAdapter {
         history.setText(date);
 
 
+
 //        // set picture
-//        ImageView picture = view.findViewById(R.id.picturehistory);
-//        DownloadImageTask Image = new DownloadImageTask(picture);
-//
-//        Image.execute(piece.getPicture());
+        ImageView picture = view.findViewById(R.id.picturehistory);
+        DownloadImageTask Image = new DownloadImageTask(picture);
+        int indexpicture = cursor.getColumnIndex("picture");
+        String url = cursor.getString(indexpicture);
+        Image.execute(url);
 
     }
 }

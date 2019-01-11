@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -25,6 +26,7 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         // get id from de meal you chosen
         Intent intent = getIntent();
         String id = intent.getStringExtra("id");
+        String picture = intent.getStringExtra("picture");
         Log.d("de id", "onCreate: " + id);
         RecipeRequest ArrayAdapter = new RecipeRequest(this);
         ArrayAdapter.getRecipe(this, id);
@@ -34,7 +36,7 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
     public void clicktostart(View view) {
 
         Intent intent = getIntent();
-
+        String picture = intent.getStringExtra("picture");
         // get id
         String id = intent.getStringExtra("id");
 
@@ -46,6 +48,10 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         TextView titlerecipe = findViewById(R.id.viewRecipeTitle);
         String titlehistory = titlerecipe.getText().toString();
 
+        // get picture
+//        Meal stukje = meals.get(0);
+//        String picture = stukje.getPicture();
+
         Intent in = new Intent(getApplicationContext(), HistoryActivity.class);
         in.putExtra("id",id);
         in.putExtra("rating", stars);
@@ -53,9 +59,10 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         Log.d("rating", "clicktostart: " + stars + id );
 
         // insert into database
-        EntryDatabase.getInstance(this).insert(id,titlehistory, stars);
+        EntryDatabase.getInstance(this).insert(id,titlehistory, stars, picture);
 
         startActivity(in);
+        finish();
     }
 
     @Override
@@ -81,7 +88,6 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
     }
 
     public void clickvideo(View view) {
-
         startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse(url)));
         Log.i("Video", "Video Playing....");
     }

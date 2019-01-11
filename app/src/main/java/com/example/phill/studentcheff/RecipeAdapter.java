@@ -40,7 +40,7 @@ public class RecipeAdapter extends  ArrayAdapter<Meal> {
         title.setText(piece.getitle());
         ingregients.setText(piece.getIngredients());
         instructions.setText(piece.getInstruction());
-//        recipe.setText(piece.getPicture());
+//          recipe.setText(piece.getPicture());
         Log.d("MenuItemAdapter", "Piece = " + piece.getitle());
 
         return convertView;
