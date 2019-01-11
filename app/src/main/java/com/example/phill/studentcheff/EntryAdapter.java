@@ -3,6 +3,7 @@ package com.example.phill.studentcheff;
 import android.content.Context;
 import android.database.Cursor;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.ResourceCursorAdapter;
 import android.widget.TextView;
@@ -30,10 +31,18 @@ public class EntryAdapter extends ResourceCursorAdapter {
         Float floatrating = cursor.getFloat(indexrating);
         rating.setRating(floatrating);
 
-        // set date
-//        TextView history = view.findViewById(R.id.historydate);
-//        int indexdate = cursor.getColumnIndex("date");
-//        String date = cursor.getString(indexdate);
-//        history.setText(date);
+//         set date
+        TextView history = view.findViewById(R.id.historydate);
+        int indexdate = cursor.getColumnIndex("timestamp");
+        String date = cursor.getString(indexdate);
+        history.setText(date);
+
+
+//        // set picture
+//        ImageView picture = view.findViewById(R.id.picturehistory);
+//        DownloadImageTask Image = new DownloadImageTask(picture);
+//
+//        Image.execute(piece.getPicture());
+
     }
 }

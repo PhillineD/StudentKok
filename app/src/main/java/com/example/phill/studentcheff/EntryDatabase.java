@@ -17,10 +17,10 @@ public class EntryDatabase extends SQLiteOpenHelper {
     // elke keer als je iets aanpas de app leeg maken.
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String  message = "CREATE TABLE " + "Studentchef" + "( _id INTEGER PRIMARY KEY AUTOINCREMENT, title TEXT, rating FLOAT , " +
+        String  message = "CREATE TABLE " + "Studentchef" + "( _id STRING, title TEXT, rating FLOAT , " +
                 "timestamp DATETIME default (datetime('now','localtime'))) ";
         db.execSQL(message);
-
+//        INTEGER PRIMARY KEY AUTOINCREMENT
         // create a new ContentValues object
         ContentValues contentvalue = new ContentValues();
 
@@ -61,20 +61,24 @@ public class EntryDatabase extends SQLiteOpenHelper {
 
 
     // method to insert a history item
-    public void insert(String title, Float rating ){
+    public void insert(String id, String title, Float rating){
         // open a connection to the database
         SQLiteDatabase db = instance.getWritableDatabase();
 
         // create a new ContentValues object
         ContentValues contentvalue = new ContentValues();
 
+        // check if the recipe is alreaedy in database
+        db.rawQuery( "SELECT * from Studentchef WHERE _id LIKE'%"+id+"%'",null) ;
+      
+
         // add values for title, content and mood.
-        contentvalue.put("_id", 12334);
+        contentvalue.put("_id", id);
         contentvalue.put("title", title);
         contentvalue.put("rating", rating);
 
         // call insert and add the right parameters
-        db.insert("Studentcheff", null, contentvalue);
+        db.insert("Studentchef", null, contentvalue);
 
     }
 

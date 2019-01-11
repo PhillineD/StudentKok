@@ -42,6 +42,10 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         RatingBar rating = findViewById(R.id.ratingBar);
         float stars = rating.getRating();
 
+        // get title
+        TextView titlerecipe = findViewById(R.id.viewRecipeTitle);
+        String titlehistory = titlerecipe.getText().toString();
+
         Intent in = new Intent(getApplicationContext(), HistoryActivity.class);
         in.putExtra("id",id);
         in.putExtra("rating", stars);
@@ -49,7 +53,7 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         Log.d("rating", "clicktostart: " + stars + id );
 
         // insert into database
-        EntryDatabase.getInstance(this).insert(id, stars);
+        EntryDatabase.getInstance(this).insert(id,titlehistory, stars);
 
         startActivity(in);
     }
