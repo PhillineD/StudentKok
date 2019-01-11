@@ -21,5 +21,12 @@ wat heb ik gedaan?
  - data kan ingeladen worden
  - proposal en design document staan op de git
  
- 
+# day 3
+wat heb ik gedaan?
+- database connectie werkt
+
+veranderd?
+ - vanuit het scherm van de history als je op item klikt ga je naar dat gerecht
+
+
  
