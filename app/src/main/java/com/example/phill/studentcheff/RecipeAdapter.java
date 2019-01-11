@@ -34,12 +34,19 @@ public class RecipeAdapter extends  ArrayAdapter<Meal> {
         TextView title = convertView.findViewById(R.id.viewRecipeTitle);
         TextView ingregients = convertView.findViewById(R.id.viewIngredients);
         TextView instructions = convertView.findViewById(R.id.viewinstructions);
+        ImageView picture = convertView.findViewById(R.id.picturerecipe);
 
         Meal piece = getItem(position);
 
         title.setText(piece.getitle());
         ingregients.setText(piece.getIngredients());
         instructions.setText(piece.getInstruction());
+
+
+        DownloadImageTask Image = new DownloadImageTask(picture);
+        String url = piece.getPicture();
+        Image.execute(url);
+
 //          recipe.setText(piece.getPicture());
         Log.d("MenuItemAdapter", "Piece = " + piece.getitle());
 

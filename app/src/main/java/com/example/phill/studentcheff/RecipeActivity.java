@@ -74,9 +74,15 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         TextView title = findViewById(R.id.viewRecipeTitle);
         TextView ingregients = findViewById(R.id.viewIngredients);
         TextView instructions = findViewById(R.id.viewinstructions);
+        ImageView picture = findViewById(R.id.picturerecipe);
+
         title.setText(stukje.getitle());
         ingregients.setText(stukje.getIngredients());
         instructions.setText(stukje.getInstruction());
+
+        DownloadImageTask Image = new DownloadImageTask(picture);
+        String link = stukje.getPicture();
+        Image.execute(link);
 
         url = stukje.getYoutubelink();
     }
