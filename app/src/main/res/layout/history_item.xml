@@ -10,7 +10,6 @@
         android:id="@+id/linearLayout2"
         android:layout_width="368dp"
         android:layout_height="301dp"
-        android:clickable="true"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp">
@@ -20,6 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="46dp"
             android:clickable="false"
+            android:focusable="false"
             android:gravity="center"
             android:text="TextView"
             android:textColor="@color/colorPrimary"
@@ -31,6 +31,7 @@
             android:layout_height="35dp"
             android:layout_gravity="center"
             android:clickable="false"
+            android:focusable="false"
             android:gravity="center"
             android:text="TextView" />
 
@@ -39,6 +40,7 @@
             android:layout_width="368dp"
             android:layout_height="148dp"
             android:clickable="false"
+            android:focusable="false"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
             tools:layout_editor_absoluteX="8dp" />
 
@@ -49,9 +51,11 @@
             android:layout_gravity="center"
             android:layout_marginTop="8dp"
             android:clickable="false"
+            android:focusable="false"
             android:focusableInTouchMode="false"
             android:longClickable="false"
             android:stepSize="1"
+
             app:layout_constraintTop_toBottomOf="@+id/picturehistory"
             tools:layout_editor_absoluteX="0dp" />
 
