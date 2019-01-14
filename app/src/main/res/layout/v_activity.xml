@@ -41,5 +41,13 @@
             android:layout_height="wrap_content"
             android:onClick="clickvega"
             android:text="Vega" />
+
+        <Button
+            android:id="@+id/randomv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:onClick="randomv"
+            android:text="random" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

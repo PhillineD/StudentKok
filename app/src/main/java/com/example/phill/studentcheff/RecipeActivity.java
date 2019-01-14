@@ -98,6 +98,7 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         ingregients2.setText(stukje.getIngredients2());
         ingregients3.setText(stukje.getIngredients3());
         ingregients4.setText(stukje.getIngredients4());
+
         ingregients5.setText(stukje.getIngredients5());
         ingregients6.setText(stukje.getIngredients6());
         ingregients7.setText(stukje.getIngredients7());
@@ -107,8 +108,22 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         measure2.setText(stukje.getMeasure2());
         measure3.setText(stukje.getMeasure3());
         measure4.setText(stukje.getMeasure4());
-        measure5.setText(stukje.getMeasure5());
-        measure6.setText(stukje.getMeasure6());
+
+        if (measure5.getText() == "null"){
+            measure5.setText("");
+        }
+        else{
+            measure5.setText(stukje.getMeasure5());
+        }
+
+        if (measure6.getText() == "null"){
+            measure6.setText("");
+        }
+        else{
+            measure6.setText(stukje.getMeasure5());
+        }
+//        measure5.setText(stukje.getMeasure5());
+//        measure6.setText(stukje.getMeasure6());
         measure7.setText(stukje.getMeasure7());
         measure8.setText(stukje.getMeasure8());
 
