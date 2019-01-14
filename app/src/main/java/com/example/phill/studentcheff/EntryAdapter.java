@@ -38,7 +38,6 @@ public class EntryAdapter extends ResourceCursorAdapter {
         history.setText(date);
 
 
-
 //        // set picture
         ImageView picture = view.findViewById(R.id.picturehistory);
         DownloadImageTask Image = new DownloadImageTask(picture);

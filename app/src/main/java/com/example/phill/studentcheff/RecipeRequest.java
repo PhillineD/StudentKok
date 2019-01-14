@@ -73,11 +73,13 @@ public class RecipeRequest implements Response.Listener<JSONObject>, Response.Er
                 String ingredient1 = mealitems.getString("strIngredient1");
                 String youtube = mealitems.getString("strYoutube");
                 String picture = mealitems.getString("strMealThumb");
+                String measure = mealitems.getString("strMeasure1");
+                Log.d("meten", "onResponse: " + measure);
 
                 // new Mealitem
-                Meal item = new Meal(id,ingredient1,instructions,youtube,picture, titlerecipe);
+                Meal item = new Meal(id,ingredient1,instructions,youtube,picture, titlerecipe, measure);
 
-                Log.d("gotmeals", "joejoe: we zijn er "+ item.getId() + item.getitle() + item.getPicture());
+                Log.d("gotmeals", "joejoe: we zijn er "+ item.getId() + item.getitle() + item.getPicture() + item.getMeasure1());
                 recipeview.add(item);
             }
 
