@@ -28,7 +28,7 @@ wat heb ik gedaan?
 veranderd?
  - vanuit het scherm van de history als je op item klikt ga je naar dat gerecht
 
-# day 3
+# day 4
 wat heb ik gedaan?
 - database word gesorteerd op rating 
 - het recept word netjes weergeven
