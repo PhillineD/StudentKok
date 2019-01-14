@@ -7,6 +7,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
+import static android.icu.text.MessagePattern.ArgType.SELECT;
+
 public class EntryDatabase extends SQLiteOpenHelper {
 
     public EntryDatabase( Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
@@ -31,7 +33,6 @@ public class EntryDatabase extends SQLiteOpenHelper {
         contentvalue.put("rating", 2);
         contentvalue.put("picture","https://www.themealdb.com//images//media//meals//1525873040.jpg");
 
-
         // call insert and add the right parameters
         db.insert("Studentchef", null, contentvalue);
 
@@ -47,10 +48,14 @@ public class EntryDatabase extends SQLiteOpenHelper {
         return EntryDatabase.instance;
 
     }
+
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         //          drops the entries table
         db.execSQL("DROP TABLE IF EXISTS "+ "Studentchef");
+
+        String sort = "SELECT * FROM "+" Studentchef "+" ORDER BY "+"rating "+"DESC";
+        db.execSQL(sort);
 
 //        recreates it by calling
         onCreate(db );
@@ -59,7 +64,7 @@ public class EntryDatabase extends SQLiteOpenHelper {
     // select all info from database
     public static Cursor selectAll(EntryDatabase instance){
         SQLiteDatabase database = instance.getWritableDatabase();
-        return database.rawQuery("SELECT * FROM "+ "Studentchef", null );
+        return database.rawQuery("SELECT * FROM "+ "Studentchef "+" ORDER BY "+"rating "+"DESC" , null );
     }
 
 
@@ -74,7 +79,6 @@ public class EntryDatabase extends SQLiteOpenHelper {
         // check if the recipe is alreaedy in database
 //        db.rawQuery( "SELECT * from Studentchef WHERE _id LIKE'%"+id+"%'",null) ;
 
-
         // add values for title, content and mood.
         contentvalue.put("_id", id);
         contentvalue.put("title", title);
@@ -83,6 +87,10 @@ public class EntryDatabase extends SQLiteOpenHelper {
 
         // call insert and add the right parameters
         db.insert("Studentchef", null, contentvalue);
+
+        // sort rating
+//        String sort = "SELECT * FROM "+" Studentchef "+" ORDER BY "+" rating";
+//        db.execSQL(sort);
 
     }
 

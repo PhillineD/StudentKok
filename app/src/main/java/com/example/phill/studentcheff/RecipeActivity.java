@@ -48,10 +48,6 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         TextView titlerecipe = findViewById(R.id.viewRecipeTitle);
         String titlehistory = titlerecipe.getText().toString();
 
-        // get picture
-//        Meal stukje = meals.get(0);
-//        String picture = stukje.getPicture();
-
         Intent in = new Intent(getApplicationContext(), HistoryActivity.class);
         in.putExtra("id",id);
         in.putExtra("rating", stars);
@@ -71,16 +67,50 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         Meal stukje = meals.get(0);
         stukje.getitle();
         Log.d("gotrecipe", "gotMeals: we zijn er "+ stukje.getitle());
+
+
         TextView title = findViewById(R.id.viewRecipeTitle);
-        TextView ingregients = findViewById(R.id.viewIngredients);
         TextView instructions = findViewById(R.id.viewinstructions);
         ImageView picture = findViewById(R.id.picturerecipe);
-        TextView measure = findViewById(R.id.ViewMeasure1);
+
+        TextView measure1 = findViewById(R.id.ViewMeasure1);
+        TextView measure2 = findViewById(R.id.ViewMeasure2);
+        TextView measure3 = findViewById(R.id.ViewMeasure3);
+        TextView measure4 = findViewById(R.id.ViewMeasure4);
+        TextView measure5 = findViewById(R.id.ViewMeasure5);
+        TextView measure6 = findViewById(R.id.ViewMeasure6);
+        TextView measure7 = findViewById(R.id.ViewMeasure7);
+        TextView measure8 = findViewById(R.id.ViewMeasure8);
+
+        TextView ingregients1 = findViewById(R.id.viewIngredients1);
+        TextView ingregients2 = findViewById(R.id.viewIngredients2);
+        TextView ingregients3 = findViewById(R.id.viewIngredients3);
+        TextView ingregients4 = findViewById(R.id.viewIngredients4);
+        TextView ingregients5 = findViewById(R.id.viewIngredients5);
+        TextView ingregients6 = findViewById(R.id.viewIngredients6);
+        TextView ingregients7 = findViewById(R.id.viewIngredients7);
+        TextView ingregients8 = findViewById(R.id.viewIngredients8);
 
         title.setText(stukje.getitle());
-        ingregients.setText(stukje.getIngredients());
         instructions.setText(stukje.getInstruction());
-        measure.setText(stukje.getMeasure1());
+
+        ingregients1.setText(stukje.getIngredients1());
+        ingregients2.setText(stukje.getIngredients2());
+        ingregients3.setText(stukje.getIngredients3());
+        ingregients4.setText(stukje.getIngredients4());
+        ingregients5.setText(stukje.getIngredients5());
+        ingregients6.setText(stukje.getIngredients6());
+        ingregients7.setText(stukje.getIngredients7());
+        ingregients8.setText(stukje.getIngredients8());
+
+        measure1.setText(stukje.getMeasure1());
+        measure2.setText(stukje.getMeasure2());
+        measure3.setText(stukje.getMeasure3());
+        measure4.setText(stukje.getMeasure4());
+        measure5.setText(stukje.getMeasure5());
+        measure6.setText(stukje.getMeasure6());
+        measure7.setText(stukje.getMeasure7());
+        measure8.setText(stukje.getMeasure8());
 
         Log.d("gotrecipe", "gotMeals: we zijn er "+ stukje.getPicture());
         DownloadImageTask Image = new DownloadImageTask(picture);
