@@ -19,7 +19,7 @@ public class EntryDatabase extends SQLiteOpenHelper {
     // elke keer als je iets aanpas de app leeg maken.
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String  message = "CREATE TABLE " + "Studentchef" + "( _id STRING, title TEXT, picture STRING, rating FLOAT , " +
+        String  message = "CREATE TABLE " + "Studentchef" + "( _id STRING PRIMARY KEY, title TEXT, picture STRING, rating FLOAT , " +
                 "timestamp DATETIME default (datetime('now','localtime'))) ";
         db.execSQL(message);
 
@@ -28,15 +28,15 @@ public class EntryDatabase extends SQLiteOpenHelper {
         ContentValues contentvalue = new ContentValues();
 
         // example for history
-        contentvalue.put("_id", 1234);
-        contentvalue.put("title", "Hallo");
-        contentvalue.put("rating", 2);
-        contentvalue.put("picture","https://www.themealdb.com//images//media//meals//1525873040.jpg");
+//        contentvalue.put("_id", 1234);
+//        contentvalue.put("title", "Hallo");
+//        contentvalue.put("rating", 2);
+//        contentvalue.put("picture","https://www.themealdb.com//images//media//meals//1525873040.jpg");
 
         // call insert and add the right parameters
-        db.insert("Studentchef", null, contentvalue);
+//        db.insert("Studentchef", null, contentvalue);
 
-        Log.d("databse", "onCreate: " + db);
+//        Log.d("databse", "onCreate: " + db);
 
     }
 
@@ -77,7 +77,8 @@ public class EntryDatabase extends SQLiteOpenHelper {
         ContentValues contentvalue = new ContentValues();
 
         // check if the recipe is alreaedy in database
-//        db.rawQuery( "SELECT * from Studentchef WHERE _id LIKE'%"+id+"%'",null) ;
+        String sort = "DELETE FROM Studentchef WHERE _id = '"+id+"'";
+        db.execSQL(sort);
 
         // add values for title, content and mood.
         contentvalue.put("_id", id);
@@ -87,10 +88,7 @@ public class EntryDatabase extends SQLiteOpenHelper {
 
         // call insert and add the right parameters
         db.insert("Studentchef", null, contentvalue);
-
-        // sort rating
-//        String sort = "SELECT * FROM "+" Studentchef "+" ORDER BY "+" rating";
-//        db.execSQL(sort);
+        
 
     }
 
