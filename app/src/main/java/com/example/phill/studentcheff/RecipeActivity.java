@@ -47,9 +47,6 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         ImageView foto  = findViewById(R.id.picturerecipe);
         Log.d("jeejj", "plaatje laden1" + picture);
 
-
-
-//        int stars = rating.getNumStars();
         // get title
         TextView titlerecipe = findViewById(R.id.viewRecipeTitle);
         String titlehistory = titlerecipe.getText().toString();
