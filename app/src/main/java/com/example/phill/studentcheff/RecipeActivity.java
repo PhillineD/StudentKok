@@ -51,7 +51,7 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         TextView titlerecipe = findViewById(R.id.viewRecipeTitle);
         String titlehistory = titlerecipe.getText().toString();
 
-        Intent in = new Intent(getApplicationContext(), HistoryActivity.class);
+        Intent in = new Intent(getApplicationContext(), StartActivity.class);
         in.putExtra("id",id);
         in.putExtra("rating", stars);
 
