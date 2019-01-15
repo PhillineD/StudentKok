@@ -53,8 +53,10 @@ public class HistoryActivity extends AppCompatActivity {
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
             Cursor clicked = (Cursor) parent.getItemAtPosition(position);
             String idee = clicked.getString(clicked.getColumnIndex("_id"));
+            String url = clicked.getString(clicked.getColumnIndex("picture"));
             Intent intent = new Intent(getApplicationContext(), RecipeActivity.class);
             intent.putExtra("id", idee);
+            intent.putExtra("picture", url);
             startActivity(intent);
         }
     }

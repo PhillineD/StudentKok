@@ -272,7 +272,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:foregroundGravity="center"
-                    android:numStars="3"
+                    android:numStars="5"
                     android:onClick="clickto"
                     android:stepSize="1"
                     tools:rating="0" />

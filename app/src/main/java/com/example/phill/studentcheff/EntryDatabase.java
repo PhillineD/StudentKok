@@ -19,7 +19,7 @@ public class EntryDatabase extends SQLiteOpenHelper {
     // elke keer als je iets aanpas de app leeg maken.
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String  message = "CREATE TABLE " + "Studentchef" + "( _id STRING PRIMARY KEY, title TEXT, picture STRING, rating FLOAT , " +
+        String  message = "CREATE TABLE " + "Studentchef" + "( _id STRING PRIMARY KEY, title TEXT, picture STRING, rating FLAOT, " +
                 "timestamp DATETIME default (datetime('now','localtime'))) ";
         db.execSQL(message);
 
@@ -88,7 +88,7 @@ public class EntryDatabase extends SQLiteOpenHelper {
 
         // call insert and add the right parameters
         db.insert("Studentchef", null, contentvalue);
-        
+
 
     }
 
