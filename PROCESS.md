@@ -37,5 +37,18 @@ wat heb ik gedaan?
 veranderd?
  - als je op het plaatje van het recept klikt krijg je het filmpje
  - je kunt ook kiezen bij elke optie voor iets randoms
+ 
+ # day 5 
+ 
+wat heb ik gedaan? 
+ - je kunt klikken op de listview van de history, om weer naar het recept te gaan
+ - als je een gerecht al een keer hebt gemaakt dan word de oude item van de history verwijderd en komt de nieuwe erin met de nieuwe tijd en rating
+ - wanneer je vanuit history naar het recept gaat en dan weer terug, onthoud die de id en url van het plaatje
+ - de sterren van de ratingbar geven nu een goede waarde door
+ - je kunt zoeken naar de naam van een gerecht
+ 
+ veranderd?
+ - vanuit history kun je naar het recept en de rating aanpassen
+ 
 
  
