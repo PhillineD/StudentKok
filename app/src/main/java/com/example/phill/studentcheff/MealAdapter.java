@@ -8,12 +8,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class MealAdapter extends ArrayAdapter<MealItem> {
+public class MealAdapter extends ArrayAdapter<MealItem> implements Filterable {
     ArrayList<MealItem> meals;
 
     public MealAdapter(Context context, int resource, ArrayList<MealItem> objects) {

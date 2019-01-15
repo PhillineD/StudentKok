@@ -80,11 +80,17 @@ public class MealsActivity extends AppCompatActivity implements MealsRequest.Cal
                                    if (adapter.meals.get(y).getitle().contains(s)){
                     Log.d("hebbes", "yeah"+ s + adapter.meals.get(y).getitle().contains(s) + adapter.meals.get(y).getitle() );
 //                        .filter(adapter.meals.get(y).getitle());
+                                       adapter.getFilter().filter(s);
                 }
                 else {
                     Log.d("hebbes", "yeah"+ s + adapter.meals.get(y).getitle().contains(s) + adapter.meals.get(y).getitle() );
                     adapter.remove(adapter.meals.get(y));
                 }
+//                KeyEvent e = null;
+//                    int keyCode = e.getKeyCode();
+//                    if(keyCode == KeyEvent.VK_F5)
+//                        message = "Pressed: " + KeyEvent.getKeyText(keyCode);
+
             }
 
             }
