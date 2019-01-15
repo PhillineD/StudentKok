@@ -51,7 +51,7 @@ public class MealsActivity extends AppCompatActivity implements MealsRequest.Cal
             searchlist.add(meals.get(i).getitle());
         }
 
-//        adapter1 = new ArrayAdapter(this,R.layout.meals_item,searchlist);
+        adapter1 = new ArrayAdapter(this,R.layout.meals_item,searchlist);
 
         Log.d("gotmeals", "honger "+ searchlist );
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -98,4 +98,7 @@ public class MealsActivity extends AppCompatActivity implements MealsRequest.Cal
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 
+    public void clicksearch(View view) {
+
+    }
 }
