@@ -32,7 +32,6 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         ArrayAdapter.getRecipe(this, id);
     }
 
-
     public void clicktostart(View view) {
 
         Intent intent = getIntent();
@@ -148,11 +147,6 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         }
 
 
-
-//        measure5.setText(stukje.getMeasure5());
-//        measure6.setText(stukje.getMeasure6());
-//        measure7.setText(stukje.getMeasure7());
-//        measure8.setText(stukje.getMeasure8());
 
 //        Log.d("meaures", "gotMeals: we zijn er "+stukje.getMeasure6()+ stukje.getMeasure7() );
         DownloadImageTask Image = new DownloadImageTask(picture);
