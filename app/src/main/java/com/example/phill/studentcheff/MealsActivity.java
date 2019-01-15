@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Adapter;
@@ -74,8 +75,18 @@ public class MealsActivity extends AppCompatActivity implements MealsRequest.Cal
         textBox.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-                Log.d("typen", "beforeTextChanged: getypt"   + meals.get(0).getitle());
-                adapter.getFilter().filter(s);
+                Log.d("typen", "beforeTextChanged: getypt"+ adapter.meals.get(0).getitle() + adapter1.getFilter() );
+                for(int y=0; y< meals.size();y++){
+                                   if (adapter.meals.get(y).getitle().contains(s)){
+                    Log.d("hebbes", "yeah"+ s + adapter.meals.get(y).getitle().contains(s) + adapter.meals.get(y).getitle() );
+//                        .filter(adapter.meals.get(y).getitle());
+                }
+                else {
+                    Log.d("hebbes", "yeah"+ s + adapter.meals.get(y).getitle().contains(s) + adapter.meals.get(y).getitle() );
+                    adapter.remove(adapter.meals.get(y));
+                }
+            }
+
             }
 
             @Override
