@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
 
+    android:background="@drawable/achtergrondfood"
+    android:dividerPadding="10dp"
     android:orientation="vertical">
 
     <EditText
@@ -11,14 +13,17 @@
         android:layout_height="57dp"
         android:ems="10"
         android:hint=" zucchini"
-        android:onClick="clicksearch"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:onClick="clicksearch" />
 
     <GridView
         android:id="@+id/MealsListView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
+        android:layout_width="304dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:dividerHeight="10.0sp">
     </GridView>
 
 </LinearLayout>
+

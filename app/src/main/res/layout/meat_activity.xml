@@ -4,59 +4,94 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/achtergrondfood"
     tools:context=".StartActivity">
 
-    <LinearLayout
-        android:layout_width="368dp"
-        android:layout_height="360dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
+    <Button
+        android:id="@+id/randommeat"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="randomclick"
+        android:text="random"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.123" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="187dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="8dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.406">
 
         <Button
             android:id="@+id/Beef"
-            android:layout_width="match_parent"
+            android:layout_width="170dp"
             android:layout_height="wrap_content"
             android:onClick="clickbeef"
             android:text="Beef" />
 
         <Button
             android:id="@+id/Chicken"
-            android:layout_width="match_parent"
+            android:layout_width="170dp"
             android:layout_height="wrap_content"
             android:onClick="clickchicken"
             android:text="Chicken" />
 
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="182dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.379">
+
         <Button
             android:id="@+id/Lam"
-            android:layout_width="match_parent"
+            android:layout_width="170dp"
             android:layout_height="wrap_content"
             android:onClick="clicklam"
             android:text="Lam" />
 
-
         <Button
             android:id="@+id/Pork"
-            android:layout_width="match_parent"
+            android:layout_width="170dp"
             android:layout_height="wrap_content"
             android:onClick="clickpork"
             android:text="Pork" />
-
-        <Button
-            android:id="@+id/randommeat"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
-            android:onClick="randomclick"
-            android:text="random" />
-
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

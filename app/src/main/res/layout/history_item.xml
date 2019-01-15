@@ -8,18 +8,20 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="382dp"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="295dp"
+        android:background="@android:color/white"
         android:foregroundGravity="center"
         android:gravity="center"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="8dp">
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="16dp">
 
         <TextView
             android:id="@+id/historytitle"
-            android:layout_width="match_parent"
+            android:layout_width="226dp"
             android:layout_height="46dp"
+            android:background="@android:color/white"
             android:clickable="false"
             android:focusable="false"
             android:gravity="center"
@@ -29,13 +31,15 @@
 
         <TextView
             android:id="@+id/historydate"
-            android:layout_width="208dp"
+            android:layout_width="226dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
+            android:background="@android:color/white"
             android:clickable="false"
             android:focusable="false"
             android:gravity="center"
-            android:text="TextView" />
+            android:text="TextView"
+            android:textColor="@android:color/black" />
 
         <ImageView
             android:id="@+id/picturehistory"
@@ -52,13 +56,14 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_marginTop="8dp"
+            android:background="@android:color/white"
             android:clickable="false"
             android:focusable="false"
             android:focusableInTouchMode="false"
             android:isIndicator="true"
             android:longClickable="false"
-            android:stepSize="1"
 
+            android:stepSize="1"
             app:layout_constraintTop_toBottomOf="@+id/picturehistory"
             tools:layout_editor_absoluteX="0dp" />
 

@@ -4,11 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/achtergrondfood"
     tools:context=".StartActivity">
 
     <LinearLayout
-        android:layout_width="368dp"
-        android:layout_height="318dp"
+        android:layout_width="347dp"
+        android:layout_height="163dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -17,19 +18,21 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.488">
 
         <Button
             android:id="@+id/Vega"
-            android:layout_width="match_parent"
+            android:layout_width="170dp"
             android:layout_height="wrap_content"
             android:onClick="clickvega"
             android:text="Vega" />
 
         <Button
             android:id="@+id/Vegan"
-            android:layout_width="match_parent"
+            android:layout_width="170dp"
             android:layout_height="wrap_content"
             android:onClick="clickvegan"
             android:text="Vegan" />
