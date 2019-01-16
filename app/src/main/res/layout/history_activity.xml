@@ -7,7 +7,7 @@
     android:orientation="vertical">
 
     <SearchView
-        android:id="@+id/editText2"
+        android:id="@+id/textbox2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"

@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.SearchView;
 
 public class HistoryActivity extends AppCompatActivity {
 
@@ -23,12 +24,27 @@ public class HistoryActivity extends AppCompatActivity {
 
         ListView history = findViewById(R.id.listviewhistory);
         history.setOnItemClickListener( new ToRecipe());
+        SearchView textbox2 = findViewById(R.id.textbox2);
 
         db = EntryDatabase.getInstance(getApplicationContext());
 
         Cursor cursor = EntryDatabase.selectAll(db);
         adapter = new EntryAdapter(this, R.layout.history_item, cursor);
         history.setAdapter(adapter);
+
+        textbox2.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String newtext ) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String query) {
+                Log.d("morgen", "onQueryTextChange: " + query);
+                adapter.getFilter().filter(query);
+                return false;
+            }
+        });
 
     }
 

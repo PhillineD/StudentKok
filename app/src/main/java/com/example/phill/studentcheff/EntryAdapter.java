@@ -2,7 +2,10 @@ package com.example.phill.studentcheff;
 
 import android.content.Context;
 import android.database.Cursor;
+import android.util.Log;
 import android.view.View;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.ResourceCursorAdapter;
@@ -10,8 +13,8 @@ import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
-public class EntryAdapter extends ResourceCursorAdapter {
-
+public class EntryAdapter extends ResourceCursorAdapter implements Filterable{
+//    CustomFilter filter;
     public EntryAdapter(Context context, int layout, Cursor cursor) {
         super(context, layout, cursor);
     }
@@ -37,7 +40,6 @@ public class EntryAdapter extends ResourceCursorAdapter {
         String date = cursor.getString(indexdate);
         history.setText(date);
 
-
 //        // set picture
         ImageView picture = view.findViewById(R.id.picturehistory);
         DownloadImageTask Image = new DownloadImageTask(picture);
@@ -46,4 +48,33 @@ public class EntryAdapter extends ResourceCursorAdapter {
         Image.execute(url);
 
     }
+//
+//    public Filter getFilter(){
+//
+//        if(filter == null)
+//        {
+//            filter=new CustomFilter();
+//            Log.d("in  get filter", "performFiltering: ");
+//        }
+//
+//        return filter;
+//
+//    }
+//
+//    class CustomFilter extends Filter {
+//
+//        @Override
+//        protected FilterResults performFiltering(CharSequence constraint) {
+//            return null;
+//        }
+//
+//        @Override
+//        protected void publishResults(CharSequence constraint, FilterResults results) {
+//
+//        }
+//    }
+
+
+
+
 }

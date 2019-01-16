@@ -23,7 +23,6 @@ public class MealAdapter extends BaseAdapter implements Filterable {
     ArrayList<MealItem> filterList;
     CustomFilter filter;
     Context c;
-//    ArrayAdapter<MealItem>
 
 
     public MealAdapter(Context context, ArrayList<MealItem> meals   ) {
@@ -75,7 +74,7 @@ public class MealAdapter extends BaseAdapter implements Filterable {
     }
 
     public Filter getFilter(){
-        // TODO Auto-generated method stub
+
         if(filter == null)
         {
             filter=new CustomFilter();
