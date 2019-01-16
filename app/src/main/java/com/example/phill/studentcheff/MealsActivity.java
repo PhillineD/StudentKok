@@ -1,5 +1,6 @@
 package com.example.phill.studentcheff;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -16,16 +17,18 @@ import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.SearchView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MealsActivity extends AppCompatActivity implements MealsRequest.Callback{
-    EditText textBox;
+public class MealsActivity extends Activity implements MealsRequest.Callback{
+    SearchView textBox;
     List<String> searchlist= new ArrayList<>();
     String lijstje[];
     ArrayAdapter adapter1;
+//    AppCompatActivity,
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,26 +45,26 @@ public class MealsActivity extends AppCompatActivity implements MealsRequest.Cal
     @Override
     public void gotMeals(final ArrayList<MealItem> meals) {
 //        Toast.makeText(this, meals.get(0),Toast.LENGTH_LONG).show();
-        Log.d("gotmeals", "gotMeals: we zijn er "+ meals);
+        Log.d("gotmeals", "gotMeals: we zijn er " + meals);
 
-        final MealAdapter adapter = new MealAdapter(this, R.layout.meals_activity, meals);
-        GridView listView =findViewById(R.id.MealsListView);
+        final MealAdapter adapter = new MealAdapter(this, meals);
+        GridView listView = findViewById(R.id.MealsListView);
         listView.setAdapter(adapter);
-
-        for(int i=0;i<meals.size();i++){
-            searchlist.add(meals.get(i).getitle());
-        }
-
-        adapter1 = new ArrayAdapter(this,R.layout.meals_item,searchlist);
-
-        Log.d("gotmeals", "honger "+ searchlist );
+//
+//        for (int i = 0; i < meals.size(); i++) {
+//            searchlist.add(meals.get(i).getitle());
+//        }
+//
+//        adapter1 = new ArrayAdapter(this, R.layout.meals_item, searchlist);
+//
+//        Log.d("gotmeals", "hhh" + searchlist);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
 
             // when  clicked on item, go to recipe activity and so recipe
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 MealItem chooserecipe = (MealItem) parent.getItemAtPosition(position);
-                Intent choosen = new Intent(getApplicationContext(),RecipeActivity.class);
+                Intent choosen = new Intent(getApplicationContext(), RecipeActivity.class);
                 choosen.putExtra("id", chooserecipe.getId());
                 choosen.putExtra("picture", chooserecipe.getPicture());
 
@@ -71,43 +74,52 @@ public class MealsActivity extends AppCompatActivity implements MealsRequest.Cal
             }
         });
 
-        textBox = (EditText) findViewById(R.id.editText);
-        textBox.addTextChangedListener(new TextWatcher() {
+        textBox = (SearchView) findViewById(R.id.editText);
+        textBox.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-                Log.d("typen", "beforeTextChanged: getypt"+ adapter.meals.get(0).getitle() + adapter1.getFilter() );
-                for(int y=0; y< meals.size();y++){
-                                   if (adapter.meals.get(y).getitle().contains(s)){
-                    Log.d("hebbes", "yeah"+ s + adapter.meals.get(y).getitle().contains(s) + adapter.meals.get(y).getitle() );
-//                        .filter(adapter.meals.get(y).getitle());
-                                       adapter.getFilter().filter(s);
-                }
-                else {
-                    Log.d("hebbes", "yeah"+ s + adapter.meals.get(y).getitle().contains(s) + adapter.meals.get(y).getitle() );
-                    adapter.remove(adapter.meals.get(y));
-                }
-//                KeyEvent e = null;
-//                    int keyCode = e.getKeyCode();
-//                    if(keyCode == KeyEvent.VK_F5)
-//                        message = "Pressed: " + KeyEvent.getKeyText(keyCode);
-
-            }
-
+            public boolean onQueryTextSubmit(String arg0) {
+                return false;
             }
 
             @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-
+            public boolean onQueryTextChange(String query) {
+                Log.d("typppeeenn", "onQueryTextChange: " + query);
+                adapter.getFilter().filter(query);
+                return false;
             }
         });
 
-
     }
+
+
+//    }
+//        textBox.addTextChangedListener(new TextWatcher() {
+//            @Override
+//            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+//                Log.d("typen", "beforeTextChanged: getypt"+ adapter.meals.get(0).getitle() + adapter1.getFilter() );
+//                for(int y=0; y< meals.size();y++){
+//                                   if (adapter.meals.get(y).getitle().contains(s)){
+//                    Log.d("hebbes", "yeah"+ s + adapter.meals.get(y).getitle().contains(s) + adapter.meals.get(y).getitle() );
+////                        .filter(adapter.meals.get(y).getitle());
+//                                       adapter.getFilter().filter(s);
+//                }
+//                else {
+//                    Log.d("hebbes", "yeah"+ s + adapter.meals.get(y).getitle().contains(s) + adapter.meals.get(y).getitle() );
+//                    adapter.remove(adapter.meals.get(y));
+//                }
+////                KeyEvent e = null;
+////                    int keyCode = e.getKeyCode();
+////                    if(keyCode == KeyEvent.VK_F5)
+////                        message = "Pressed: " + KeyEvent.getKeyText(keyCode);
+//
+//            }
+//
+//            }
+
+
+
+
+
 
     @Override
     public void gotMealsError(String message) {

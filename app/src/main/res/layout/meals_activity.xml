@@ -7,7 +7,7 @@
     android:dividerPadding="10dp"
     android:orientation="vertical">
 
-    <EditText
+    <SearchView
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="57dp"

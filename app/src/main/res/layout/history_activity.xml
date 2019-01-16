@@ -6,7 +6,7 @@
     android:background="@drawable/achtergrondfood"
     android:orientation="vertical">
 
-    <EditText
+    <SearchView
         android:id="@+id/editText2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
