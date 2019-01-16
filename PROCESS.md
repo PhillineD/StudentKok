@@ -50,5 +50,14 @@ wat heb ik gedaan?
  veranderd?
  - vanuit history kun je naar het recept en de rating aanpassen
  
+  # day 5 
+wat heb ik gedaan? 
+ - je kunt nu zoeken naar een gerechtnaam in meals.activity
+ 
+ veranderd?
+ - de edittexten in history en in meals activity zijn nu seachrvieuws geworden
+ 
+ 
+ 
 
  
