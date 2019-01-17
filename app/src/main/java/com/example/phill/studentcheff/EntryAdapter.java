@@ -14,10 +14,11 @@ import android.widget.TextView;
 import org.w3c.dom.Text;
 
 public class EntryAdapter extends ResourceCursorAdapter implements Filterable{
-//    CustomFilter filter;
+    //    CustomFilter filter;
     public EntryAdapter(Context context, int layout, Cursor cursor) {
         super(context, layout, cursor);
     }
+
 
     @Override
     public void bindView(View view, Context context, Cursor cursor) {
@@ -39,6 +40,7 @@ public class EntryAdapter extends ResourceCursorAdapter implements Filterable{
         int indexdate = cursor.getColumnIndex("timestamp");
         String date = cursor.getString(indexdate);
         history.setText(date);
+
 
 //        // set picture
         ImageView picture = view.findViewById(R.id.picturehistory);
@@ -78,3 +80,8 @@ public class EntryAdapter extends ResourceCursorAdapter implements Filterable{
 
 
 }
+
+
+
+
+

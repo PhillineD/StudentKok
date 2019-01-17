@@ -7,6 +7,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.database.sqlite.SQLiteQueryBuilder;
 import android.util.Log;
+import android.widget.Filter;
+import android.widget.Filterable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,11 +17,17 @@ import static android.icu.text.MessagePattern.ArgType.SELECT;
 
 public class EntryDatabase extends SQLiteOpenHelper {
 
+    ArrayList<HistoryItem> filterList;
+
     public EntryDatabase( Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
+
     }
 
     private static EntryDatabase instance;
+
+
+
     // elke keer als je iets aanpas de app leeg maken.
     @Override
     public void onCreate(SQLiteDatabase db) {
@@ -85,7 +93,7 @@ public class EntryDatabase extends SQLiteOpenHelper {
         db.execSQL(sort);
 
         // add values for title, content and mood.
-          contentvalue.put("_id", id);
+        contentvalue.put("_id", id);
         contentvalue.put("title", title);
         contentvalue.put("rating", rating);
         contentvalue.put("picture",picture );
@@ -96,30 +104,12 @@ public class EntryDatabase extends SQLiteOpenHelper {
 
     }
 
-
-    public List<HistoryItem> gettitle(String name){
-        SQLiteDatabase db = getReadableDatabase();
-        SQLiteQueryBuilder qb = new SQLiteQueryBuilder();
-
-        String[] sqlSelect={"title"};
-        String tablename = "Studentchef";
-
-        qb.setTables(tablename);
-        Cursor cursor = qb.query(db,sqlSelect,"title LIKE '?'",new String[]{"%"+name+"%"},null, null, null);
-        List<HistoryItem> result = new ArrayList<>();
-        if(cursor.moveToFirst()){
-            do{
-                HistoryItem title = new HistoryItem(null,null,null);
-                title.setTitle(cursor.getString(cursor.getColumnIndex("title")));
-                title.setPicture(cursor.getString(cursor.getColumnIndex("picture")));
-                title.setId(cursor.getString(cursor.getColumnIndex("_id")));
-
-                result.add(title);
-            }while (cursor.moveToNext());
-        }
-        return result;
+    // filteren op naam
+    public static void filteren(String waarop){
+        SQLiteDatabase db = instance.getWritableDatabase();
+        String sql = "SELECT * FROM  Studentchef WHERE  title =  '"+waarop+"'";
+        Log.d("Philline", "filteren: mmm" + sql);
+        db.rawQuery(sql, null);
     }
-
-
 
 }

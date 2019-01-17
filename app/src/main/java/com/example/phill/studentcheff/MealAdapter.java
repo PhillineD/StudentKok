@@ -16,7 +16,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-import java.util.BitSet;
+
 
 public class MealAdapter extends BaseAdapter implements Filterable {
     ArrayList<MealItem> meals;
@@ -26,7 +26,6 @@ public class MealAdapter extends BaseAdapter implements Filterable {
 
 
     public MealAdapter(Context context, ArrayList<MealItem> meals   ) {
-//        super(context, objects);
         this.meals = meals;
         this.c = context;
         this.filterList=meals;
@@ -51,7 +50,6 @@ public class MealAdapter extends BaseAdapter implements Filterable {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         if(convertView == null) {
-//            LayoutInflater inflater = LayoutInflater.from(getContext());
             LayoutInflater inflater =(LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView = inflater.inflate(R.layout.meals_item, parent, false);
         }
@@ -60,10 +58,8 @@ public class MealAdapter extends BaseAdapter implements Filterable {
         TextView recipe = convertView.findViewById(R.id.Recipe);
 
 
-//        MealItem piece = getItem(position);
-//        recipe.setText(piece.getitle());
+
         recipe.setText(meals.get(position).getitle());
-//        recipe.setText(piece.getPicture());
         Log.d("MenuItemAdapter", "Piece = " +meals.get(position).getitle());
 
         DownloadImageTask Image = new DownloadImageTask(picture);
