@@ -58,6 +58,14 @@ wat heb ik gedaan?
  - de edittexten in history en in meals activity zijn nu seachrvieuws geworden
  - voor het zoeken door mijn database heb ik de classe: HistoryItem en SearchAdapterHistory aangemaakt
  
+  
+  # day 6
+wat heb ik gedaan? 
+ -  gezocht naar de beste manier om te zoeken door database
+ 
+ veranderd?
+ - Ik heb besloten om bij het zoeken door je meals je ook moet kunnen zoeken naar een soort bijvoorbeeld 'pasta' hiervoor moet ik Tags betrekken in mijn MealItem classe.
+ - Het zoeken door de database word ook zoeken naar een soort of naam, maar wel met een zoekknop.  
  
  
 
