@@ -70,6 +70,7 @@ public class RecipeRequest implements Response.Listener<JSONObject>, Response.Er
                 String id = mealitems.getString("idMeal");
                 String titlerecipe = mealitems.getString("strMeal");
                 String instructions = mealitems.getString("strInstructions");
+                String hit = mealitems.getString("strTags");
 
                 String youtube = mealitems.getString("strYoutube");
                 String picture = mealitems.getString("strMealThumb");
