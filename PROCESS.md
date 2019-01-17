@@ -67,6 +67,10 @@ wat heb ik gedaan?
  - Ik heb besloten om bij het zoeken door je meals je ook moet kunnen zoeken naar een soort bijvoorbeeld 'pasta' hiervoor moet ik Tags betrekken in mijn MealItem classe.
  - Het zoeken door de database word ook zoeken naar een soort of naam, maar wel met een zoekknop.  
  
+ te doen?
+  - classe MealItem aanpassen zodat de "tags"ook worden opgehaald
+  - zoekfuncties hierop aanpassen
+  
  
 
  
