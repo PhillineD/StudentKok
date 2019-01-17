@@ -56,6 +56,7 @@ wat heb ik gedaan?
  
  veranderd?
  - de edittexten in history en in meals activity zijn nu seachrvieuws geworden
+ - voor het zoeken door mijn database heb ik de classe: HistoryItem en SearchAdapterHistory aangemaakt
  
  
  
