@@ -70,7 +70,7 @@ public class EntryDatabase extends SQLiteOpenHelper {
 
     public static  Cursor filteren (EntryDatabase instance, String woord){
         SQLiteDatabase database = instance.getWritableDatabase();
-        return database.rawQuery("SELECT * FROM  Studentchef WHERE  title =  '"+woord+"' OR timestamp ='"+woord+"' OR hint= '"+woord+"'", null );
+        return database.rawQuery("SELECT * FROM  Studentchef WHERE  title  = '"+woord+"' OR timestamp ='"+woord+"' OR hint= '"+woord+"'", null );
     }
 
 

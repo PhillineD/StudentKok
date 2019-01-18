@@ -26,7 +26,6 @@ import java.util.List;
 public class MealsActivity extends Activity implements MealsRequest.Callback{
     SearchView textBox;
     List<String> searchlist= new ArrayList<>();
-    String lijstje[];
     ArrayAdapter adapter1;
 
 
@@ -36,6 +35,11 @@ public class MealsActivity extends Activity implements MealsRequest.Callback{
         setContentView(R.layout.meals_activity);
         Intent intent = getIntent();
         String message = intent.getStringExtra("categorie");
+        SearchView search = findViewById(R.id.editText);
+
+        if (message == "Beef"){
+            search.setQueryHint("lekker vleesjes");
+        }
 
         MealsRequest requestmeals = new MealsRequest(this);
         requestmeals.getMeals(this, message);
@@ -89,8 +93,8 @@ public class MealsActivity extends Activity implements MealsRequest.Callback{
 
     @Override
     public void gotMealsError(String message) {
-        Log.d("gotmealserror", "gotMeals: we zijn er dus niet "+ message);
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Something went wrong, try again", Toast.LENGTH_SHORT).show();
     }
 
     public void clicksearch(View view) {

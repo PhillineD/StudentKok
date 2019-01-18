@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -85,6 +86,7 @@ public class MealsRequest implements Response.Listener<JSONObject>, Response.Err
 
         } catch (JSONException e) {
             e.printStackTrace();
+
         }
 
     }
