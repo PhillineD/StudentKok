@@ -71,6 +71,15 @@ wat heb ik gedaan?
   - classe MealItem aanpassen zodat de "tags"ook worden opgehaald
   - zoekfuncties hierop aanpassen
   
+  # day 7
+  wat heb ik gedaan ? 
+  -  je kunt nu zoeken door je history naar de datum, catergorie of title van het recept
+  - de layouts aangepaast zodat je een duidelijker overzicht hebt
+  
+  veranderd?
+  - je kunt ook zoeken naar de datum waarop je een gerecht gemaakt hebt en naar een catergorie bv seafood. 
+  
+  
  
 
  
