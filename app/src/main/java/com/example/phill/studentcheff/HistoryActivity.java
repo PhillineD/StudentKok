@@ -75,12 +75,20 @@ public class HistoryActivity extends AppCompatActivity {
 
         EditText zoeken = findViewById(R.id.searchbox);
         String term = zoeken.toString();
-        if (zoeken != null) {
+
+        // if edittext is empthy
+        if (zoeken.getText().toString().equals("")) {
+            Cursor cursor = EntryDatabase.selectAll(db);
+            adapter.swapCursor(cursor);
+            adapter = new EntryAdapter(this, R.layout.history_item, cursor);
+            ListView history = findViewById(R.id.listviewhistory);
+            history.setAdapter(adapter);
+            Log.d("Philline Leeeeg", "search: " + zoeken.toString());
+
+        }
+        else{
 
             String searchTerm = zoeken.toString();
-//            EntryDatabase.filteren(searchTerm);
-//            Cursor cursor = EntryDatabase.selectAll(db);
-//            adapter.swapCursor(cursor);
             Cursor cursor = EntryDatabase.filteren(db , searchTerm);
             adapter.swapCursor(cursor);
 
@@ -90,13 +98,6 @@ public class HistoryActivity extends AppCompatActivity {
 
             //  put in a new cursor for the updated data
             Log.d("Philline", "search: " + zoeken.toString());
-        }
-        else{
-            Cursor cursor = EntryDatabase.selectAll(db);
-            adapter.swapCursor(cursor);
-            adapter = new EntryAdapter(this, R.layout.history_item, cursor);
-            ListView history = findViewById(R.id.listviewhistory);
-            history.setAdapter(adapter);
 //
 
         }
