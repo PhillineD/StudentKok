@@ -70,7 +70,7 @@
                         android:layout_gravity="center"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:text="Categorie :"
+                        android:text="Categorie "
                         android:textSize="12sp" />
 
                     <TextView
@@ -324,6 +324,7 @@
                     android:layout_width="238dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:foreground="@color/colorPrimary"
                     android:foregroundGravity="center"
                     android:numStars="5"
                     android:onClick="clickto"
