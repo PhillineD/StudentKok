@@ -16,14 +16,14 @@
         android:inputType="textPersonName"
         android:onClick="clicksearch" />
 
-    <GridView
+    <ListView
         android:id="@+id/MealsListView"
-        android:layout_width="304dp"
+        android:layout_width="335dp"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:gravity="center"
-        android:dividerHeight="10.0sp">
-    </GridView>
+        android:divider="@android:color/transparent"
+        android:dividerHeight="15dp"
+        android:gravity="center"></ListView>
 
 </LinearLayout>
 

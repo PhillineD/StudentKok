@@ -16,20 +16,22 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:background="@color/colorPrimary"
         android:onClick="randomv"
         android:text="random"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.923"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout5"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.34" />
 
     <LinearLayout
-        android:layout_width="187dp"
-        android:layout_height="180dp"
+        android:id="@+id/linearLayout5"
+        android:layout_width="183dp"
+        android:layout_height="186dp"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
@@ -45,6 +47,7 @@
             android:id="@+id/meat"
             android:layout_width="185dp"
             android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
             android:onClick="clickmeat"
             android:text="Meat" />
 
@@ -52,6 +55,8 @@
             android:id="@+id/fish"
             android:layout_width="185dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimary"
             android:onClick="clickfish"
             android:text="Fish" />
 
@@ -59,6 +64,8 @@
             android:id="@+id/vega"
             android:layout_width="185dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimary"
             android:onClick="clickvega"
             android:text="Vega" />
 

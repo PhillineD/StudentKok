@@ -10,21 +10,22 @@
     <Button
         android:id="@+id/randommeat"
         android:layout_width="170dp"
-        android:layout_height="wrap_content"
+        android:layout_height="47dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:background="@color/colorPrimary"
         android:onClick="randomclick"
         android:text="random"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.123" />
+        app:layout_constraintVertical_bias="0.49" />
 
     <LinearLayout
         android:id="@+id/linearLayout3"
@@ -42,12 +43,13 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.406">
+        app:layout_constraintVertical_bias="0.47">
 
         <Button
             android:id="@+id/Beef"
             android:layout_width="170dp"
             android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
             android:onClick="clickbeef"
             android:text="Beef" />
 
@@ -55,6 +57,8 @@
             android:id="@+id/Chicken"
             android:layout_width="170dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimary"
             android:onClick="clickchicken"
             android:text="Chicken" />
 
@@ -66,7 +70,7 @@
         android:layout_width="182dp"
         android:layout_height="122dp"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
+        android:layout_marginLeft="15dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
@@ -74,15 +78,16 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.016"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.379">
+        app:layout_constraintVertical_bias="0.442">
 
         <Button
             android:id="@+id/Lam"
             android:layout_width="170dp"
             android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
             android:onClick="clicklam"
             android:text="Lam" />
 
@@ -90,6 +95,8 @@
             android:id="@+id/Pork"
             android:layout_width="170dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimary"
             android:onClick="clickpork"
             android:text="Pork" />
     </LinearLayout>

@@ -51,11 +51,12 @@ public class MealsActivity extends Activity implements MealsRequest.Callback{
         Log.d("gotmeals", "gotMeals: we zijn er " + meals);
 
         final MealAdapter adapter = new MealAdapter(this, meals);
-        GridView listView = findViewById(R.id.MealsListView);
+        ListView listView = findViewById(R.id.MealsListView);
         listView.setAdapter(adapter);
 //
 //
 //        Log.d("gotmeals", "hhh" + searchlist);
+        // aparte classe maken voor the on item click listener
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
 
