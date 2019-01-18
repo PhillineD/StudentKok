@@ -11,13 +11,13 @@
         android:layout_height="76dp"
         android:orientation="horizontal">
 
-        <SearchView
+        <EditText
             android:id="@+id/searchbox"
             android:layout_width="219dp"
             android:layout_height="74dp"
             android:ems="10"
             android:hint=" zucchini"
-            android:inputType="textPersonName"></SearchView>
+            android:inputType="textPersonName"></EditText>
 
         <Button
             android:id="@+id/searchbutton"

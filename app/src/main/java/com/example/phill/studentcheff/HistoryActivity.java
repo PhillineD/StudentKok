@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.TextView;
@@ -30,7 +31,7 @@ public class HistoryActivity extends AppCompatActivity {
 
         ListView history = findViewById(R.id.listviewhistory);
         history.setOnItemClickListener( new ToRecipe());
-        SearchView textbox2 = findViewById(R.id.searchbox);
+        EditText textbox2 = findViewById(R.id.searchbox);
 
         db = EntryDatabase.getInstance(getApplicationContext());
 
@@ -38,19 +39,19 @@ public class HistoryActivity extends AppCompatActivity {
         adapter = new EntryAdapter(this, R.layout.history_item, cursor);
         history.setAdapter(adapter);
 
-        textbox2.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override
-                public boolean onQueryTextSubmit(String newtext ) {
-                    return false;
-            }
-
-            @Override
-            public boolean onQueryTextChange(String query) {
-                Log.d("morgen", "onQueryTextChange: " + query + db.getWritableDatabase());
-//                adapter.getFilter().filter(query);
-                return false;
-            }
-        });
+//        textbox2.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+//            @Override
+//                public boolean onQueryTextSubmit(String newtext ) {
+//                    return false;
+//            }
+//
+//            @Override
+//            public boolean onQueryTextChange(String query) {
+//                Log.d("morgen", "onQueryTextChange: " + query + db.getWritableDatabase());
+////                adapter.getFilter().filter(query);
+//                return false;
+//            }
+//        });
 
     }
 
@@ -72,11 +73,15 @@ public class HistoryActivity extends AppCompatActivity {
     // filter adapter
     public void search(View view) {
 
-        SearchView zoeken = findViewById(R.id.searchbox);
+        EditText zoeken = findViewById(R.id.searchbox);
+        String term = zoeken.toString();
         if (zoeken != null) {
-            String searchTerm = zoeken.getQuery().toString();
-            EntryDatabase.filteren(searchTerm);
-            Cursor cursor = EntryDatabase.selectAll(db);
+
+            String searchTerm = zoeken.toString();
+//            EntryDatabase.filteren(searchTerm);
+//            Cursor cursor = EntryDatabase.selectAll(db);
+//            adapter.swapCursor(cursor);
+            Cursor cursor = EntryDatabase.filteren(db , searchTerm);
             adapter.swapCursor(cursor);
 
             adapter = new EntryAdapter(this, R.layout.history_item, cursor);
@@ -84,7 +89,16 @@ public class HistoryActivity extends AppCompatActivity {
             history.setAdapter(adapter);
 
             //  put in a new cursor for the updated data
-            Log.d("Philline", "search: " + zoeken.getQuery().toString());
+            Log.d("Philline", "search: " + zoeken.toString());
+        }
+        else{
+            Cursor cursor = EntryDatabase.selectAll(db);
+            adapter.swapCursor(cursor);
+            adapter = new EntryAdapter(this, R.layout.history_item, cursor);
+            ListView history = findViewById(R.id.listviewhistory);
+            history.setAdapter(adapter);
+//
+
         }
     }
 

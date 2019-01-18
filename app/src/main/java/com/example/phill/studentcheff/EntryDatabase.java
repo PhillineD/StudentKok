@@ -79,6 +79,12 @@ public class EntryDatabase extends SQLiteOpenHelper {
         return database.rawQuery("SELECT * FROM "+ "Studentchef "+" ORDER BY "+"rating "+"DESC" , null );
     }
 
+    public static  Cursor filteren (EntryDatabase instance, String woord){
+        SQLiteDatabase database = instance.getWritableDatabase();
+        return database.rawQuery("SELECT * FROM  Studentchef WHERE  title =  '"+woord+"'", null );
+    }
+
+
 
     // method to insert a history item
     public void insert(String id, String title, Float rating, String picture){

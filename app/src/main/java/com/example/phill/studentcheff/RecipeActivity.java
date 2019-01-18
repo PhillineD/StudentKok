@@ -159,6 +159,7 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
     }
 
     public void clickvideo(View view) {
+        // moet nog een try want als je geen verbinding hebt dan moet je daargan een melding krijgen
         startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse(url)));
         Log.i("Video", "Video Playing....");
     }
