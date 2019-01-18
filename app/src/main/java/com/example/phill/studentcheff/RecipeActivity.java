@@ -51,14 +51,19 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         TextView titlerecipe = findViewById(R.id.viewRecipeTitle);
         String titlehistory = titlerecipe.getText().toString();
 
+        // get hint
+        TextView sethint = findViewById(R.id.hint);
+        String hinty = sethint.getText().toString();
+
         Intent in = new Intent(getApplicationContext(), StartActivity.class);
         in.putExtra("id",id);
         in.putExtra("rating", stars);
+        in.putExtra("hint", hinty);
 
-        Log.d("rating", "clicktostart: " +  rating.getRating() + "jaa" +  rating.getNumStars() );
+        Log.d("rating", "clicktostart: " +  rating.getRating() + "jaa" +  rating.getNumStars() + hinty );
 
         // insert into database
-        EntryDatabase.getInstance(this).insert(id,titlehistory, stars, picture);
+        EntryDatabase.getInstance(this).insert(id,titlehistory, stars, picture, hinty);
 
         startActivity(in);
         finish();
@@ -93,6 +98,9 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         TextView ingregients6 = findViewById(R.id.viewIngredients6);
         TextView ingregients7 = findViewById(R.id.viewIngredients7);
         TextView ingregients8 = findViewById(R.id.viewIngredients8);
+
+        TextView hint = findViewById(R.id.hint);
+        hint.setText(stukje.getHint());
 
         title.setText(stukje.getitle());
         instructions.setText(stukje.getInstruction());

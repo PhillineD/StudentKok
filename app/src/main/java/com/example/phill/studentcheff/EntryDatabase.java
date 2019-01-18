@@ -31,24 +31,13 @@ public class EntryDatabase extends SQLiteOpenHelper {
     // elke keer als je iets aanpas de app leeg maken.
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String  message = "CREATE TABLE " + "Studentchef" + "( _id STRING PRIMARY KEY, title TEXT, picture STRING, rating FLAOT, " +
+        String  message = "CREATE TABLE " + "Studentchef" + "( _id STRING PRIMARY KEY, title TEXT, picture STRING,hint STRING ,rating FLAOT, " +
                 "timestamp DATETIME default (datetime('now','localtime'))) ";
         db.execSQL(message);
 
 //        INTEGER PRIMARY KEY AUTOINCREMENT
         // create a new ContentValues object
         ContentValues contentvalue = new ContentValues();
-
-        // example for history
-//        contentvalue.put("_id", 1234);
-//        contentvalue.put("title", "Hallo");
-//        contentvalue.put("rating", 2);
-//        contentvalue.put("picture","https://www.themealdb.com//images//media//meals//1525873040.jpg");
-
-        // call insert and add the right parameters
-//        db.insert("Studentchef", null, contentvalue);
-
-//        Log.d("databse", "onCreate: " + db);
 
     }
 
@@ -81,13 +70,13 @@ public class EntryDatabase extends SQLiteOpenHelper {
 
     public static  Cursor filteren (EntryDatabase instance, String woord){
         SQLiteDatabase database = instance.getWritableDatabase();
-        return database.rawQuery("SELECT * FROM  Studentchef WHERE  title =  '"+woord+"'", null );
+        return database.rawQuery("SELECT * FROM  Studentchef WHERE  title =  '"+woord+"' OR timestamp ='"+woord+"' OR hint= '"+woord+"'", null );
     }
 
 
 
     // method to insert a history item
-    public void insert(String id, String title, Float rating, String picture){
+    public void insert(String id, String title, Float rating, String picture, String Catergorie){
         // open a connection to the database
         SQLiteDatabase db = instance.getWritableDatabase();
 
@@ -103,19 +92,15 @@ public class EntryDatabase extends SQLiteOpenHelper {
         contentvalue.put("title", title);
         contentvalue.put("rating", rating);
         contentvalue.put("picture",picture );
+        contentvalue.put("hint", Catergorie);
 
         // call insert and add the right parameters
         db.insert("Studentchef", null, contentvalue);
 
+        Log.d("filterjij", "insert: " + contentvalue);
+
 
     }
 
-    // filteren op naam
-    public static void filteren(String waarop){
-        SQLiteDatabase db = instance.getWritableDatabase();
-        String sql = "SELECT * FROM  Studentchef WHERE  title =  '"+waarop+"'";
-        Log.d("Philline", "filteren: mmm" + sql);
-        db.rawQuery(sql, null);
-    }
 
 }

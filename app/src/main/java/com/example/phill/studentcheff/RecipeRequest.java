@@ -70,7 +70,7 @@ public class RecipeRequest implements Response.Listener<JSONObject>, Response.Er
                 String id = mealitems.getString("idMeal");
                 String titlerecipe = mealitems.getString("strMeal");
                 String instructions = mealitems.getString("strInstructions");
-                String hit = mealitems.getString("strTags");
+                String hit = mealitems.getString("strCategory");
 
                 String youtube = mealitems.getString("strYoutube");
                 String picture = mealitems.getString("strMealThumb");
@@ -99,9 +99,9 @@ public class RecipeRequest implements Response.Listener<JSONObject>, Response.Er
                 // new Mealitem
                 Meal item = new Meal(id,ingredient1,instructions,youtube,picture, titlerecipe,
                         measure1,ingredient2 , measure2, ingredient3 , measure3, ingredient4 , measure4,
-                        ingredient5 , measure5, ingredient6 , measure6, ingredient7 , measure7, ingredient8 , measure8);
+                        ingredient5 , measure5, ingredient6 , measure6, ingredient7 , measure7, ingredient8 , measure8, hit);
 
-                Log.d("gotmeals", "joejoe: we zijn er "+ item.getId() + item.getitle() + item.getPicture() + item.getMeasure1());
+                Log.d("gotmeals", "joejoe: we zijn er "+ item.getHint() + item.getitle() + item.getPicture() + item.getMeasure1());
                 recipeview.add(item);
             }
 

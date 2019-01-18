@@ -28,7 +28,7 @@ public class MealsActivity extends Activity implements MealsRequest.Callback{
     List<String> searchlist= new ArrayList<>();
     String lijstje[];
     ArrayAdapter adapter1;
-//    AppCompatActivity,
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,18 +44,12 @@ public class MealsActivity extends Activity implements MealsRequest.Callback{
 
     @Override
     public void gotMeals(final ArrayList<MealItem> meals) {
-//        Toast.makeText(this, meals.get(0),Toast.LENGTH_LONG).show();
         Log.d("gotmeals", "gotMeals: we zijn er " + meals);
 
         final MealAdapter adapter = new MealAdapter(this, meals);
         GridView listView = findViewById(R.id.MealsListView);
         listView.setAdapter(adapter);
 //
-//        for (int i = 0; i < meals.size(); i++) {
-//            searchlist.add(meals.get(i).getitle());
-//        }
-//
-//        adapter1 = new ArrayAdapter(this, R.layout.meals_item, searchlist);
 //
 //        Log.d("gotmeals", "hhh" + searchlist);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -90,34 +84,6 @@ public class MealsActivity extends Activity implements MealsRequest.Callback{
         });
 
     }
-
-
-//    }
-//        textBox.addTextChangedListener(new TextWatcher() {
-//            @Override
-//            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-//                Log.d("typen", "beforeTextChanged: getypt"+ adapter.meals.get(0).getitle() + adapter1.getFilter() );
-//                for(int y=0; y< meals.size();y++){
-//                                   if (adapter.meals.get(y).getitle().contains(s)){
-//                    Log.d("hebbes", "yeah"+ s + adapter.meals.get(y).getitle().contains(s) + adapter.meals.get(y).getitle() );
-////                        .filter(adapter.meals.get(y).getitle());
-//                                       adapter.getFilter().filter(s);
-//                }
-//                else {
-//                    Log.d("hebbes", "yeah"+ s + adapter.meals.get(y).getitle().contains(s) + adapter.meals.get(y).getitle() );
-//                    adapter.remove(adapter.meals.get(y));
-//                }
-////                KeyEvent e = null;
-////                    int keyCode = e.getKeyCode();
-////                    if(keyCode == KeyEvent.VK_F5)
-////                        message = "Pressed: " + KeyEvent.getKeyText(keyCode);
-//
-//            }
-//
-//            }
-
-
-
 
 
 

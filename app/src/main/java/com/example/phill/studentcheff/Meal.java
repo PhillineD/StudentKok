@@ -4,7 +4,16 @@ public class Meal {
     private String id, Ingredients1, Instruction, Youtubelink, Picture,  title;
     private  String measure1, measure2, measure3, measure4, measure5, measure6, measure7, measure8;
     String Ingredients2, Ingredients3, Ingredients4, Ingredients5, Ingredients6, Ingredients7, Ingredients8;
+    String Hint;
 
+
+    public String getHint() {
+        return Hint;
+    }
+
+    public void setHint(String hint) {
+        Hint = hint;
+    }
 
     public Meal(String id, String Ingredients1, String Instruction, String Youtubelink, String Picture, String title, String measure1,
                 String Ingredients2, String measure2,
@@ -13,7 +22,8 @@ public class Meal {
                 String Ingredients5, String measure5,
                 String Ingredients6, String measure6,
                 String Ingredients7, String measure7,
-                String Ingredients8, String measure8
+                String Ingredients8, String measure8,
+                String hint
                 ){
         this.id = id;
         this.Ingredients1 = Ingredients1;
@@ -36,6 +46,7 @@ public class Meal {
         this.measure7 = measure7;
         this.Ingredients8 = Ingredients8;
         this.measure8 = measure8;
+        this.Hint = hint;
     }
 
     public String getId() {

@@ -74,7 +74,6 @@ public class HistoryActivity extends AppCompatActivity {
     public void search(View view) {
 
         EditText zoeken = findViewById(R.id.searchbox);
-        String term = zoeken.toString();
 
         // if edittext is empthy
         if (zoeken.getText().toString().equals("")) {
@@ -88,7 +87,7 @@ public class HistoryActivity extends AppCompatActivity {
         }
         else{
 
-            String searchTerm = zoeken.toString();
+            String searchTerm = zoeken.getText().toString();
             Cursor cursor = EntryDatabase.filteren(db , searchTerm);
             adapter.swapCursor(cursor);
 
