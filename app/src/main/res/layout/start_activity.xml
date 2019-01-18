@@ -10,8 +10,8 @@
     <LinearLayout
         android:layout_width="197dp"
         android:layout_height="137dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="15dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginLeft="92dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
@@ -24,7 +24,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.427">
+        app:layout_constraintVertical_bias="0.435">
 
         <Button
             android:id="@+id/newmeal"
@@ -33,7 +33,8 @@
             android:layout_gravity="right"
             android:background="@color/colorPrimary"
             android:onClick="clicknew"
-            android:text="Try something new" />
+            android:text="Try something new"
+            android:textColor="@android:color/white" />
 
         <Button
             android:id="@+id/history"
@@ -43,7 +44,8 @@
             android:layout_marginTop="20dp"
             android:background="@color/colorPrimary"
             android:onClick="clickhistory"
-            android:text="History" />
+            android:text="History"
+            android:textColor="@android:color/white" />
 
     </LinearLayout>
 

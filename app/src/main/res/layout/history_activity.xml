@@ -33,7 +33,8 @@
             android:onClick="search"
             android:padding="10dp"
             android:paddingLeft="20dp"
-            android:text="Search" />
+            android:text="Search"
+            android:textColor="@android:color/white" />
     </LinearLayout>
 
     <ListView
