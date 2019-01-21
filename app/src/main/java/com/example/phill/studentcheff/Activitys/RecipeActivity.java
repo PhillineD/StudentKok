@@ -61,7 +61,7 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         // get time
         TextView timetext = findViewById(R.id.time);
         String time = timetext.getText().toString();
-        if (! time.equals("")) {
+        if (! time.equals("") && stars != 0 ) {
             float constant = new Float(time);
 
             Intent in = new Intent(getApplicationContext(), StartActivity.class);
@@ -77,7 +77,7 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
 
         }
         else{
-            Toast.makeText(this, "Please fill in time cooked", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Please fill all fields", Toast.LENGTH_LONG).show();
         }
     }
 
@@ -173,7 +173,7 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         Toast.makeText(this, "Please try again", Toast.LENGTH_SHORT).show();
     }
 
-    public void clickvideo(View view) {
+    public void clickVideo(View view) {
         startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse(url)));
     }
 }

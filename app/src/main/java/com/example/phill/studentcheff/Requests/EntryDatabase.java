@@ -54,7 +54,7 @@ public class EntryDatabase extends SQLiteOpenHelper {
                 "DESC" , null );
     }
 
-    public static  Cursor filteren (EntryDatabase instance, String woord){
+    public static  Cursor filterData (EntryDatabase instance, String woord){
         SQLiteDatabase database = instance.getWritableDatabase();
         Log.d("loggen ", "filteren:" + woord);
         return database.rawQuery("SELECT * FROM  Studentchef WHERE  title  = '"+woord+"' " +

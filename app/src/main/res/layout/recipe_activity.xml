@@ -51,7 +51,7 @@
                     android:layout_height="246dp"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:onClick="clickvideo" />
+                    android:onClick="clickVideo" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -296,7 +296,7 @@
                         android:layout_gravity="center"
                         android:layout_weight="1"
                         android:foregroundGravity="center"
-                        android:onClick="clickvideo"
+                        android:onClick="clickVideo"
                         app:srcCompat="@android:drawable/presence_video_online" />
                 </LinearLayout>
 

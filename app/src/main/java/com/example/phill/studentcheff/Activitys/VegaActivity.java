@@ -14,13 +14,13 @@ public class VegaActivity extends AppCompatActivity {
         setContentView(R.layout.vegan_activity);
     }
 
-    public void clickvega(View view) {
+    public void clickVega(View view) {
         Intent intent = new Intent(getApplicationContext(), MealsActivity.class);
         intent.putExtra("categorie", "Vegetarian");
         startActivity(intent);
     }
 
-    public void clickvegan(View view) {
+    public void clickVegan(View view) {
         Intent intent = new Intent(getApplicationContext(), MealsActivity.class);
         intent.putExtra("categorie", "Vegan");
         startActivity(intent);

@@ -18,28 +18,28 @@ public class VActivity extends AppCompatActivity {
         setContentView(R.layout.v_activity);
     }
 
-    public void clickmeat(View view) {
+    public void clickMeat(View view) {
         Intent intent = new Intent(getApplicationContext(), MeatActivity.class);
         intent.putExtra("categorie", "meat");
         startActivity(intent);
         finish();
     }
 
-    public void clickfish(View view) {
+    public void clickFish(View view) {
         Intent intent = new Intent(getApplicationContext(), MealsActivity.class);
         intent.putExtra("categorie", "seafood");
         startActivity(intent);
         finish();
     }
 
-    public void clickvega(View view) {
+    public void clickVega(View view) {
         Intent intent = new Intent(getApplicationContext(), VegaActivity.class);
         intent.putExtra("categorie", "vega");
         startActivity(intent);
         finish();
     }
 
-    public void randomv(View view) {
+    public void randomV(View view) {
         List<String> givenList = Arrays.asList("meat", "seafood", "vega");
         Random rand = new Random();
         String randomElement = givenList.get(rand.nextInt(givenList.size()));

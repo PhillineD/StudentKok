@@ -19,21 +19,21 @@ public class MeatActivity extends AppCompatActivity {
         setContentView(R.layout.meat_activity);
     }
 
-    public void clickbeef(View view) {
+    public void clickBeef(View view) {
         Intent intent = new Intent(getApplicationContext(), MealsActivity.class);
         intent.putExtra("categorie", "Beef");
         startActivity(intent);
         finish();
     }
 
-    public void clickchicken(View view) {
+    public void clickChicken(View view) {
         Intent intent = new Intent(getApplicationContext(), MealsActivity.class);
         intent.putExtra("categorie", "Chicken");
         startActivity(intent);
         finish();
     }
 
-    public void clicklam(View view) {
+    public void clickLam(View view) {
         Intent intent = new Intent(getApplicationContext(), MealsActivity.class);
         intent.putExtra("categorie", "Lamb");
         startActivity(intent);
@@ -41,7 +41,7 @@ public class MeatActivity extends AppCompatActivity {
     }
 
 
-    public void clickpork(View view) {
+    public void clickPork(View view) {
         Intent intent = new Intent(getApplicationContext(), MealsActivity.class);
         intent.putExtra("categorie", "Pork");
         startActivity(intent);
@@ -49,7 +49,7 @@ public class MeatActivity extends AppCompatActivity {
     }
 
 
-    public void randomclick(View view) {
+    public void randomClick(View view) {
         List<String> givenList = Arrays.asList("Beef", "Chicken", "Lamb", "Pork");
         Random rand = new Random();
         String randomElement = givenList.get(rand.nextInt(givenList.size()));

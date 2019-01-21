@@ -32,7 +32,7 @@
             android:layout_height="60dp"
             android:layout_gravity="right"
             android:background="@color/colorPrimary"
-            android:onClick="clicknew"
+            android:onClick="clickNew"
             android:text="Try something new"
             android:textColor="@android:color/white" />
 
@@ -43,7 +43,7 @@
             android:layout_gravity="right"
             android:layout_marginTop="20dp"
             android:background="@color/colorPrimary"
-            android:onClick="clickhistory"
+            android:onClick="clickHistory"
             android:text="History"
             android:textColor="@android:color/white" />
 

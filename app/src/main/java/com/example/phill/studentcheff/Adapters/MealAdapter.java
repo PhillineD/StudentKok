@@ -58,11 +58,7 @@ public class MealAdapter extends BaseAdapter implements Filterable {
 
         ImageView picture = convertView.findViewById(R.id.Picture);
         TextView recipe = convertView.findViewById(R.id.Recipe);
-
-
-
         recipe.setText(meals.get(position).getitle());
-        Log.d("MenuItemAdapter", "Piece = " +meals.get(position).getitle());
 
         DownloadImageTask Image = new DownloadImageTask(picture);
         Image.execute(meals.get(position).getPicture());
@@ -76,7 +72,6 @@ public class MealAdapter extends BaseAdapter implements Filterable {
         if(filter == null)
         {
             filter=new CustomFilter();
-            Log.d("in  get filter", "performFiltering: ");
         }
 
         return filter;
@@ -88,16 +83,15 @@ public class MealAdapter extends BaseAdapter implements Filterable {
         @Override
         protected FilterResults performFiltering(CharSequence constraint) {
             FilterResults results = new FilterResults();
+
             if (constraint != null && constraint.length() > 0) {
 
 
                 ArrayList<MealItem> filters = new ArrayList<MealItem>();
-                Log.d("vandaag", "performFiltering: " + filterList.size()+ filterList.get(0).getitle() + constraint);
 
                 // get specifc items
                 for (int i = 0; i < filterList.size(); i++) {
                     if (filterList.get(i).getitle().contains(constraint)) {
-                        Log.d("in filter maar", "performFiltering: " + filterList.get(i).getitle());
                         MealItem p = new MealItem(filterList.get(i).getId(),  filterList.get(i).getPicture(),filterList.get(i).getitle()) {
                         };
 

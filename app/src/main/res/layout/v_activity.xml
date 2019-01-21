@@ -15,7 +15,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="@color/colorPrimary"
-        android:onClick="randomv"
+        android:onClick="randomV"
         android:text="random"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
@@ -50,7 +50,7 @@
             android:layout_width="185dp"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
-            android:onClick="clickmeat"
+            android:onClick="clickMeat"
             android:text="Meat"
             android:textColor="@android:color/white" />
 
@@ -60,7 +60,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:background="@color/colorPrimary"
-            android:onClick="clickfish"
+            android:onClick="clickFish"
             android:text="Fish"
             android:textColor="@android:color/white" />
 
@@ -70,7 +70,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:background="@color/colorPrimary"
-            android:onClick="clickvega"
+            android:onClick="clickVega"
             android:text="Vega"
             android:textColor="@android:color/white" />
 

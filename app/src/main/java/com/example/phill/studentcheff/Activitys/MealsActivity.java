@@ -37,7 +37,7 @@ public class MealsActivity extends Activity implements MealsRequest.Callback{
         final MealAdapter adapter = new MealAdapter(this, meals);
         ListView listView = findViewById(R.id.MealsListView);
         listView.setAdapter(adapter);
-        listView.setOnItemClickListener(new clicked());
+        listView.setOnItemClickListener(new Clicked());
 
         textBox = (SearchView) findViewById(R.id.editText);
         textBox.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
@@ -55,7 +55,7 @@ public class MealsActivity extends Activity implements MealsRequest.Callback{
 
     }
 
-    private class clicked implements AdapterView.OnItemClickListener{
+    private class Clicked implements AdapterView.OnItemClickListener{
 
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

@@ -15,13 +15,13 @@ public class StartActivity extends AppCompatActivity {
         setContentView(R.layout.start_activity);
     }
 
-    public void clicknew(View view) {
+    public void clickNew(View view) {
         Intent intent = new Intent(getApplicationContext(), VActivity.class);
         startActivity(intent);
     }
 
 
-    public void clickhistory(View view) {
+    public void clickHistory(View view) {
         Intent intent = new Intent(getApplicationContext(), HistoryActivity.class);
         startActivity(intent);
     }

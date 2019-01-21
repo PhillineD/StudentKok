@@ -28,7 +28,7 @@
             android:layout_width="170dp"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
-            android:onClick="clickvega"
+            android:onClick="clickVega"
             android:text="Vega"
             android:textColor="@android:color/white" />
 
@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:background="@color/colorPrimary"
-            android:onClick="clickvegan"
+            android:onClick="clickVegan"
             android:text="Vegan"
             android:textColor="@android:color/white" />
     </LinearLayout>

@@ -17,8 +17,6 @@ public class HistoryActivity extends AppCompatActivity {
 
     private EntryDatabase db;
     private EntryAdapter adapter;
-    String id;
-
 
 
     @Override
@@ -68,7 +66,7 @@ public class HistoryActivity extends AppCompatActivity {
         else{
 
             String searchTerm = zoeken.getText().toString();
-            Cursor cursor = EntryDatabase.filteren(db , searchTerm);
+            Cursor cursor = EntryDatabase.filterData(db , searchTerm);
             adapter.swapCursor(cursor);
 
             adapter = new EntryAdapter(this, R.layout.history_item, cursor);
