@@ -86,6 +86,7 @@ wat heb ik gedaan?
   - foutmelding als je geen duur invoert 
   - Aantal knoppen zijn veranderd in plaatjes waar je op kunt klikken ipv buttons. 
   - De classes zijn verdeeld over mappen. 
+  - apparte classes voor klik events
   
   veranderd?
   - je kunt ook zoeken naar de de duur van een gerecht. 
