@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -16,25 +17,22 @@
 
         <EditText
             android:id="@+id/searchbox"
-            android:layout_width="242dp"
+            android:layout_width="300dp"
             android:layout_height="74dp"
             android:ems="10"
             android:hint='"Seafood"'
             android:inputType="textPersonName"
             android:textColorHighlight="@color/colorPrimaryDark"></EditText>
 
-        <Button
+        <ImageView
             android:id="@+id/searchbutton"
-            android:layout_width="115dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
+            android:layout_width="5dp"
+            android:layout_height="33dp"
             android:layout_weight="1"
-            android:background="@color/colorPrimary"
             android:onClick="search"
-            android:padding="10dp"
             android:paddingLeft="20dp"
-            android:text="Search"
-            android:textColor="@android:color/white" />
+            app:srcCompat="@android:drawable/ic_search_category_default" />
+
     </LinearLayout>
 
     <ListView
