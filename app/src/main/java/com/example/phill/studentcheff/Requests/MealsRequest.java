@@ -20,7 +20,7 @@ public class MealsRequest implements Response.Listener<JSONObject>, Response.Err
 
     private Callback activity;
     private Context context;
-    String add;
+
 
     public interface Callback{
         void gotMeals(ArrayList<MealItem> meals);

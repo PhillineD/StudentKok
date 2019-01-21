@@ -20,7 +20,7 @@
             android:layout_width="300dp"
             android:layout_height="74dp"
             android:ems="10"
-            android:hint='"Seafood"'
+            android:hint='"Seafood" or "Max cooking time"'
             android:inputType="textPersonName"
             android:textColorHighlight="@color/colorPrimaryDark"></EditText>
 
