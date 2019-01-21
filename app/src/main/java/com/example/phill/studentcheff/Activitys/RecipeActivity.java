@@ -62,16 +62,12 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         TextView timetext = findViewById(R.id.time);
         String time = timetext.getText().toString();
         if (! time.equals("")) {
-            Log.d("duurt te lang", "NIET  LEEEEGGG1")   ;
             float constant = new Float(time);
-
-            Log.d("duurt te lang", "clicktostart: " + constant)   ;
 
             Intent in = new Intent(getApplicationContext(), StartActivity.class);
             in.putExtra("id",id);
             in.putExtra("rating", stars);
             in.putExtra("hint", hinty);
-
 
             // insert into database
             EntryDatabase.getInstance(this).insert(id,titlehistory, stars, picture, hinty, constant);
@@ -79,20 +75,17 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
             startActivity(in);
             finish();
 
-
         }
         else{
-            Log.d("duurt te lang", "NIET  LEEEEGGG")   ;
+            Toast.makeText(this, "Please fill in time cooked", Toast.LENGTH_LONG).show();
         }
     }
 
     @Override
     public void gotRecipe(ArrayList<Meal> meals) {
-        Log.d("gotrecipe", "gotMeals: we zijn er "+ meals.get(0));
+
         Meal stukje = meals.get(0);
         stukje.getitle();
-        Log.d("gotrecipe", "gotMeals: we zijn er "+ stukje.getitle());
-
 
         TextView title = findViewById(R.id.viewRecipeTitle);
         TextView instructions = findViewById(R.id.viewinstructions);
@@ -177,7 +170,7 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
 
     @Override
     public void gotRecipeError(String message) {
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Please try again", Toast.LENGTH_SHORT).show();
     }
 
     public void clickvideo(View view) {

@@ -58,7 +58,8 @@ public class EntryDatabase extends SQLiteOpenHelper {
         SQLiteDatabase database = instance.getWritableDatabase();
         Log.d("loggen ", "filteren:" + woord);
         return database.rawQuery("SELECT * FROM  Studentchef WHERE  title  = '"+woord+"' " +
-                "OR timestamp ='"+woord+"' " + "OR hint= '"+woord+"'" +  "OR time = '"+woord+"'", null );
+                "OR timestamp ='"+woord+"' " + "OR hint= '"+woord+"'" +  "OR time < '"+woord+"'"
+                + "OR time = '"+woord+"'", null );
 
     }
 
