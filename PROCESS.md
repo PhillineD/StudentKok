@@ -79,6 +79,20 @@ wat heb ik gedaan?
   veranderd?
   - je kunt ook zoeken naar de datum waarop je een gerecht gemaakt hebt en naar een catergorie bv seafood. 
   
+  # day 8
+  wat heb ik gedaan ? 
+  -  je kunt nu bij het maken van het recept aangeven hoe lang je erover gedaan hebt
+  - je kunt nu zoeken in history naar een bepaalde duur. Bijvoorbeeld: we willen max 20 minuten besteden aan het koken van dit recept, geeft hij alle recepten die 20 minuten of minder duren. 
+  - foutmelding als je geen duur invoert 
+  - Aantal knoppen zijn veranderd in plaatjes waar je op kunt klikken ipv buttons. 
+  - De classes zijn verdeeld over mappen. 
+  
+  veranderd?
+  - je kunt ook zoeken naar de de duur van een gerecht. 
+  - plaatjes knoppen voor meer duidelijkheid.
+  - layout van een history item voor beter inzicht in het recept.
+  - classes zitten in mappen, voor een beter overzicht
+  
   
  
 
