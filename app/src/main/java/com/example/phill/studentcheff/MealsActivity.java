@@ -48,30 +48,13 @@ public class MealsActivity extends Activity implements MealsRequest.Callback{
 
     @Override
     public void gotMeals(final ArrayList<MealItem> meals) {
-        Log.d("gotmeals", "gotMeals: we zijn er " + meals);
 
         final MealAdapter adapter = new MealAdapter(this, meals);
         ListView listView = findViewById(R.id.MealsListView);
         listView.setAdapter(adapter);
-//
-//
-//        Log.d("gotmeals", "hhh" + searchlist);
-        // aparte classe maken voor the on item click listener
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
 
-            // when  clicked on item, go to recipe activity and so recipe
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                MealItem chooserecipe = (MealItem) parent.getItemAtPosition(position);
-                Intent choosen = new Intent(getApplicationContext(), RecipeActivity.class);
-                choosen.putExtra("id", chooserecipe.getId());
-                choosen.putExtra("picture", chooserecipe.getPicture());
 
-                // alle waardes moeten doorgegeven worden, dan hoeven ze alleen geplaatst te worden.
-                startActivity(choosen);
-                finish();
-            }
-        });
+        listView.setOnItemClickListener(new clicked());
 
         textBox = (SearchView) findViewById(R.id.editText);
         textBox.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
@@ -90,7 +73,20 @@ public class MealsActivity extends Activity implements MealsRequest.Callback{
 
     }
 
+    private class clicked implements AdapterView.OnItemClickListener{
 
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            MealItem chooserecipe = (MealItem) parent.getItemAtPosition(position);
+            Intent choosen = new Intent(getApplicationContext(), RecipeActivity.class);
+            choosen.putExtra("id", chooserecipe.getId());
+            choosen.putExtra("picture", chooserecipe.getPicture());
+
+            // alle waardes moeten doorgegeven worden, dan hoeven ze alleen geplaatst te worden.
+            startActivity(choosen);
+            finish();
+        }
+    }
 
     @Override
     public void gotMealsError(String message) {

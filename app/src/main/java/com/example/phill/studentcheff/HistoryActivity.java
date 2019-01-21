@@ -31,27 +31,11 @@ public class HistoryActivity extends AppCompatActivity {
 
         ListView history = findViewById(R.id.listviewhistory);
         history.setOnItemClickListener( new ToRecipe());
-        EditText textbox2 = findViewById(R.id.searchbox);
-
         db = EntryDatabase.getInstance(getApplicationContext());
 
         Cursor cursor = EntryDatabase.selectAll(db);
         adapter = new EntryAdapter(this, R.layout.history_item, cursor);
         history.setAdapter(adapter);
-
-//        textbox2.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-//            @Override
-//                public boolean onQueryTextSubmit(String newtext ) {
-//                    return false;
-//            }
-//
-//            @Override
-//            public boolean onQueryTextChange(String query) {
-//                Log.d("morgen", "onQueryTextChange: " + query + db.getWritableDatabase());
-////                adapter.getFilter().filter(query);
-//                return false;
-//            }
-//        });
 
     }
 
@@ -82,7 +66,6 @@ public class HistoryActivity extends AppCompatActivity {
             adapter = new EntryAdapter(this, R.layout.history_item, cursor);
             ListView history = findViewById(R.id.listviewhistory);
             history.setAdapter(adapter);
-            Log.d("Philline Leeeeg", "search: " + zoeken.toString());
 
         }
         else{
@@ -94,10 +77,6 @@ public class HistoryActivity extends AppCompatActivity {
             adapter = new EntryAdapter(this, R.layout.history_item, cursor);
             ListView history = findViewById(R.id.listviewhistory);
             history.setAdapter(adapter);
-
-            //  put in a new cursor for the updated data
-            Log.d("Philline", "search: " + zoeken.toString());
-//
 
         }
     }
