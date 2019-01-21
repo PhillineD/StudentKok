@@ -10,19 +10,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".StartActivity">
+        <activity android:name=".Activitys.StartActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".VActivity" />
-        <activity android:name=".MealsActivity" />
-        <activity android:name=".RecipeActivity" />
-        <activity android:name=".HistoryActivity" />
-        <activity android:name=".MeatActivity" />
-        <activity android:name=".VegaActivity" />
+        <activity android:name=".Activitys.VActivity" />
+        <activity android:name=".Activitys.MealsActivity" />
+        <activity android:name=".Activitys.RecipeActivity" />
+        <activity android:name=".Activitys.HistoryActivity" />
+        <activity android:name=".Activitys.MeatActivity" />
+        <activity android:name=".Activitys.VegaActivity" />
     </application>
 
 </manifest>

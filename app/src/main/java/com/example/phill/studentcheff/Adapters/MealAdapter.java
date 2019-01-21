@@ -1,19 +1,21 @@
-package com.example.phill.studentcheff;
+package com.example.phill.studentcheff.Adapters;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.phill.studentcheff.Extra.DownloadImageTask;
+import com.example.phill.studentcheff.Models.MealItem;
+import com.example.phill.studentcheff.R;
 
 import java.util.ArrayList;
 
@@ -87,8 +89,8 @@ public class MealAdapter extends BaseAdapter implements Filterable {
         protected FilterResults performFiltering(CharSequence constraint) {
             FilterResults results = new FilterResults();
             if (constraint != null && constraint.length() > 0) {
-                //CONSTARINT TO UPPER
-//                constraint = constraint.toString().toUpperCase();
+
+
                 ArrayList<MealItem> filters = new ArrayList<MealItem>();
                 Log.d("vandaag", "performFiltering: " + filterList.size()+ filterList.get(0).getitle() + constraint);
 

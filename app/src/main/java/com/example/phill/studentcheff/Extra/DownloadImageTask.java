@@ -1,4 +1,4 @@
-package com.example.phill.studentcheff;
+package com.example.phill.studentcheff.Extra;
 
 
 import android.graphics.Bitmap;
@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import java.io.InputStream;
 
 // code from https://medium.com/@crossphd/android-image-loading-from-a-string-url-6c8290b82c5e
-class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
+public class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
     ImageView bmImage;
     public DownloadImageTask(ImageView bmImage) {
         this.bmImage = bmImage;

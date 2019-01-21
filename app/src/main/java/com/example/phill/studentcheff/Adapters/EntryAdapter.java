@@ -1,20 +1,19 @@
-package com.example.phill.studentcheff;
+package com.example.phill.studentcheff.Adapters;
 
 import android.content.Context;
 import android.database.Cursor;
-import android.util.Log;
 import android.view.View;
-import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.ResourceCursorAdapter;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
+import com.example.phill.studentcheff.Extra.DownloadImageTask;
+import com.example.phill.studentcheff.R;
+
 
 public class EntryAdapter extends ResourceCursorAdapter implements Filterable{
-    //    CustomFilter filter;
     public EntryAdapter(Context context, int layout, Cursor cursor) {
         super(context, layout, cursor);
     }
@@ -35,14 +34,14 @@ public class EntryAdapter extends ResourceCursorAdapter implements Filterable{
         Float floatrating = cursor.getFloat(indexrating);
         rating.setRating(floatrating);
 
-//         set date
+        //  set date
         TextView history = view.findViewById(R.id.historydate);
         int indexdate = cursor.getColumnIndex("timestamp");
         String date = cursor.getString(indexdate);
         history.setText(date);
 
 
-//        // set picture
+        // set picture
         ImageView picture = view.findViewById(R.id.picturehistory);
         DownloadImageTask Image = new DownloadImageTask(picture);
         int indexpicture = cursor.getColumnIndex("picture");
@@ -50,33 +49,6 @@ public class EntryAdapter extends ResourceCursorAdapter implements Filterable{
         Image.execute(url);
 
     }
-//
-//    public Filter getFilter(){
-//
-//        if(filter == null)
-//        {
-//            filter=new CustomFilter();
-//            Log.d("in  get filter", "performFiltering: ");
-//        }
-//
-//        return filter;
-//
-//    }
-//
-//    class CustomFilter extends Filter {
-//
-//        @Override
-//        protected FilterResults performFiltering(CharSequence constraint) {
-//            return null;
-//        }
-//
-//        @Override
-//        protected void publishResults(CharSequence constraint, FilterResults results) {
-//
-//        }
-//    }
-
-
 
 
 }

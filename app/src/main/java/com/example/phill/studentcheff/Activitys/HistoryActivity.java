@@ -1,28 +1,25 @@
-package com.example.phill.studentcheff;
+package com.example.phill.studentcheff.Activitys;
 
 import android.content.Intent;
 import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.SearchView;
-import android.widget.TextView;
 
-import java.util.ArrayList;
+import com.example.phill.studentcheff.Adapters.EntryAdapter;
+import com.example.phill.studentcheff.Requests.EntryDatabase;
+import com.example.phill.studentcheff.R;
 
 public class HistoryActivity extends AppCompatActivity {
 
     private EntryDatabase db;
     private EntryAdapter adapter;
     String id;
-    ArrayList< String> listItem;
-    float stars;
+
+
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
@@ -93,6 +90,7 @@ public class HistoryActivity extends AppCompatActivity {
             intent.putExtra("id", idee);
             intent.putExtra("picture", url);
             startActivity(intent);
+            finish();
         }
     }
 

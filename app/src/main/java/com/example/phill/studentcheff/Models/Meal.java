@@ -1,19 +1,10 @@
-package com.example.phill.studentcheff;
+package com.example.phill.studentcheff.Models;
 
 public class Meal {
     private String id, Ingredients1, Instruction, Youtubelink, Picture,  title;
     private  String measure1, measure2, measure3, measure4, measure5, measure6, measure7, measure8;
     String Ingredients2, Ingredients3, Ingredients4, Ingredients5, Ingredients6, Ingredients7, Ingredients8;
     String Hint;
-
-
-    public String getHint() {
-        return Hint;
-    }
-
-    public void setHint(String hint) {
-        Hint = hint;
-    }
 
     public Meal(String id, String Ingredients1, String Instruction, String Youtubelink, String Picture, String title, String measure1,
                 String Ingredients2, String measure2,
@@ -53,10 +44,10 @@ public class Meal {
         return id;
     }
 
-
     public String getitle() {
         return title;
     }
+
     public String getMeasure1() {
         return measure1;
     }
@@ -89,11 +80,9 @@ public class Meal {
         return measure8;
     }
 
-
     public String getIngredients1() {
         return Ingredients1;
     }
-
 
     public String getIngredients2() {
         return Ingredients2;
@@ -123,9 +112,6 @@ public class Meal {
         return Ingredients8;
     }
 
-
-
-
     public String getInstruction() {
         return Instruction;
     }
@@ -136,6 +122,14 @@ public class Meal {
 
     public String getPicture() {
         return Picture;
+    }
+
+    public String getHint() {
+        return Hint;
+    }
+
+    public void setHint(String hint) {
+        Hint = hint;
     }
 
 }

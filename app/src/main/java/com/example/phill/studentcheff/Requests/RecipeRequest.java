@@ -1,27 +1,18 @@
-package com.example.phill.studentcheff;
+package com.example.phill.studentcheff.Requests;
 import android.content.Context;
-import android.content.Context;
-import android.content.Intent;
-import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.phill.studentcheff.Models.Meal;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
-
-
-import org.json.JSONObject;
-
-import javax.security.auth.callback.Callback;
 
 public class RecipeRequest implements Response.Listener<JSONObject>, Response.ErrorListener {
 
@@ -40,11 +31,9 @@ public class RecipeRequest implements Response.Listener<JSONObject>, Response.Er
     public void getRecipe(Callback activity, String id){
         this.activity = activity;
         RequestQueue queue = Volley.newRequestQueue(this.context);
-        Log.d("foutje", "onResponse: " + id);
 
         // create a JsonObjectRequest
         String url = "https://www.themealdb.com/api/json/v1/1/lookup.php?i="+ id;
-        Log.d("foutje", "onResponse: " + url);
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(url, null, this, this);
         queue.add(jsonObjectRequest);
     }
@@ -57,12 +46,11 @@ public class RecipeRequest implements Response.Listener<JSONObject>, Response.Er
     @Override
     public void onResponse(JSONObject response) {
         ArrayList<Meal> recipeview = new ArrayList<Meal>();
-        Log.d("gotmeals", "aaa");
+
         try {
             JSONArray meal = response.getJSONArray("meals");
 
             for(int i =0;i<meal.length();i++){
-                Log.d("gotmeals", "gotMeals: we zijn er "+ meal.get(i));
 
                 JSONObject mealitems = meal.getJSONObject(i);
 
@@ -94,14 +82,10 @@ public class RecipeRequest implements Response.Listener<JSONObject>, Response.Er
                 String ingredient8 = mealitems.getString("strIngredient8");
 
 
-                Log.d("meten", "onResponse: " + measure1);
-
                 // new Mealitem
                 Meal item = new Meal(id,ingredient1,instructions,youtube,picture, titlerecipe,
                         measure1,ingredient2 , measure2, ingredient3 , measure3, ingredient4 , measure4,
                         ingredient5 , measure5, ingredient6 , measure6, ingredient7 , measure7, ingredient8 , measure8, hit);
-
-                Log.d("gotmeals", "joejoe: we zijn er "+ item.getHint() + item.getitle() + item.getPicture() + item.getMeasure1());
                 recipeview.add(item);
             }
 

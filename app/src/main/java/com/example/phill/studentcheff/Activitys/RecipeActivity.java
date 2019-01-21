@@ -1,4 +1,4 @@
-package com.example.phill.studentcheff;
+package com.example.phill.studentcheff.Activitys;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -6,17 +6,21 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.phill.studentcheff.Extra.DownloadImageTask;
+import com.example.phill.studentcheff.Requests.EntryDatabase;
+import com.example.phill.studentcheff.Models.Meal;
+import com.example.phill.studentcheff.R;
+import com.example.phill.studentcheff.Requests.RecipeRequest;
+
 import java.util.ArrayList;
 
 public class RecipeActivity extends AppCompatActivity implements RecipeRequest.Callback {
-    ArrayList<Meal> meals;
+
     String url;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +31,6 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         Intent intent = getIntent();
         String id = intent.getStringExtra("id");
         String picture = intent.getStringExtra("picture");
-        Log.d("de id", "onCreate: " + id);
         RecipeRequest ArrayAdapter = new RecipeRequest(this);
         ArrayAdapter.getRecipe(this, id);
     }
@@ -45,7 +48,6 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         float stars = rating.getRating();
 
         ImageView foto  = findViewById(R.id.picturerecipe);
-        Log.d("jeejj", "plaatje laden1" + picture);
 
         // get title
         TextView titlerecipe = findViewById(R.id.viewRecipeTitle);
@@ -60,7 +62,6 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         in.putExtra("rating", stars);
         in.putExtra("hint", hinty);
 
-        Log.d("rating", "clicktostart: " +  rating.getRating() + "jaa" +  rating.getNumStars() + hinty );
 
         // insert into database
         EntryDatabase.getInstance(this).insert(id,titlehistory, stars, picture, hinty);
@@ -152,8 +153,6 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         }
 
 
-
-//        Log.d("meaures", "gotMeals: we zijn er "+stukje.getMeasure6()+ stukje.getMeasure7() );
         DownloadImageTask Image = new DownloadImageTask(picture);
         Image.execute(stukje.getPicture());
 
@@ -162,13 +161,10 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
 
     @Override
     public void gotRecipeError(String message) {
-        Log.d("gotmealserror", "gotMeals: we zijn er dus niet "+ message);
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 
     public void clickvideo(View view) {
-        // moet nog een try want als je geen verbinding hebt dan moet je daargan een melding krijgen
         startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse(url)));
-        Log.i("Video", "Video Playing....");
     }
 }

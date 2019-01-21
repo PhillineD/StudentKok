@@ -1,4 +1,4 @@
-package com.example.phill.studentcheff;
+package com.example.phill.studentcheff.Models;
 
 public class MealItem {
     private String id, Picture,  title;

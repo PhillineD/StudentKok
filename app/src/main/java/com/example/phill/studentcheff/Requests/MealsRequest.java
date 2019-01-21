@@ -1,29 +1,19 @@
-package com.example.phill.studentcheff;
+package com.example.phill.studentcheff.Requests;
 
 import android.content.Context;
-import android.content.Context;
-import android.content.Intent;
-import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.phill.studentcheff.Models.MealItem;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
-
-
-import org.json.JSONObject;
-
-import javax.security.auth.callback.Callback;
 
 public class MealsRequest implements Response.Listener<JSONObject>, Response.ErrorListener{
 
@@ -44,10 +34,7 @@ public class MealsRequest implements Response.Listener<JSONObject>, Response.Err
     public void getMeals(Callback activity, String message){
         this.activity =activity;
         RequestQueue queue = Volley.newRequestQueue(this.context);
-        Log.d("foutje", "onResponse: " + message);
-        // create a JsonObjectRequest
         String url = "https://www.themealdb.com/api/json/v1/1/filter.php?c="+ message;
-        Log.d("foutje", "onResponse: " + url);
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(url, null, this, this);
         queue.add(jsonObjectRequest);
 
@@ -61,12 +48,10 @@ public class MealsRequest implements Response.Listener<JSONObject>, Response.Err
     @Override
     public void onResponse(JSONObject response) {
         ArrayList<MealItem> mealsview = new ArrayList<MealItem>();
-        Log.d("gotmeals", "aaa");
         try {
             JSONArray meal = response.getJSONArray("meals");
 
             for(int i =0;i<meal.length();i++){
-                Log.d("gotmeals", "gotMeals: we zijn er "+ meal.get(i));
 
                 JSONObject mealitems = meal.getJSONObject(i);
 
@@ -77,8 +62,6 @@ public class MealsRequest implements Response.Listener<JSONObject>, Response.Err
 
                 // new Mealitem
                 MealItem item = new MealItem(id,picture,titlerecipe);
-
-                Log.d("gotmeals", "joejoe: we zijn er "+ item.getId() + item.getitle() + item.getPicture());
                 mealsview.add(item);
             }
 

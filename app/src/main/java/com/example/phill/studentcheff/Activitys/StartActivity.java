@@ -1,9 +1,11 @@
-package com.example.phill.studentcheff;
+package com.example.phill.studentcheff.Activitys;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.phill.studentcheff.R;
 
 public class StartActivity extends AppCompatActivity {
 
