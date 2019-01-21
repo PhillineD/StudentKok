@@ -7,7 +7,7 @@
     android:background="@drawable/achtergrondfood">
 
     <LinearLayout
-        android:layout_width="335dp"
+        android:layout_width="360dp"
         android:layout_height="match_parent"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
@@ -307,6 +307,27 @@
                     android:foregroundGravity="center"
                     android:gravity="center"
                     android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:gravity="center"
+                    android:text="Time cooked in minutes"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/time"
+                    android:layout_width="119dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="20"
+                    android:inputType="time"
+                    android:textSize="12sp" />
 
                 <TextView
                     android:id="@+id/textView6"

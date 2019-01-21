@@ -17,6 +17,7 @@ import com.example.phill.studentcheff.Models.Meal;
 import com.example.phill.studentcheff.R;
 import com.example.phill.studentcheff.Requests.RecipeRequest;
 
+import java.sql.Time;
 import java.util.ArrayList;
 
 public class RecipeActivity extends AppCompatActivity implements RecipeRequest.Callback {
@@ -57,17 +58,32 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         TextView sethint = findViewById(R.id.hint);
         String hinty = sethint.getText().toString();
 
-        Intent in = new Intent(getApplicationContext(), StartActivity.class);
-        in.putExtra("id",id);
-        in.putExtra("rating", stars);
-        in.putExtra("hint", hinty);
+        // get time
+        TextView timetext = findViewById(R.id.time);
+        String time = timetext.getText().toString();
+        if (! time.equals("")) {
+            Log.d("duurt te lang", "NIET  LEEEEGGG1")   ;
+            float constant = new Float(time);
+
+            Log.d("duurt te lang", "clicktostart: " + constant)   ;
+
+            Intent in = new Intent(getApplicationContext(), StartActivity.class);
+            in.putExtra("id",id);
+            in.putExtra("rating", stars);
+            in.putExtra("hint", hinty);
 
 
-        // insert into database
-        EntryDatabase.getInstance(this).insert(id,titlehistory, stars, picture, hinty);
+            // insert into database
+            EntryDatabase.getInstance(this).insert(id,titlehistory, stars, picture, hinty, constant);
 
-        startActivity(in);
-        finish();
+            startActivity(in);
+            finish();
+
+
+        }
+        else{
+            Log.d("duurt te lang", "NIET  LEEEEGGG")   ;
+        }
     }
 
     @Override

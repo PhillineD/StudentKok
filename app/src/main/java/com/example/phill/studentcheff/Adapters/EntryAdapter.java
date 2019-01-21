@@ -40,13 +40,18 @@ public class EntryAdapter extends ResourceCursorAdapter implements Filterable{
         String date = cursor.getString(indexdate);
         history.setText(date);
 
-
         // set picture
         ImageView picture = view.findViewById(R.id.picturehistory);
         DownloadImageTask Image = new DownloadImageTask(picture);
         int indexpicture = cursor.getColumnIndex("picture");
         String url = cursor.getString(indexpicture);
         Image.execute(url);
+
+        // set cooks  in time
+        TextView time = view.findViewById(R.id.cookstime);
+        int indextime = cursor.getColumnIndex("time");
+        Float timecook = cursor.getFloat( indextime);
+        time.setText(timecook.toString());
 
     }
 
