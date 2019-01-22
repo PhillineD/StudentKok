@@ -1,3 +1,14 @@
+/**
+ * Request for meals form: The MealDatabase.
+ *
+ *
+ * @author      Philline Dikker
+ * @version
+ *
+ *
+ * This work complies with the JMU Honor Code.
+ */
+
 package com.example.phill.studentcheff.Requests;
 
 import android.content.Context;
@@ -31,6 +42,13 @@ public class MealsRequest implements Response.Listener<JSONObject>, Response.Err
         this.context = context;
     }
 
+
+    /**
+     * Request for meals with right categorie.
+     *
+     * @param activity   The right Activity.
+     * @param message    the chosen categorie.
+     */
     public void getMeals(Callback activity, String message){
         this.activity =activity;
         RequestQueue queue = Volley.newRequestQueue(this.context);
@@ -40,11 +58,22 @@ public class MealsRequest implements Response.Listener<JSONObject>, Response.Err
 
     }
 
+    /**
+     * Send error message if requst went wrong.
+     *
+     * @param error  Error why request went wrong.
+     */
     @Override
     public void onErrorResponse(VolleyError error) {
         this.activity.gotMealsError(error.getMessage());
     }
 
+
+    /**
+     * Get meal items from API.
+     *
+     * @param response Response from API.
+     */
     @Override
     public void onResponse(JSONObject response) {
         ArrayList<MealItem> mealsview = new ArrayList<MealItem>();

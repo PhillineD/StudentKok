@@ -1,3 +1,14 @@
+/**
+ * Classes with meal items, use for RecipeRequest.
+ *
+ *
+ * @author      Philline Dikker
+ * @version
+ *
+ *
+ * This work complies with the JMU Honor Code.
+ */
+
 package com.example.phill.studentcheff.Models;
 
 public class Meal {

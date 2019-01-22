@@ -1,3 +1,14 @@
+/**
+ * Make database for history, select items, insert items and upgrade.
+ *
+ *
+ * @author      Philline Dikker
+ * @version
+ *
+ *
+ * This work complies with the JMU Honor Code.
+ */
+
 package com.example.phill.studentcheff.Requests;
 
 import android.content.ContentValues;
@@ -7,7 +18,6 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-import java.sql.Time;
 
 public class EntryDatabase extends SQLiteOpenHelper {
 
@@ -25,6 +35,13 @@ public class EntryDatabase extends SQLiteOpenHelper {
 
     }
 
+
+    /**
+     * Get instance from database.
+     *
+     * @param context    Description of the first parameter
+     * @return          Description of what is returned
+     */
     public static EntryDatabase getInstance(Context context){
 
         if(EntryDatabase.instance == null){
@@ -34,26 +51,25 @@ public class EntryDatabase extends SQLiteOpenHelper {
 
     }
 
-    @Override
-    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-
-        // drops the entries table
-        db.execSQL("DROP TABLE IF EXISTS "+ "Studentchef");
-
-        String sort = "SELECT * FROM "+" Studentchef "+" ORDER BY "+"rating "+"DESC";
-        db.execSQL(sort);
-
-        // recreates it by calling
-        onCreate(db );
-    }
-
-    // select all info from database
+    /**
+     * Select all info from database, order by rating.
+     *
+     * @param instance    Instance from the history database.
+     * @return  database
+     */
     public static Cursor selectAll(EntryDatabase instance){
         SQLiteDatabase database = instance.getWritableDatabase();
         return database.rawQuery("SELECT * FROM "+ "Studentchef "+" ORDER BY "+"rating "+
                 "DESC" , null );
     }
 
+    /**
+     * Filter history if user search.
+     *
+     * @param instance    Instance from the history database.
+     * @param woord         Serach on woord typed in by user.
+     * @return  database
+     */
     public static  Cursor filterData (EntryDatabase instance, String woord){
         SQLiteDatabase database = instance.getWritableDatabase();
         Log.d("loggen ", "filteren:" + woord);
@@ -63,7 +79,17 @@ public class EntryDatabase extends SQLiteOpenHelper {
 
     }
 
-    // method to insert a history item
+
+    /**
+     * Method to insert a history item.
+     *
+     * @param id    Instance from the history database.
+     * @param title        Serach on woord typed in by user.
+     * @param rating       given rating for recipe
+     * @param picture       Picture from recipe.
+     * @param Catergorie    The caterogie from recipe.
+     * @param time          Cooked time for recipe.
+     */
     public void insert(String id, String title, Float rating, String picture, String Catergorie, Float time){
         // open a connection to the database
         SQLiteDatabase db = instance.getWritableDatabase();
@@ -89,6 +115,26 @@ public class EntryDatabase extends SQLiteOpenHelper {
         // call insert and add the right parameters
         db.insert("Studentchef", null, contentvalue);
 
+    }
+
+    /**
+     * Upgrade History database.
+     *
+     * @param db   ``       History database.
+     * @param oldVersion    Oldversion from database.
+     * @param newVersion    NewVersion from database.
+     */
+    @Override
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+
+        // drops the entries table
+        db.execSQL("DROP TABLE IF EXISTS "+ "Studentchef");
+
+        String sort = "SELECT * FROM "+" Studentchef "+" ORDER BY "+"rating "+"DESC";
+        db.execSQL(sort);
+
+        // recreates it by calling
+        onCreate(db );
     }
 
 }

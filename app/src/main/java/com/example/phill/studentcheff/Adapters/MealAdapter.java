@@ -1,9 +1,20 @@
+/**
+ * Fill the meals items in the listview.
+ *
+ *
+ * @author      Philline Dikker
+ * @version
+ *
+ *
+ * This work complies with the JMU Honor Code.
+ */
+
+
 package com.example.phill.studentcheff.Adapters;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,51 +44,10 @@ public class MealAdapter extends BaseAdapter implements Filterable {
         this.filterList=meals;
     }
 
-    @Override
-    public int getCount() {
-        return meals.size();
-    }
-
-    @Override
-    public Object getItem(int position) {
-        return meals.get(position);
-    }
-
-    @Override
-    public long getItemId(int position) {
-        return meals.indexOf(getItem(position));
-    }
-
-    @NonNull
-    @Override
-    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        if(convertView == null) {
-            LayoutInflater inflater =(LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = inflater.inflate(R.layout.meals_item, parent, false);
-        }
-
-        ImageView picture = convertView.findViewById(R.id.Picture);
-        TextView recipe = convertView.findViewById(R.id.Recipe);
-        recipe.setText(meals.get(position).getitle());
-
-        DownloadImageTask Image = new DownloadImageTask(picture);
-        Image.execute(meals.get(position).getPicture());
-
-        return convertView;
-
-    }
-
-    public Filter getFilter(){
-
-        if(filter == null)
-        {
-            filter=new CustomFilter();
-        }
-
-        return filter;
-
-    }
-
+    /**
+     * Inner class to filter the meals on what is typed.
+     *
+     */
     class CustomFilter extends Filter {
 
         @Override
@@ -115,5 +85,65 @@ public class MealAdapter extends BaseAdapter implements Filterable {
             notifyDataSetChanged();
         }
     }
+
+    @Override
+    public int getCount() {
+        return meals.size();
+    }
+
+    @Override
+    public Object getItem(int position) {
+        return meals.get(position);
+    }
+
+    @Override
+    public long getItemId(int position) {
+        return meals.indexOf(getItem(position));
+    }
+
+    /**
+     * Dependent on view set meal.
+     *
+     * @param position      Position from view.
+     * @param convertView    View from layout.
+     * @param parent
+     * @return  convertView
+     *
+     **/
+    @NonNull
+    @Override
+    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+        if(convertView == null) {
+            LayoutInflater inflater =(LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            convertView = inflater.inflate(R.layout.meals_item, parent, false);
+        }
+
+        ImageView picture = convertView.findViewById(R.id.Picture);
+        TextView recipe = convertView.findViewById(R.id.Recipe);
+        recipe.setText(meals.get(position).getitle());
+
+        DownloadImageTask Image = new DownloadImageTask(picture);
+        Image.execute(meals.get(position).getPicture());
+
+        return convertView;
+
+    }
+
+    /**
+     * Make custom filter if something is typed.
+     *
+     **/
+    public Filter getFilter(){
+
+        if(filter == null)
+        {
+            filter=new CustomFilter();
+        }
+
+        return filter;
+
+    }
+
+
 
 }

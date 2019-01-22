@@ -1,3 +1,15 @@
+/**
+ * Navigation class, choose between new or history.
+ *
+ *
+ * @author      Philline Dikker
+ * @version
+ *
+ *
+ * This work complies with the JMU Honor Code.
+ */
+
+
 package com.example.phill.studentcheff.Activitys;
 
 import android.content.Intent;
@@ -15,12 +27,21 @@ public class StartActivity extends AppCompatActivity {
         setContentView(R.layout.start_activity);
     }
 
+    /**
+     * Navigation to Vactivity.
+     *
+     * @param view    Represents a view of the button "Try something new".
+     */
     public void clickNew(View view) {
         Intent intent = new Intent(getApplicationContext(), VActivity.class);
         startActivity(intent);
     }
 
-
+    /**
+     * Navigation to History.
+     *
+     * @param view    Represents a view of the button "History" .
+     */
     public void clickHistory(View view) {
         Intent intent = new Intent(getApplicationContext(), HistoryActivity.class);
         startActivity(intent);

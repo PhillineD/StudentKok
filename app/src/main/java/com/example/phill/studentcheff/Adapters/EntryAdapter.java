@@ -1,3 +1,14 @@
+/**
+ * Fill the history items in the listview.
+ *
+ *
+ * @author      Philline Dikker
+ * @version
+ *
+ *
+ * This work complies with the JMU Honor Code.
+ */
+
 package com.example.phill.studentcheff.Adapters;
 
 import android.content.Context;
@@ -19,6 +30,13 @@ public class EntryAdapter extends ResourceCursorAdapter implements Filterable{
     }
 
 
+    /**
+     * Set history item in listview.
+     *
+     * @param view    Description of the first parameter
+     * @param context    Description of the second parameter
+     * @param cursor    Description of the second parameter
+     */
     @Override
     public void bindView(View view, Context context, Cursor cursor) {
 

@@ -1,3 +1,14 @@
+/**
+ * Get the recipe from a request, set the recipe.
+ *
+ *
+ * @author      Philline Dikker
+ * @version
+ *
+ *
+ * This work complies with the JMU Honor Code.
+ */
+
 package com.example.phill.studentcheff.Activitys;
 
 import android.content.Intent;
@@ -36,6 +47,20 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         ArrayAdapter.getRecipe(this, id);
     }
 
+    /**
+     * Open youtube with recipe video.
+     *
+     * @param view    Represents a view of clicked item.
+     */
+    public void clickVideo(View view) {
+        startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse(url)));
+    }
+
+    /**
+     * Finished recipe, go to start and parse information.
+     *
+     * @param view    Represents a view of clicked item.
+     */
     public void clicktostart(View view) {
 
         Intent intent = getIntent();
@@ -81,6 +106,11 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         }
     }
 
+    /**
+     * Set recipe.
+     *
+     * @param  "ArrayList<Meal> meals"  List of recipe items.
+     */
     @Override
     public void gotRecipe(ArrayList<Meal> meals) {
 
@@ -243,12 +273,15 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         url = stukje.getYoutubelink();
     }
 
+    /**
+     * Error message, recipe request went wrong.
+     *
+     * @param message    Error- message.
+     */
     @Override
     public void gotRecipeError(String message) {
         Toast.makeText(this, "Please try again", Toast.LENGTH_SHORT).show();
     }
 
-    public void clickVideo(View view) {
-        startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse(url)));
-    }
+
 }

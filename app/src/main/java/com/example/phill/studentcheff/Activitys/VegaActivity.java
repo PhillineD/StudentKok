@@ -1,3 +1,15 @@
+/**
+ * Navigation class, choose between Vega or Vegan.
+ *
+ *
+ * @author      Philline Dikker
+ * @version
+ *
+ *
+ * This work complies with the JMU Honor Code.
+ */
+
+
 package com.example.phill.studentcheff.Activitys;
 
 import android.content.Intent;
@@ -14,12 +26,24 @@ public class VegaActivity extends AppCompatActivity {
         setContentView(R.layout.vegan_activity);
     }
 
+
+    /**
+     * Navigation to MealsActivity, parse the categorie.
+     *
+     * @param view    Represents a view of the button "Vega".
+     */
     public void clickVega(View view) {
         Intent intent = new Intent(getApplicationContext(), MealsActivity.class);
         intent.putExtra("categorie", "Vegetarian");
         startActivity(intent);
     }
 
+
+    /**
+     * Navigation to MealsActivity, parse the categorie.
+     *
+     * @param view    Represents a view of the button "Vegan".
+     */
     public void clickVegan(View view) {
         Intent intent = new Intent(getApplicationContext(), MealsActivity.class);
         intent.putExtra("categorie", "Vegan");

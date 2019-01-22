@@ -1,3 +1,15 @@
+/**
+ * Navigation class, choose the kinds of meat or choose random.
+ *
+ *
+ * @author      Philline Dikker
+ * @version
+ *
+ *
+ * This work complies with the JMU Honor Code.
+ */
+
+
 package com.example.phill.studentcheff.Activitys;
 
 import android.content.Intent;
@@ -19,6 +31,11 @@ public class MeatActivity extends AppCompatActivity {
         setContentView(R.layout.meat_activity);
     }
 
+    /**
+     * Navigation to Mealsactivity, parse the categorie.
+     *
+     * @param view    Represents a view of the button beef.
+     */
     public void clickBeef(View view) {
         Intent intent = new Intent(getApplicationContext(), MealsActivity.class);
         intent.putExtra("categorie", "Beef");
@@ -26,6 +43,11 @@ public class MeatActivity extends AppCompatActivity {
         finish();
     }
 
+    /**
+     * Navigation to Mealsactivity, parse the categorie.
+     *
+     * @param view    Represents a view of the button chicken.
+     */
     public void clickChicken(View view) {
         Intent intent = new Intent(getApplicationContext(), MealsActivity.class);
         intent.putExtra("categorie", "Chicken");
@@ -33,6 +55,11 @@ public class MeatActivity extends AppCompatActivity {
         finish();
     }
 
+    /**
+     * Navigation to Mealsactivity, parse the categorie.
+     *
+     * @param view    Represents a view of the button lam.
+     */
     public void clickLam(View view) {
         Intent intent = new Intent(getApplicationContext(), MealsActivity.class);
         intent.putExtra("categorie", "Lamb");
@@ -41,6 +68,11 @@ public class MeatActivity extends AppCompatActivity {
     }
 
 
+    /**
+     * Navigation to Mealsactivity, parse the categorie.
+     *
+     * @param view    Represents a view of the button pork.
+     */
     public void clickPork(View view) {
         Intent intent = new Intent(getApplicationContext(), MealsActivity.class);
         intent.putExtra("categorie", "Pork");
@@ -48,7 +80,11 @@ public class MeatActivity extends AppCompatActivity {
         finish();
     }
 
-
+    /**
+     * Navigation to a random activity, parse the categorie.
+     *
+     * @param view    Represents a view of the button random.
+     */
     public void randomClick(View view) {
         List<String> givenList = Arrays.asList("Beef", "Chicken", "Lamb", "Pork");
         Random rand = new Random();

@@ -1,3 +1,15 @@
+/**
+ * Get meals from meals request, set them, search in them and click on them.
+ *
+ *
+ * @author      Philline Dikker
+ * @version
+ *
+ *
+ * This work complies with the JMU Honor Code.
+ */
+
+
 package com.example.phill.studentcheff.Activitys;
 
 import android.app.Activity;
@@ -31,6 +43,29 @@ public class MealsActivity extends Activity implements MealsRequest.Callback{
 
     }
 
+    /**
+     * Go the recipe if clicked on a meal item.
+     *
+     */
+    private class Clicked implements AdapterView.OnItemClickListener{
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            MealItem chooserecipe = (MealItem) parent.getItemAtPosition(position);
+            Intent choosen = new Intent(getApplicationContext(), RecipeActivity.class);
+            choosen.putExtra("id", chooserecipe.getId());
+            choosen.putExtra("picture", chooserecipe.getPicture());
+            startActivity(choosen);
+            finish();
+        }
+    }
+
+
+    /**
+     * Set meals and  set on query listener.
+     *
+     * @param  "ArrayList<MealItem> meals"  List of meal items.
+     * @return  false
+     */
     @Override
     public void gotMeals(final ArrayList<MealItem> meals) {
 
@@ -55,19 +90,11 @@ public class MealsActivity extends Activity implements MealsRequest.Callback{
 
     }
 
-    private class Clicked implements AdapterView.OnItemClickListener{
-
-        @Override
-        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-            MealItem chooserecipe = (MealItem) parent.getItemAtPosition(position);
-            Intent choosen = new Intent(getApplicationContext(), RecipeActivity.class);
-            choosen.putExtra("id", chooserecipe.getId());
-            choosen.putExtra("picture", chooserecipe.getPicture());
-            startActivity(choosen);
-            finish();
-        }
-    }
-
+    /**
+     * Error message, meals request went wrong.
+     *
+     * @param message    Error- message.
+     */
     @Override
     public void gotMealsError(String message) {
         Toast.makeText(this, "Something went wrong, try again", Toast.LENGTH_SHORT).show();

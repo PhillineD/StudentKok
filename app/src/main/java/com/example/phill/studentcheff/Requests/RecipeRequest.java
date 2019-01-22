@@ -1,3 +1,14 @@
+/**
+ * Request for recipe form: The MealDatabase.
+ *
+ *
+ * @author      Philline Dikker
+ * @version
+ *
+ *
+ * This work complies with the JMU Honor Code.
+ */
+
 package com.example.phill.studentcheff.Requests;
 import android.content.Context;
 import android.util.Log;
@@ -20,15 +31,21 @@ public class RecipeRequest implements Response.Listener<JSONObject>, Response.Er
     private Callback activity;
     private Context context;
 
+    public RecipeRequest(Context context){
+        this.context = context;
+    }
+
     public interface Callback{
         void gotRecipe(ArrayList<Meal> meals);
         void gotRecipeError(String message);
     }
 
-    public RecipeRequest(Context context){
-        this.context = context;
-    }
-
+    /**
+     * Request for recipe with right id.
+     *
+     * @param activity   The right Activity.
+     * @param id        the chosen recipe has an id.
+     */
     public void getRecipe(Callback activity, String id){
         this.activity = activity;
         RequestQueue queue = Volley.newRequestQueue(this.context);
@@ -39,11 +56,24 @@ public class RecipeRequest implements Response.Listener<JSONObject>, Response.Er
         queue.add(jsonObjectRequest);
     }
 
+
+    /**
+     * Send error message if requst went wrong.
+     *
+     * @param error  Error why request went wrong.
+     */
     @Override
     public void onErrorResponse(VolleyError error) {
         this.activity.gotRecipeError(error.getMessage());
     }
 
+
+
+    /**
+     * Get recipe items from API.
+     *
+     * @param response Response from API.
+     */
     @Override
     public void onResponse(JSONObject response) {
         ArrayList<Meal> recipeview = new ArrayList<Meal>();

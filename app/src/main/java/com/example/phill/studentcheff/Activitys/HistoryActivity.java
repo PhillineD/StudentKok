@@ -1,3 +1,14 @@
+/**
+ * Get the history items form database, search in items and click on them to go to recipe.
+ *
+ *
+ * @author      Philline Dikker
+ * @version
+ *
+ *
+ * This work complies with the JMU Honor Code.
+ */
+
 package com.example.phill.studentcheff.Activitys;
 
 import android.content.Intent;
@@ -18,7 +29,6 @@ public class HistoryActivity extends AppCompatActivity {
     private EntryDatabase db;
     private EntryAdapter adapter;
 
-
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,22 +44,19 @@ public class HistoryActivity extends AppCompatActivity {
 
     }
 
-    // method to update every time we save something
-    public void updateData(){
-
-        // get new cursor
-        Cursor ncursor = EntryDatabase.selectAll(db);
-
-        //  put in a new cursor for the updated data
-        adapter.swapCursor(ncursor);
-    }
-
+    /**
+     * This is where the description of the method goes.
+     */
     protected void onResume(){
         super.onResume();
         updateData();
     }
 
-    // filter adapter
+    /**
+     * Search in history.
+     *
+     * @param view    Represents a view of the history.
+     */
     public void search(View view) {
 
         EditText zoeken = findViewById(R.id.searchbox);
@@ -76,6 +83,17 @@ public class HistoryActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * This is where the description of the method goes.
+     */
+    public void updateData(){
+
+        // get new cursor
+        Cursor ncursor = EntryDatabase.selectAll(db);
+
+        //  put in a new cursor for the updated data
+        adapter.swapCursor(ncursor);
+    }
 
     private class ToRecipe implements AdapterView.OnItemClickListener{
 

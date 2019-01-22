@@ -1,3 +1,14 @@
+/**
+ * Navigation class choose between meat, fish, vega or random.
+ *
+ *
+ * @author      Philline Dikker
+ * @version
+ *
+ *
+ * This work complies with the JMU Honor Code.
+ */
+
 package com.example.phill.studentcheff.Activitys;
 
 import android.content.Intent;
@@ -18,6 +29,12 @@ public class VActivity extends AppCompatActivity {
         setContentView(R.layout.v_activity);
     }
 
+
+    /**
+     * Navigation to MeatActivity, parse the categorie.
+     *
+     * @param view    Represents a view of the button "Meat".
+     */
     public void clickMeat(View view) {
         Intent intent = new Intent(getApplicationContext(), MeatActivity.class);
         intent.putExtra("categorie", "meat");
@@ -25,6 +42,11 @@ public class VActivity extends AppCompatActivity {
         finish();
     }
 
+    /**
+     * Navigation to MealsActivity, parse the categorie.
+     *
+     * @param view    Represents a view of the button "Fish".
+     */
     public void clickFish(View view) {
         Intent intent = new Intent(getApplicationContext(), MealsActivity.class);
         intent.putExtra("categorie", "seafood");
@@ -32,6 +54,11 @@ public class VActivity extends AppCompatActivity {
         finish();
     }
 
+    /**
+     * Navigation to VegaActivity, parse the categorie.
+     *
+     * @param view    Represents a view of the button "Vega".
+     */
     public void clickVega(View view) {
         Intent intent = new Intent(getApplicationContext(), VegaActivity.class);
         intent.putExtra("categorie", "vega");
@@ -39,6 +66,11 @@ public class VActivity extends AppCompatActivity {
         finish();
     }
 
+    /**
+     * Navigation to random Activity, parse the categorie.
+     *
+     * @param view    Represents a view of the button "Random".
+     */
     public void randomV(View view) {
         List<String> givenList = Arrays.asList("meat", "seafood", "vega");
         Random rand = new Random();
