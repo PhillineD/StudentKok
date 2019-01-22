@@ -83,7 +83,7 @@ wat heb ik gedaan?
   wat heb ik gedaan ? 
   -  je kunt nu bij het maken van het recept aangeven hoe lang je erover gedaan hebt
   - je kunt nu zoeken in history naar een bepaalde duur. Bijvoorbeeld: we willen max 20 minuten besteden aan het koken van dit recept, geeft hij alle recepten die 20 minuten of minder duren. 
-  - foutmelding als je geen duur invoert 
+  - foutmelding als je geen duur of rating invoert 
   - Aantal knoppen zijn veranderd in plaatjes waar je op kunt klikken ipv buttons. 
   - De classes zijn verdeeld over mappen. 
   - apparte classes voor klik events
@@ -93,6 +93,17 @@ wat heb ik gedaan?
   - plaatjes knoppen voor meer duidelijkheid.
   - layout van een history item voor beter inzicht in het recept.
   - classes zitten in mappen, voor een beter overzicht
+  
+  # day 9 
+  wat heb ik gedaan?
+  - alle documenten aangepast op de juist style
+  - layout van history aangepast
+  - extra ruimte voor ingredienten
+  
+  veranderd?
+  - tijd dat je over je gerecht hebt gedaan is nu een interger. 
+  - het aantal vakjes voor ingredienten is nu groter geworden omdat sommige gerechten meer dan 8 ingredienten hebben. 
+  - check of het wel dat aantal ingeredienten heeft anders geeft hij is de app NULL maar nu word dat vakje leeg 
   
   
  
