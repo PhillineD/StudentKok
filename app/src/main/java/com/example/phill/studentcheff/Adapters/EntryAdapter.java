@@ -51,7 +51,9 @@ public class EntryAdapter extends ResourceCursorAdapter implements Filterable{
         TextView time = view.findViewById(R.id.cookstime);
         int indextime = cursor.getColumnIndex("time");
         Float timecook = cursor.getFloat( indextime);
-        time.setText(timecook.toString());
+        int timecooking = timecook.intValue();
+        String cooked = Integer.toString(timecooking);
+        time.setText(cooked);
 
     }
 
