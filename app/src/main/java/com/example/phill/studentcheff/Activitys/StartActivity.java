@@ -1,5 +1,5 @@
 /**
- * Navigation class, choose between new or history.
+ * Navigation class, choose between new or history or give information.
  *
  *
  * @author      Philline Dikker
@@ -12,7 +12,6 @@
 
 package com.example.phill.studentcheff.Activitys;
 
-import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -53,8 +52,14 @@ public class StartActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    /**
+     * Give a pop up with information.
+     *
+     * @param view    Represents a view of the i picture.
+     */
+    public void informationClick(View view) {
 
-    public void informationClick(View view) {// inflate the layout of the popup window
+        // inflate the layout of the popup window
         LayoutInflater inflater = (LayoutInflater)
                 getSystemService(LAYOUT_INFLATER_SERVICE);
         View popupView = inflater.inflate(R.layout.popup_history, null);
@@ -62,11 +67,12 @@ public class StartActivity extends AppCompatActivity {
         // create the popup window
         int width = LinearLayout.LayoutParams.WRAP_CONTENT;
         int height = LinearLayout.LayoutParams.WRAP_CONTENT;
-        boolean focusable = true; // lets taps outside the popup also dismiss it
+        boolean focusable = true;
+
+        // lets taps outside the popup also dismiss it
         final PopupWindow popupWindow = new PopupWindow(popupView, width, height, focusable);
 
         // show the popup window
-        // which view you pass in doesn't matter, it is only used for the window tolken
         popupWindow.showAtLocation(view, Gravity.CENTER, 0, 0);
 
         // dismiss the popup window when touched
