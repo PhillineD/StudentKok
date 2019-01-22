@@ -99,11 +99,13 @@ wat heb ik gedaan?
   - alle documenten aangepast op de juist style
   - layout van history aangepast
   - extra ruimte voor ingredienten
+  - i knopje toevoegd met uitleg van de app.
   
   veranderd?
   - tijd dat je over je gerecht hebt gedaan is nu een interger. 
   - het aantal vakjes voor ingredienten is nu groter geworden omdat sommige gerechten meer dan 8 ingredienten hebben. 
   - check of het wel dat aantal ingeredienten heeft anders geeft hij is de app NULL maar nu word dat vakje leeg 
+  - op het beginscherm staat nu een i knopje, als je hierop klikt komt er een pop upje met uitleg van de app. Dit geeft een duidelijker beeld wat de app kan. 
   
   
  
