@@ -77,11 +77,12 @@ public class RecipeRequest implements Response.Listener<JSONObject>, Response.Er
     @Override
     public void onResponse(JSONObject response) {
         ArrayList<Meal> recipeview = new ArrayList<Meal>();
+        int i;
 
         try {
             JSONArray meal = response.getJSONArray("meals");
 
-            for(int i =0;i<meal.length();i++){
+            for(i =0;i<meal.length();i++){
 
                 JSONObject mealitems = meal.getJSONObject(i);
 
@@ -126,7 +127,6 @@ public class RecipeRequest implements Response.Listener<JSONObject>, Response.Er
                 String ingredient15 = mealitems.getString("strIngredient15");
 
 
-                Log.d("hallo", "onResponse: " + ingredient11 + measure12);
                 // new Mealitem
                 Meal item = new Meal(id,ingredient1,instructions,youtube,picture, titlerecipe,
                         measure1,ingredient2 , measure2, ingredient3 , measure3, ingredient4 , measure4,

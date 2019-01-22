@@ -59,7 +59,7 @@ public class MealAdapter extends BaseAdapter implements Filterable {
 
                 ArrayList<MealItem> filters = new ArrayList<MealItem>();
 
-                // get specifc items
+                // get specific items
                 for (int i = 0; i < filterList.size(); i++) {
                     if (filterList.get(i).getitle().contains(constraint)) {
                         MealItem p = new MealItem(filterList.get(i).getId(),  filterList.get(i).getPicture(),filterList.get(i).getitle()) {
@@ -118,6 +118,7 @@ public class MealAdapter extends BaseAdapter implements Filterable {
             convertView = inflater.inflate(R.layout.meals_item, parent, false);
         }
 
+        // set picture en title
         ImageView picture = convertView.findViewById(R.id.Picture);
         TextView recipe = convertView.findViewById(R.id.Recipe);
         recipe.setText(meals.get(position).getitle());
@@ -143,7 +144,6 @@ public class MealAdapter extends BaseAdapter implements Filterable {
         return filter;
 
     }
-
 
 
 }

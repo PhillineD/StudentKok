@@ -35,11 +35,11 @@ public class HistoryActivity extends AppCompatActivity {
         setContentView(R.layout.history_activity);
 
         ListView history = findViewById(R.id.listviewhistory);
-        history.setOnItemClickListener( new ToRecipe());
         db = EntryDatabase.getInstance(getApplicationContext());
-
         Cursor cursor = EntryDatabase.selectAll(db);
         adapter = new EntryAdapter(this, R.layout.history_item, cursor);
+
+        history.setOnItemClickListener( new ToRecipe());
         history.setAdapter(adapter);
 
     }
@@ -61,7 +61,7 @@ public class HistoryActivity extends AppCompatActivity {
 
         EditText zoeken = findViewById(R.id.searchbox);
 
-        // if edittext is empthy
+        // user typed nothing, set adapter normal
         if (zoeken.getText().toString().equals("")) {
             Cursor cursor = EntryDatabase.selectAll(db);
             adapter.swapCursor(cursor);
@@ -70,6 +70,8 @@ public class HistoryActivity extends AppCompatActivity {
             history.setAdapter(adapter);
 
         }
+
+        // user typed , call filter and set adapter
         else{
 
             String searchTerm = zoeken.getText().toString();
@@ -95,6 +97,10 @@ public class HistoryActivity extends AppCompatActivity {
         adapter.swapCursor(ncursor);
     }
 
+
+    /**
+     * Navigation to RecipeActivity, if clicked on item.
+     */
     private class ToRecipe implements AdapterView.OnItemClickListener{
 
         @Override
@@ -102,9 +108,11 @@ public class HistoryActivity extends AppCompatActivity {
             Cursor clicked = (Cursor) parent.getItemAtPosition(position);
             String idee = clicked.getString(clicked.getColumnIndex("_id"));
             String url = clicked.getString(clicked.getColumnIndex("picture"));
+
             Intent intent = new Intent(getApplicationContext(), RecipeActivity.class);
             intent.putExtra("id", idee);
             intent.putExtra("picture", url);
+
             startActivity(intent);
             finish();
         }

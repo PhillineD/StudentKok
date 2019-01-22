@@ -45,7 +45,6 @@ public class MealsActivity extends Activity implements MealsRequest.Callback{
 
     /**
      * Go the recipe if clicked on a meal item.
-     *
      */
     private class Clicked implements AdapterView.OnItemClickListener{
         @Override
@@ -74,6 +73,7 @@ public class MealsActivity extends Activity implements MealsRequest.Callback{
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(new Clicked());
 
+        // find searchview
         textBox = (SearchView) findViewById(R.id.editText);
         textBox.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
@@ -81,6 +81,7 @@ public class MealsActivity extends Activity implements MealsRequest.Callback{
                 return false;
             }
 
+            // if typed call getFilter()
             @Override
             public boolean onQueryTextChange(String query) {
                 adapter.getFilter().filter(query);

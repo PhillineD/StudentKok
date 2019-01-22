@@ -15,7 +15,6 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RatingBar;
@@ -73,8 +72,6 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         RatingBar rating = findViewById(R.id.ratingBar);
         float stars = rating.getRating();
 
-        ImageView foto  = findViewById(R.id.picturerecipe);
-
         // get title
         TextView titlerecipe = findViewById(R.id.viewRecipeTitle);
         String titlehistory = titlerecipe.getText().toString();
@@ -86,6 +83,8 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         // get time
         TextView timetext = findViewById(R.id.time);
         String time = timetext.getText().toString();
+
+        // only navigate to StartActivity if stars and time are filled in
         if (! time.equals("") && stars != 0 ) {
             float constant = new Float(time);
 
@@ -101,6 +100,8 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
             finish();
 
         }
+
+        // stars and / or time are not filled
         else{
             Toast.makeText(this, "Please fill all fields", Toast.LENGTH_LONG).show();
         }
@@ -114,12 +115,15 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
     @Override
     public void gotRecipe(ArrayList<Meal> meals) {
 
+        // get right piece from list
         Meal stukje = meals.get(0);
         stukje.getitle();
 
+        // find views
+        ImageView picture = findViewById(R.id.picturerecipe);
         TextView title = findViewById(R.id.viewRecipeTitle);
         TextView instructions = findViewById(R.id.viewinstructions);
-        ImageView picture = findViewById(R.id.picturerecipe);
+        TextView hint = findViewById(R.id.hint);
 
         TextView measure1 = findViewById(R.id.ViewMeasure1);
         TextView measure2 = findViewById(R.id.ViewMeasure2);
@@ -153,11 +157,12 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         TextView ingregients14 = findViewById(R.id.viewIngredients14);
         TextView ingregients15 = findViewById(R.id.viewIngredients15);
 
-        TextView hint = findViewById(R.id.hint);
-        hint.setText(stukje.getHint());
 
+
+        // set views
         title.setText(stukje.getitle());
         instructions.setText(stukje.getInstruction());
+        hint.setText(stukje.getHint());
 
         ingregients1.setText(stukje.getIngredients1());
         ingregients2.setText(stukje.getIngredients2());
@@ -169,7 +174,7 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         measure3.setText(stukje.getMeasure3());
         measure4.setText(stukje.getMeasure4());
 
-
+        // not al recipes has more then 5 ingregients, then measure == null, set nothing.
         if (stukje.getMeasure5() == "null"){
             measure5.setText("");
             ingregients5.setText("");
@@ -267,9 +272,11 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
             ingregients15.setText(stukje.getIngredients15());
         }
 
+        // download pictue en set image
         DownloadImageTask Image = new DownloadImageTask(picture);
         Image.execute(stukje.getPicture());
 
+        // get youtubelink
         url = stukje.getYoutubelink();
     }
 

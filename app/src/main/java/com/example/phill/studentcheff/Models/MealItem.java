@@ -13,12 +13,14 @@ package com.example.phill.studentcheff.Models;
 public class MealItem {
     private String id, Picture,  title;
 
+    // contructer
     public MealItem(String id, String Picture, String title){
         this.id = id;
         this.Picture = Picture;
         this.title =title;
     }
 
+    // getters and setters for items
     public String getId() {
         return id;
     }

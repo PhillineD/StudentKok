@@ -32,15 +32,17 @@ public class MealsRequest implements Response.Listener<JSONObject>, Response.Err
     private Callback activity;
     private Context context;
 
+    // constructor
+    public MealsRequest(Context context){
+        this.context = context;
+    }
 
     public interface Callback{
         void gotMeals(ArrayList<MealItem> meals);
         void gotMealsError(String message);
     }
 
-    public MealsRequest(Context context){
-        this.context = context;
-    }
+
 
 
     /**

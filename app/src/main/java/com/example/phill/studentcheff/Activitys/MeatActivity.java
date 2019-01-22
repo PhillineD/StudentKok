@@ -86,9 +86,15 @@ public class MeatActivity extends AppCompatActivity {
      * @param view    Represents a view of the button random.
      */
     public void randomClick(View view) {
+
+        // list with all posible categories
         List<String> givenList = Arrays.asList("Beef", "Chicken", "Lamb", "Pork");
+
+        // get a random element from the list
         Random rand = new Random();
         String randomElement = givenList.get(rand.nextInt(givenList.size()));
+
+        // dependent on random element, navigate to MealsActivity with right categorie
         if (randomElement == "Beef") {
             Intent intent = new Intent(getApplicationContext(), MealsActivity.class);
             intent.putExtra("categorie", "Beef");

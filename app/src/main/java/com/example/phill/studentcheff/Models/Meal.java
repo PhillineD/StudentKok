@@ -12,6 +12,7 @@
 package com.example.phill.studentcheff.Models;
 
 public class Meal {
+
     private String id, Ingredients1, Instruction, Youtubelink, Picture,  title;
     private  String measure1, measure2, measure3, measure4, measure5, measure6, measure7, measure8, measure9, measure10, measure11, measure12;
     String Ingredients2, Ingredients3, Ingredients4, Ingredients5, Ingredients6, Ingredients7, Ingredients8, Ingredients9, Ingredients10, Ingredients11, Ingredients12;
@@ -20,8 +21,7 @@ public class Meal {
     String measure13, measure14, measure15;
 
 
-
-
+    // contructer
     public Meal(String id, String Ingredients1, String Instruction, String Youtubelink, String Picture, String title, String measure1,
                 String Ingredients2, String measure2,
                 String Ingredients3, String measure3,
@@ -78,6 +78,7 @@ public class Meal {
         this.Hint = hint;
     }
 
+    // getters and setters for items
     public String getId() {
         return id;
     }

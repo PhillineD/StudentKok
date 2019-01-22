@@ -65,7 +65,7 @@ public class EntryAdapter extends ResourceCursorAdapter implements Filterable{
         String url = cursor.getString(indexpicture);
         Image.execute(url);
 
-        // set cooks  in time
+        // set time choocked
         TextView time = view.findViewById(R.id.cookstime);
         int indextime = cursor.getColumnIndex("time");
         Float timecook = cursor.getFloat( indextime);

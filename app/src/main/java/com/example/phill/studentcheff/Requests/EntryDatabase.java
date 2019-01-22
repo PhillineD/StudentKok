@@ -29,6 +29,8 @@ public class EntryDatabase extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
+
+        // create database for history
         String  message = "CREATE TABLE " + "Studentchef" + "( _id STRING PRIMARY KEY, title TEXT, picture STRING,hint STRING ,rating FLAOT,time FLOAT, " +
                 "timestamp DATETIME default (datetime('now','localtime'))) ";
         db.execSQL(message);
@@ -59,6 +61,8 @@ public class EntryDatabase extends SQLiteOpenHelper {
      */
     public static Cursor selectAll(EntryDatabase instance){
         SQLiteDatabase database = instance.getWritableDatabase();
+
+        // order database by rating
         return database.rawQuery("SELECT * FROM "+ "Studentchef "+" ORDER BY "+"rating "+
                 "DESC" , null );
     }
@@ -72,7 +76,8 @@ public class EntryDatabase extends SQLiteOpenHelper {
      */
     public static  Cursor filterData (EntryDatabase instance, String woord){
         SQLiteDatabase database = instance.getWritableDatabase();
-        Log.d("loggen ", "filteren:" + woord);
+
+        // filter data by title, timestamp, hint or time
         return database.rawQuery("SELECT * FROM  Studentchef WHERE  title  = '"+woord+"' " +
                 "OR timestamp ='"+woord+"' " + "OR hint= '"+woord+"'" +  "OR time < '"+woord+"'"
                 + "OR time = '"+woord+"'", null );
@@ -97,20 +102,18 @@ public class EntryDatabase extends SQLiteOpenHelper {
         // create a new ContentValues object
         ContentValues contentvalue = new ContentValues();
 
-        // check if the recipe is alreaedy in database
+        // if recipe is alreaedy in database, delete it
         String sort = "DELETE FROM Studentchef WHERE _id = '"+id+"'";
         db.execSQL(sort);
 
-//        String time1 = time.toString();
-        // add values for title, content and mood.
+
+        // add values
         contentvalue.put("_id", id);
         contentvalue.put("title", title);
         contentvalue.put("rating", rating);
         contentvalue.put("picture",picture );
         contentvalue.put("hint", Catergorie);
         contentvalue.put("time", time);
-
-        Log.d("het duurt te lang", "insert: " + time);
 
         // call insert and add the right parameters
         db.insert("Studentchef", null, contentvalue);
@@ -130,6 +133,7 @@ public class EntryDatabase extends SQLiteOpenHelper {
         // drops the entries table
         db.execSQL("DROP TABLE IF EXISTS "+ "Studentchef");
 
+        // sort by rating
         String sort = "SELECT * FROM "+" Studentchef "+" ORDER BY "+"rating "+"DESC";
         db.execSQL(sort);
 
