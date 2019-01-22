@@ -99,6 +99,13 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         TextView measure6 = findViewById(R.id.ViewMeasure6);
         TextView measure7 = findViewById(R.id.ViewMeasure7);
         TextView measure8 = findViewById(R.id.ViewMeasure8);
+        TextView measure9 = findViewById(R.id.ViewMeasure9);
+        TextView measure10 = findViewById(R.id.ViewMeasure10);
+        TextView measure11 = findViewById(R.id.ViewMeasure11);
+        TextView measure12 = findViewById(R.id.ViewMeasure12);
+        TextView measure13 = findViewById(R.id.ViewMeasure13);
+        TextView measure14 = findViewById(R.id.ViewMeasure14);
+        TextView measure15 = findViewById(R.id.ViewMeasure15);
 
         TextView ingregients1 = findViewById(R.id.viewIngredients1);
         TextView ingregients2 = findViewById(R.id.viewIngredients2);
@@ -108,6 +115,13 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         TextView ingregients6 = findViewById(R.id.viewIngredients6);
         TextView ingregients7 = findViewById(R.id.viewIngredients7);
         TextView ingregients8 = findViewById(R.id.viewIngredients8);
+        TextView ingregients9 = findViewById(R.id.viewIngredients9);
+        TextView ingregients10 = findViewById(R.id.viewIngredients10);
+        TextView ingregients11 = findViewById(R.id.viewIngredients11);
+        TextView ingregients12 = findViewById(R.id.viewIngredients12);
+        TextView ingregients13 = findViewById(R.id.viewIngredients13);
+        TextView ingregients14 = findViewById(R.id.viewIngredients14);
+        TextView ingregients15 = findViewById(R.id.viewIngredients15);
 
         TextView hint = findViewById(R.id.hint);
         hint.setText(stukje.getHint());
@@ -124,6 +138,7 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         measure2.setText(stukje.getMeasure2());
         measure3.setText(stukje.getMeasure3());
         measure4.setText(stukje.getMeasure4());
+
 
         if (stukje.getMeasure5() == "null"){
             measure5.setText("");
@@ -161,6 +176,66 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
             ingregients8.setText(stukje.getIngredients8());
         }
 
+        if (stukje.getMeasure9()  == "null"){
+            measure9.setText("");
+            ingregients9.setText("");
+        }
+        else {
+            measure9.setText(stukje.getMeasure9());
+            ingregients9.setText(stukje.getIngredients9());
+        }
+
+        if (stukje.getMeasure10()  == "null"){
+            measure10.setText("");
+            ingregients10.setText("");
+        }
+        else {
+            measure10.setText(stukje.getMeasure10());
+            ingregients10.setText(stukje.getIngredients10());
+        }
+        if (stukje.getMeasure11()  == "null"){
+            measure11.setText("");
+            ingregients11.setText("");
+        }
+        else {
+            measure11.setText(stukje.getMeasure11());
+            ingregients11.setText(stukje.getIngredients11());
+        }
+        if (stukje.getMeasure12()  == "null"){
+            measure12.setText("");
+            ingregients12.setText("");
+        }
+        else {
+            measure12.setText(stukje.getMeasure12());
+            ingregients12.setText(stukje.getIngredients12());
+        }
+
+        if (stukje.getMeasure13()  == "null"){
+            measure13.setText("");
+            ingregients13.setText("");
+        }
+        else {
+            measure13.setText(stukje.getMeasure13());
+            ingregients13.setText(stukje.getIngredients13());
+        }
+
+        if (stukje.getMeasure14()  == "null"){
+            measure14.setText("");
+            ingregients14.setText("");
+        }
+        else {
+            measure14.setText(stukje.getMeasure14());
+            ingregients14.setText(stukje.getIngredients14());
+        }
+
+        if (stukje.getMeasure15()  == "null"){
+            measure15.setText("");
+            ingregients15.setText("");
+        }
+        else {
+            measure15.setText(stukje.getMeasure15());
+            ingregients15.setText(stukje.getIngredients15());
+        }
 
         DownloadImageTask Image = new DownloadImageTask(picture);
         Image.execute(stukje.getPicture());

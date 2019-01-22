@@ -1,5 +1,6 @@
 package com.example.phill.studentcheff.Requests;
 import android.content.Context;
+import android.util.Log;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -70,7 +71,13 @@ public class RecipeRequest implements Response.Listener<JSONObject>, Response.Er
                 String measure6 = mealitems.getString("strMeasure6");
                 String measure7 = mealitems.getString("strMeasure7");
                 String measure8 = mealitems.getString("strMeasure8");
-
+                String measure9 = mealitems.getString("strMeasure9");
+                String measure10 = mealitems.getString("strMeasure10");
+                String measure11 = mealitems.getString("strMeasure11");
+                String measure12 = mealitems.getString("strMeasure12");
+                String measure13 = mealitems.getString("strMeasure13");
+                String measure14 = mealitems.getString("strMeasure14");
+                String measure15 = mealitems.getString("strMeasure15");
 
                 String ingredient1 = mealitems.getString("strIngredient1");
                 String ingredient2 = mealitems.getString("strIngredient2");
@@ -80,12 +87,22 @@ public class RecipeRequest implements Response.Listener<JSONObject>, Response.Er
                 String ingredient6 = mealitems.getString("strIngredient6");
                 String ingredient7 = mealitems.getString("strIngredient7");
                 String ingredient8 = mealitems.getString("strIngredient8");
+                String ingredient9 = mealitems.getString("strIngredient9");
+                String ingredient10 = mealitems.getString("strIngredient10");
+                String ingredient11 = mealitems.getString("strIngredient11");
+                String ingredient12 = mealitems.getString("strIngredient12");
+                String ingredient13 = mealitems.getString("strIngredient13");
+                String ingredient14 = mealitems.getString("strIngredient14");
+                String ingredient15 = mealitems.getString("strIngredient15");
 
 
+                Log.d("hallo", "onResponse: " + ingredient11 + measure12);
                 // new Mealitem
                 Meal item = new Meal(id,ingredient1,instructions,youtube,picture, titlerecipe,
                         measure1,ingredient2 , measure2, ingredient3 , measure3, ingredient4 , measure4,
-                        ingredient5 , measure5, ingredient6 , measure6, ingredient7 , measure7, ingredient8 , measure8, hit);
+                        ingredient5 , measure5, ingredient6 , measure6, ingredient7 , measure7, ingredient8 , measure8,
+                        ingredient9 , measure9,ingredient10 , measure10, ingredient11 , measure11 , ingredient12 , measure12,
+                        ingredient13 , measure13, ingredient14 , measure14, ingredient15 , measure15, hit);
                 recipeview.add(item);
             }
 

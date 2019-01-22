@@ -84,14 +84,14 @@
 
                 <LinearLayout
                     android:layout_width="364dp"
-                    android:layout_height="154dp"
+                    android:layout_height="260dp"
                     android:layout_gravity="center"
                     android:background="@android:color/darker_gray"
                     android:orientation="horizontal">
 
                     <LinearLayout
                         android:layout_width="182dp"
-                        android:layout_height="match_parent"
+                        android:layout_height="260dp"
                         android:orientation="vertical">
 
                         <TextView
@@ -182,6 +182,84 @@
                             android:gravity="center"
                             android:paddingLeft="20dp"
                             android:text="TextView" />
+
+                        <TextView
+                            android:id="@+id/viewIngredients9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+                            android:paddingLeft="20dp"
+                            android:text="TextView" />
+
+                        <TextView
+                            android:id="@+id/viewIngredients10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+                            android:paddingLeft="20dp"
+                            android:text="TextView" />
+
+                        <TextView
+                            android:id="@+id/viewIngredients11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+                            android:paddingLeft="20dp"
+                            android:text="TextView" />
+
+                        <TextView
+                            android:id="@+id/viewIngredients12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+                            android:paddingLeft="20dp"
+                            android:text="TextView" />
+
+                        <TextView
+                            android:id="@+id/viewIngredients13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+                            android:paddingLeft="20dp"
+                            android:text="TextView" />
+
+                        <TextView
+                            android:id="@+id/viewIngredients14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+                            android:paddingLeft="20dp"
+                            android:text="TextView" />
+
+                        <TextView
+                            android:id="@+id/viewIngredients15"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+                            android:paddingLeft="20dp"
+                            android:text="TextView" />
+
                     </LinearLayout>
 
                     <LinearLayout
@@ -261,6 +339,76 @@
 
                         <TextView
                             android:id="@+id/ViewMeasure8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+                            android:text="TextView" />
+
+                        <TextView
+                            android:id="@+id/ViewMeasure9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+                            android:text="TextView" />
+
+                        <TextView
+                            android:id="@+id/ViewMeasure10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+                            android:text="TextView" />
+
+                        <TextView
+                            android:id="@+id/ViewMeasure11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+                            android:text="TextView" />
+
+                        <TextView
+                            android:id="@+id/ViewMeasure12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+                            android:text="TextView" />
+
+                        <TextView
+                            android:id="@+id/ViewMeasure13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+                            android:text="TextView" />
+
+                        <TextView
+                            android:id="@+id/ViewMeasure14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+                            android:text="TextView" />
+
+                        <TextView
+                            android:id="@+id/ViewMeasure15"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
