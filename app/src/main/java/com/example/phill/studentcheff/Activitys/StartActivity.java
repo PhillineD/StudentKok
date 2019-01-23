@@ -13,6 +13,8 @@
 package com.example.phill.studentcheff.Activitys;
 
 import android.content.Intent;
+import android.net.Uri;
+import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -23,6 +25,8 @@ import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 
 import com.example.phill.studentcheff.R;
+
+import java.io.File;
 
 public class StartActivity extends AppCompatActivity {
 
@@ -85,4 +89,5 @@ public class StartActivity extends AppCompatActivity {
         });
 
     }
+
 }

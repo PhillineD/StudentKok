@@ -17,8 +17,9 @@
 
         <EditText
             android:id="@+id/searchbox"
-            android:layout_width="300dp"
+            android:layout_width="254dp"
             android:layout_height="74dp"
+            android:layout_marginLeft="10dp"
             android:ems="10"
             android:hint='"Seafood" or "title"'
             android:inputType="textPersonName"
