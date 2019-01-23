@@ -107,6 +107,14 @@ wat heb ik gedaan?
   - check of het wel dat aantal ingeredienten heeft anders geeft hij is de app NULL maar nu word dat vakje leeg 
   - op het beginscherm staat nu een i knopje, als je hierop klikt komt er een pop upje met uitleg van de app. Dit geeft een duidelijker beeld wat de app kan. 
   
+  # day 10 
+  wat heb ik gedaan?
+   - de VeganActivity heb ik gecombineerd met de V activty zodat de gebruiker minder schermen heeft
+   - de zoekbalk in MealsActivity is niet gevoelig voorgebruik van kleine of hoofdletters
+   
+   veranderd? 
+  - De Veganactivity is verwijderd 
+  - Zoekfunctie meals activity niet hoofdletter gevoelig
   
  
 
