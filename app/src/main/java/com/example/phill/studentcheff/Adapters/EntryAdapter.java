@@ -42,35 +42,35 @@ public class EntryAdapter extends ResourceCursorAdapter implements Filterable{
 
         // set title
         TextView title = view.findViewById(R.id.historytitle);
-        int indextitle = cursor.getColumnIndex("title");
-        String texttitle = cursor.getString(indextitle);
-        title.setText(texttitle);
+        int indexTitle = cursor.getColumnIndex("title");
+        String textTitle = cursor.getString(indexTitle);
+        title.setText(textTitle);
 
         // set rating
         RatingBar rating = view.findViewById(R.id.historyrating);
-        int indexrating = cursor.getColumnIndex("rating");
-        Float floatrating = cursor.getFloat(indexrating);
-        rating.setRating(floatrating);
+        int indexRating = cursor.getColumnIndex("rating");
+        Float floatRating = cursor.getFloat(indexRating);
+        rating.setRating(floatRating);
 
         //  set date
         TextView history = view.findViewById(R.id.historydate);
-        int indexdate = cursor.getColumnIndex("timestamp");
-        String date = cursor.getString(indexdate);
+        int indexRate = cursor.getColumnIndex("timestamp");
+        String date = cursor.getString(indexRate);
         history.setText(date);
 
         // set picture
         ImageView picture = view.findViewById(R.id.picturehistory);
         DownloadImageTask Image = new DownloadImageTask(picture);
-        int indexpicture = cursor.getColumnIndex("picture");
-        String url = cursor.getString(indexpicture);
+        int indexPicture = cursor.getColumnIndex("picture");
+        String url = cursor.getString(indexPicture);
         Image.execute(url);
 
         // set time choocked
         TextView time = view.findViewById(R.id.cookstime);
-        int indextime = cursor.getColumnIndex("time");
-        Float timecook = cursor.getFloat( indextime);
-        int timecooking = timecook.intValue();
-        String cooked = Integer.toString(timecooking);
+        int indexTime = cursor.getColumnIndex("time");
+        Float timeCook = cursor.getFloat( indexTime);
+        int timeCooking = timeCook.intValue();
+        String cooked = Integer.toString(timeCooking);
         time.setText(cooked);
 
     }

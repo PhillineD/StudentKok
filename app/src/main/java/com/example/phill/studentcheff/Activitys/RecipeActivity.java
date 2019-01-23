@@ -41,7 +41,7 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         // get id from de meal you chosen
         Intent intent = getIntent();
         String id = intent.getStringExtra("id");
-        String picture = intent.getStringExtra("picture");
+//        String picture = intent.getStringExtra("picture");
         RecipeRequest ArrayAdapter = new RecipeRequest(this);
         ArrayAdapter.getRecipe(this, id);
     }
@@ -73,16 +73,16 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         float stars = rating.getRating();
 
         // get title
-        TextView titlerecipe = findViewById(R.id.viewRecipeTitle);
-        String titlehistory = titlerecipe.getText().toString();
+        TextView titleRecipe = findViewById(R.id.viewRecipeTitle);
+        String titleHistory = titleRecipe.getText().toString();
 
         // get hint
-        TextView sethint = findViewById(R.id.hint);
-        String hinty = sethint.getText().toString();
+        TextView setHint = findViewById(R.id.hint);
+        String soortMeal = setHint.getText().toString();
 
         // get time
-        TextView timetext = findViewById(R.id.time);
-        String time = timetext.getText().toString();
+        TextView timeText = findViewById(R.id.time);
+        String time = timeText.getText().toString();
 
         // only navigate to StartActivity if stars and time are filled in
         if (! time.equals("") && stars != 0 ) {
@@ -91,10 +91,10 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
             Intent in = new Intent(getApplicationContext(), StartActivity.class);
             in.putExtra("id",id);
             in.putExtra("rating", stars);
-            in.putExtra("hint", hinty);
+            in.putExtra("hint", soortMeal);
 
             // insert into database
-            EntryDatabase.getInstance(this).insert(id,titlehistory, stars, picture, hinty, constant);
+            EntryDatabase.getInstance(this).insert(id,titleHistory, stars, picture, soortMeal, constant);
 
             startActivity(in);
             finish();
@@ -116,8 +116,8 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
     public void gotRecipe(ArrayList<Meal> meals) {
 
         // get right piece from list
-        Meal stukje = meals.get(0);
-        stukje.getitle();
+        Meal pieceRecipe = meals.get(0);
+        pieceRecipe.getitle();
 
         // find views
         ImageView picture = findViewById(R.id.picturerecipe);
@@ -160,124 +160,124 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
 
 
         // set views
-        title.setText(stukje.getitle());
-        instructions.setText(stukje.getInstruction());
-        hint.setText(stukje.getHint());
+        title.setText(pieceRecipe.getitle());
+        instructions.setText(pieceRecipe.getInstruction());
+        hint.setText(pieceRecipe.getHint());
 
-        ingregients1.setText(stukje.getIngredients1());
-        ingregients2.setText(stukje.getIngredients2());
-        ingregients3.setText(stukje.getIngredients3());
-        ingregients4.setText(stukje.getIngredients4());
+        ingregients1.setText(pieceRecipe.getIngredients1());
+        ingregients2.setText(pieceRecipe.getIngredients2());
+        ingregients3.setText(pieceRecipe.getIngredients3());
+        ingregients4.setText(pieceRecipe.getIngredients4());
 
-        measure1.setText(stukje.getMeasure1());
-        measure2.setText(stukje.getMeasure2());
-        measure3.setText(stukje.getMeasure3());
-        measure4.setText(stukje.getMeasure4());
+        measure1.setText(pieceRecipe.getMeasure1());
+        measure2.setText(pieceRecipe.getMeasure2());
+        measure3.setText(pieceRecipe.getMeasure3());
+        measure4.setText(pieceRecipe.getMeasure4());
 
         // not al recipes has more then 5 ingregients, then measure == null, set nothing.
-        if (stukje.getMeasure5() == "null"){
+        if (pieceRecipe.getMeasure5() == "null"){
             measure5.setText("");
             ingregients5.setText("");
         }
         else{
-            measure5.setText(stukje.getMeasure5());
-            ingregients5.setText(stukje.getIngredients5());
+            measure5.setText(pieceRecipe.getMeasure5());
+            ingregients5.setText(pieceRecipe.getIngredients5());
         }
 
-        if (stukje.getMeasure6()  == "null"){
+        if (pieceRecipe.getMeasure6()  == "null"){
             measure6.setText("");
             ingregients6.setText("");
         }
         else{
-            measure6.setText(stukje.getMeasure6());
-            ingregients6.setText(stukje.getIngredients6());
+            measure6.setText(pieceRecipe.getMeasure6());
+            ingregients6.setText(pieceRecipe.getIngredients6());
         }
 
-        if (stukje.getMeasure7()  == "null"){
+        if (pieceRecipe.getMeasure7()  == "null"){
             measure7.setText("");
             ingregients7.setText("");
         }
         else{
-            measure7.setText(stukje.getMeasure7());
-            ingregients7.setText(stukje.getIngredients7());
+            measure7.setText(pieceRecipe.getMeasure7());
+            ingregients7.setText(pieceRecipe.getIngredients7());
         }
 
-        if (stukje.getMeasure8()  == "null"){
+        if (pieceRecipe.getMeasure8()  == "null"){
             measure8.setText("");
             ingregients8.setText("");
         }
         else {
-            measure8.setText(stukje.getMeasure8());
-            ingregients8.setText(stukje.getIngredients8());
+            measure8.setText(pieceRecipe.getMeasure8());
+            ingregients8.setText(pieceRecipe.getIngredients8());
         }
 
-        if (stukje.getMeasure9()  == "null"){
+        if (pieceRecipe.getMeasure9()  == "null"){
             measure9.setText("");
             ingregients9.setText("");
         }
         else {
-            measure9.setText(stukje.getMeasure9());
-            ingregients9.setText(stukje.getIngredients9());
+            measure9.setText(pieceRecipe.getMeasure9());
+            ingregients9.setText(pieceRecipe.getIngredients9());
         }
 
-        if (stukje.getMeasure10()  == "null"){
+        if (pieceRecipe.getMeasure10()  == "null"){
             measure10.setText("");
             ingregients10.setText("");
         }
         else {
-            measure10.setText(stukje.getMeasure10());
-            ingregients10.setText(stukje.getIngredients10());
+            measure10.setText(pieceRecipe.getMeasure10());
+            ingregients10.setText(pieceRecipe.getIngredients10());
         }
-        if (stukje.getMeasure11()  == "null"){
+        if (pieceRecipe.getMeasure11()  == "null"){
             measure11.setText("");
             ingregients11.setText("");
         }
         else {
-            measure11.setText(stukje.getMeasure11());
-            ingregients11.setText(stukje.getIngredients11());
+            measure11.setText(pieceRecipe.getMeasure11());
+            ingregients11.setText(pieceRecipe.getIngredients11());
         }
-        if (stukje.getMeasure12()  == "null"){
+        if (pieceRecipe.getMeasure12()  == "null"){
             measure12.setText("");
             ingregients12.setText("");
         }
         else {
-            measure12.setText(stukje.getMeasure12());
-            ingregients12.setText(stukje.getIngredients12());
+            measure12.setText(pieceRecipe.getMeasure12());
+            ingregients12.setText(pieceRecipe.getIngredients12());
         }
 
-        if (stukje.getMeasure13()  == "null"){
+        if (pieceRecipe.getMeasure13()  == "null"){
             measure13.setText("");
             ingregients13.setText("");
         }
         else {
-            measure13.setText(stukje.getMeasure13());
-            ingregients13.setText(stukje.getIngredients13());
+            measure13.setText(pieceRecipe.getMeasure13());
+            ingregients13.setText(pieceRecipe.getIngredients13());
         }
 
-        if (stukje.getMeasure14()  == "null"){
+        if (pieceRecipe.getMeasure14()  == "null"){
             measure14.setText("");
             ingregients14.setText("");
         }
         else {
-            measure14.setText(stukje.getMeasure14());
-            ingregients14.setText(stukje.getIngredients14());
+            measure14.setText(pieceRecipe.getMeasure14());
+            ingregients14.setText(pieceRecipe.getIngredients14());
         }
 
-        if (stukje.getMeasure15()  == "null"){
+        if (pieceRecipe.getMeasure15()  == "null"){
             measure15.setText("");
             ingregients15.setText("");
         }
         else {
-            measure15.setText(stukje.getMeasure15());
-            ingregients15.setText(stukje.getIngredients15());
+            measure15.setText(pieceRecipe.getMeasure15());
+            ingregients15.setText(pieceRecipe.getIngredients15());
         }
 
         // download pictue en set image
         DownloadImageTask Image = new DownloadImageTask(picture);
-        Image.execute(stukje.getPicture());
+        Image.execute(pieceRecipe.getPicture());
 
         // get youtubelink
-        url = stukje.getYoutubelink();
+        url = pieceRecipe.getYoutubelink();
     }
 
     /**

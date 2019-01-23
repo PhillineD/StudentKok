@@ -50,11 +50,11 @@ public class MealsActivity extends Activity implements MealsRequest.Callback{
     private class Clicked implements AdapterView.OnItemClickListener{
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-            MealItem chooserecipe = (MealItem) parent.getItemAtPosition(position);
-            Intent choosen = new Intent(getApplicationContext(), RecipeActivity.class);
-            choosen.putExtra("id", chooserecipe.getId());
-            choosen.putExtra("picture", chooserecipe.getPicture());
-            startActivity(choosen);
+            MealItem chooseRecipe = (MealItem) parent.getItemAtPosition(position);
+            Intent choosenRecipe = new Intent(getApplicationContext(), RecipeActivity.class);
+            choosenRecipe.putExtra("id", chooseRecipe.getId());
+            choosenRecipe.putExtra("picture", chooseRecipe.getPicture());
+            startActivity(choosenRecipe);
             finish();
         }
     }

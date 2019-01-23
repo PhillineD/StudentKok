@@ -71,12 +71,12 @@ public class EntryDatabase extends SQLiteOpenHelper {
      * Filter history if user search.
      *
      * @param instance    Instance from the history database.
-     * @param woord         Serach on woord typed in by user.
+     * @param word         Serach on woord typed in by user.
      * @return  database
      */
-    public static  Cursor filterData (EntryDatabase instance, String woord){
+    public static  Cursor filterData (EntryDatabase instance, String word){
         SQLiteDatabase database = instance.getWritableDatabase();
-        String search = woord.toLowerCase();
+        String search = word.toLowerCase();
 
         return database.rawQuery("SELECT * FROM  Studentchef WHERE INSTR(lower(title), '"+search+"')" +
                 "OR INSTR(lower(hint), '"+search+"') " , null);
@@ -94,27 +94,27 @@ public class EntryDatabase extends SQLiteOpenHelper {
      * @param Catergorie    The caterogie from recipe.
      * @param time          Cooked time for recipe.
      */
-    public void insert(String id, String title, Float rating, String picture, String Catergorie, Float time){
+    public void insert(String id, String title, Float rating, String picture, String categorie, Float time){
         // open a connection to the database
         SQLiteDatabase db = instance.getWritableDatabase();
 
         // create a new ContentValues object
-        ContentValues contentvalue = new ContentValues();
+        ContentValues contentValue = new ContentValues();
 
         // if recipe is alreaedy in database, delete it
         String sort = "DELETE FROM Studentchef WHERE _id = '"+id+"'";
         db.execSQL(sort);
 
         // add values
-        contentvalue.put("_id", id);
-        contentvalue.put("title", title);
-        contentvalue.put("rating", rating);
-        contentvalue.put("picture",picture );
-        contentvalue.put("hint", Catergorie);
-        contentvalue.put("time", time);
+        contentValue.put("_id", id);
+        contentValue.put("title", title);
+        contentValue.put("rating", rating);
+        contentValue.put("picture",picture );
+        contentValue.put("hint", categorie);
+        contentValue.put("time", time);
 
         // call insert and add the right parameters
-        db.insert("Studentchef", null, contentvalue);
+        db.insert("Studentchef", null, contentValue);
 
     }
 

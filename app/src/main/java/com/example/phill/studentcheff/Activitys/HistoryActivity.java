@@ -45,7 +45,7 @@ public class HistoryActivity extends AppCompatActivity {
     }
 
     /**
-     * This is where the description of the method goes.
+     * When the activity resumes from the background.
      */
     protected void onResume(){
         super.onResume();
@@ -59,10 +59,10 @@ public class HistoryActivity extends AppCompatActivity {
      */
     public void search(View view) {
 
-        EditText zoeken = findViewById(R.id.searchbox);
+        EditText findItem = findViewById(R.id.searchbox);
 
         // user typed nothing, set adapter normal
-        if (zoeken.getText().toString().equals("")) {
+        if (findItem.getText().toString().equals("")) {
             Cursor cursor = EntryDatabase.selectAll(db);
             adapter.swapCursor(cursor);
             adapter = new EntryAdapter(this, R.layout.history_item, cursor);
@@ -74,7 +74,7 @@ public class HistoryActivity extends AppCompatActivity {
         // user typed , call filter and set adapter
         else{
 
-            String searchTerm = zoeken.getText().toString();
+            String searchTerm = findItem.getText().toString();
             Cursor cursor = EntryDatabase.filterData(db , searchTerm);
             adapter.swapCursor(cursor);
 
@@ -86,7 +86,7 @@ public class HistoryActivity extends AppCompatActivity {
     }
 
     /**
-     * This is where the description of the method goes.
+     * Update data.
      */
     public void updateData(){
 
@@ -106,11 +106,11 @@ public class HistoryActivity extends AppCompatActivity {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
             Cursor clicked = (Cursor) parent.getItemAtPosition(position);
-            String idee = clicked.getString(clicked.getColumnIndex("_id"));
+            String number = clicked.getString(clicked.getColumnIndex("_id"));
             String url = clicked.getString(clicked.getColumnIndex("picture"));
 
             Intent intent = new Intent(getApplicationContext(), RecipeActivity.class);
-            intent.putExtra("id", idee);
+            intent.putExtra("id", number);
             intent.putExtra("picture", url);
 
             startActivity(intent);

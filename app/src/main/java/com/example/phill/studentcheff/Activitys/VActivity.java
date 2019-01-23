@@ -29,7 +29,6 @@ public class VActivity extends AppCompatActivity {
         setContentView(R.layout.v_activity);
     }
 
-
     /**
      * Navigation to MeatActivity, parse the categorie.
      *
@@ -110,8 +109,5 @@ public class VActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
         }
-
-
-
     }
 }

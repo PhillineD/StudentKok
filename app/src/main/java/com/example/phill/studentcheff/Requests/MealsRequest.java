@@ -42,9 +42,6 @@ public class MealsRequest implements Response.Listener<JSONObject>, Response.Err
         void gotMealsError(String message);
     }
 
-
-
-
     /**
      * Request for meals with right categorie.
      *
@@ -84,12 +81,12 @@ public class MealsRequest implements Response.Listener<JSONObject>, Response.Err
 
             for(int i =0;i<meal.length();i++){
 
-                JSONObject mealitems = meal.getJSONObject(i);
+                JSONObject mealItems = meal.getJSONObject(i);
 
                 // get title, id and picture
-                String titlerecipe = mealitems.getString("strMeal");
-                String id = mealitems.getString("idMeal");
-                String picture = mealitems.getString("strMealThumb");
+                String titlerecipe = mealItems.getString("strMeal");
+                String id = mealItems.getString("idMeal");
+                String picture = mealItems.getString("strMealThumb");
 
                 // new Mealitem
                 MealItem item = new MealItem(id,picture,titlerecipe);

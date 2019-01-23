@@ -76,7 +76,7 @@ public class RecipeRequest implements Response.Listener<JSONObject>, Response.Er
      */
     @Override
     public void onResponse(JSONObject response) {
-        ArrayList<Meal> recipeview = new ArrayList<Meal>();
+        ArrayList<Meal> recipeView = new ArrayList<Meal>();
         int i;
 
         try {
@@ -84,47 +84,47 @@ public class RecipeRequest implements Response.Listener<JSONObject>, Response.Er
 
             for(i =0;i<meal.length();i++){
 
-                JSONObject mealitems = meal.getJSONObject(i);
+                JSONObject mealItems = meal.getJSONObject(i);
 
                 // get title, id and picture
-                String id = mealitems.getString("idMeal");
-                String titlerecipe = mealitems.getString("strMeal");
-                String instructions = mealitems.getString("strInstructions");
-                String hit = mealitems.getString("strCategory");
+                String id = mealItems.getString("idMeal");
+                String titlerecipe = mealItems.getString("strMeal");
+                String instructions = mealItems.getString("strInstructions");
+                String hit =mealItems.getString("strCategory");
 
-                String youtube = mealitems.getString("strYoutube");
-                String picture = mealitems.getString("strMealThumb");
-                String measure1 = mealitems.getString("strMeasure1");
-                String measure2 = mealitems.getString("strMeasure2");
-                String measure3 = mealitems.getString("strMeasure3");
-                String measure4 = mealitems.getString("strMeasure4");
-                String measure5 = mealitems.getString("strMeasure5");
-                String measure6 = mealitems.getString("strMeasure6");
-                String measure7 = mealitems.getString("strMeasure7");
-                String measure8 = mealitems.getString("strMeasure8");
-                String measure9 = mealitems.getString("strMeasure9");
-                String measure10 = mealitems.getString("strMeasure10");
-                String measure11 = mealitems.getString("strMeasure11");
-                String measure12 = mealitems.getString("strMeasure12");
-                String measure13 = mealitems.getString("strMeasure13");
-                String measure14 = mealitems.getString("strMeasure14");
-                String measure15 = mealitems.getString("strMeasure15");
+                String youtube = mealItems.getString("strYoutube");
+                String picture = mealItems.getString("strMealThumb");
+                String measure1 = mealItems.getString("strMeasure1");
+                String measure2 = mealItems.getString("strMeasure2");
+                String measure3 = mealItems.getString("strMeasure3");
+                String measure4 = mealItems.getString("strMeasure4");
+                String measure5 = mealItems.getString("strMeasure5");
+                String measure6 = mealItems.getString("strMeasure6");
+                String measure7 = mealItems.getString("strMeasure7");
+                String measure8 = mealItems.getString("strMeasure8");
+                String measure9 = mealItems.getString("strMeasure9");
+                String measure10 = mealItems.getString("strMeasure10");
+                String measure11 = mealItems.getString("strMeasure11");
+                String measure12 = mealItems.getString("strMeasure12");
+                String measure13 = mealItems.getString("strMeasure13");
+                String measure14 = mealItems.getString("strMeasure14");
+                String measure15 = mealItems.getString("strMeasure15");
 
-                String ingredient1 = mealitems.getString("strIngredient1");
-                String ingredient2 = mealitems.getString("strIngredient2");
-                String ingredient3 = mealitems.getString("strIngredient3");
-                String ingredient4 = mealitems.getString("strIngredient4");
-                String ingredient5 = mealitems.getString("strIngredient5");
-                String ingredient6 = mealitems.getString("strIngredient6");
-                String ingredient7 = mealitems.getString("strIngredient7");
-                String ingredient8 = mealitems.getString("strIngredient8");
-                String ingredient9 = mealitems.getString("strIngredient9");
-                String ingredient10 = mealitems.getString("strIngredient10");
-                String ingredient11 = mealitems.getString("strIngredient11");
-                String ingredient12 = mealitems.getString("strIngredient12");
-                String ingredient13 = mealitems.getString("strIngredient13");
-                String ingredient14 = mealitems.getString("strIngredient14");
-                String ingredient15 = mealitems.getString("strIngredient15");
+                String ingredient1 = mealItems.getString("strIngredient1");
+                String ingredient2 = mealItems.getString("strIngredient2");
+                String ingredient3 = mealItems.getString("strIngredient3");
+                String ingredient4 = mealItems.getString("strIngredient4");
+                String ingredient5 = mealItems.getString("strIngredient5");
+                String ingredient6 = mealItems.getString("strIngredient6");
+                String ingredient7 = mealItems.getString("strIngredient7");
+                String ingredient8 = mealItems.getString("strIngredient8");
+                String ingredient9 = mealItems.getString("strIngredient9");
+                String ingredient10 = mealItems.getString("strIngredient10");
+                String ingredient11 = mealItems.getString("strIngredient11");
+                String ingredient12 = mealItems.getString("strIngredient12");
+                String ingredient13 = mealItems.getString("strIngredient13");
+                String ingredient14 = mealItems.getString("strIngredient14");
+                String ingredient15 = mealItems.getString("strIngredient15");
 
 
                 // new Mealitem
@@ -133,10 +133,10 @@ public class RecipeRequest implements Response.Listener<JSONObject>, Response.Er
                         ingredient5 , measure5, ingredient6 , measure6, ingredient7 , measure7, ingredient8 , measure8,
                         ingredient9 , measure9,ingredient10 , measure10, ingredient11 , measure11 , ingredient12 , measure12,
                         ingredient13 , measure13, ingredient14 , measure14, ingredient15 , measure15, hit);
-                recipeview.add(item);
+                recipeView.add(item);
             }
 
-            this.activity.gotRecipe(recipeview);
+            this.activity.gotRecipe(recipeView);
 
         } catch (JSONException e) {
             e.printStackTrace();
