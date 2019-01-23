@@ -28,7 +28,7 @@
     <LinearLayout
         android:id="@+id/linearLayout5"
         android:layout_width="183dp"
-        android:layout_height="184dp"
+        android:layout_height="232dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="1dp"
@@ -43,7 +43,7 @@
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.452">
+        app:layout_constraintVertical_bias="0.548">
 
         <Button
             android:id="@+id/meat"
@@ -72,6 +72,16 @@
             android:background="@color/colorPrimary"
             android:onClick="clickVega"
             android:text="Vega"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/vegan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimary"
+            android:onClick="clickVegan"
+            android:text="Vegan"
             android:textColor="@android:color/white" />
 
     </LinearLayout>
