@@ -117,6 +117,7 @@ wat heb ik gedaan?
   - De Veganactivity is verwijderd 
   - Zoekfunctie meals activity niet hoofdletter gevoelig
   - in de informatie knop uitleg over de hoeveelheid van de gerechten 
+  - UpperCamelCase & lowerCamelCase veranders
   
   Extra? 
   - misschien ga ik nog een rekenmachine toevoegen voor de hoeveelheid
