@@ -76,11 +76,10 @@ public class EntryDatabase extends SQLiteOpenHelper {
      */
     public static  Cursor filterData (EntryDatabase instance, String woord){
         SQLiteDatabase database = instance.getWritableDatabase();
+        String search = woord.toLowerCase();
 
-        // filter data by title, timestamp, hint or time
-        return database.rawQuery("SELECT * FROM  Studentchef WHERE  title  = '"+woord+"' " +
-                "OR timestamp ='"+woord+"' " + "OR hint= '"+woord+"'" +  "OR time < '"+woord+"'"
-                + "OR time = '"+woord+"'", null );
+        return database.rawQuery("SELECT * FROM  Studentchef WHERE INSTR(lower(title), '"+search+"')" +
+                "OR INSTR(lower(hint), '"+search+"') " , null);
 
     }
 
@@ -105,7 +104,6 @@ public class EntryDatabase extends SQLiteOpenHelper {
         // if recipe is alreaedy in database, delete it
         String sort = "DELETE FROM Studentchef WHERE _id = '"+id+"'";
         db.execSQL(sort);
-
 
         // add values
         contentvalue.put("_id", id);

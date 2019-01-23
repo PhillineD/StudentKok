@@ -38,6 +38,7 @@ public class MealsActivity extends Activity implements MealsRequest.Callback{
         setContentView(R.layout.meals_activity);
         Intent intent = getIntent();
         String message = intent.getStringExtra("categorie");
+        Toast.makeText(this, "Categorie: " + message, Toast.LENGTH_LONG).show();
         MealsRequest requestmeals = new MealsRequest(this);
         requestmeals.getMeals(this, message);
 

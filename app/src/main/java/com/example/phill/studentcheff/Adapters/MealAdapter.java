@@ -15,6 +15,7 @@ package com.example.phill.studentcheff.Adapters;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -56,12 +57,11 @@ public class MealAdapter extends BaseAdapter implements Filterable {
 
             if (constraint != null && constraint.length() > 0) {
 
-
                 ArrayList<MealItem> filters = new ArrayList<MealItem>();
 
                 // get specific items
                 for (int i = 0; i < filterList.size(); i++) {
-                    if (filterList.get(i).getitle().contains(constraint)) {
+                    if (filterList.get(i).getitle().toLowerCase().contains(constraint.toString().toLowerCase())) {
                         MealItem p = new MealItem(filterList.get(i).getId(),  filterList.get(i).getPicture(),filterList.get(i).getitle()) {
                         };
 

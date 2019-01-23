@@ -23,13 +23,14 @@
 
             <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content">
 
                 <LinearLayout
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
                     android:gravity="center"
                     android:orientation="vertical">
 
@@ -160,6 +161,27 @@
                         android:layout_gravity="center"
                         android:gravity="center"
                         android:text="Here all the dishes you have already made appear. The dishes are sorted by the rating you gave at the time. You can also search through the dishes. it can be searched for the date and time when the court is made, the duration of the cooking and the title of the court.  Do you want to make the court again? Then click on the dish. Now the recipe will appear. " />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Amounts"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="The amounts are showed on the picture." />
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
                 </LinearLayout>
             </ScrollView>
         </LinearLayout>
