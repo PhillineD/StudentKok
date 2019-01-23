@@ -111,10 +111,15 @@ wat heb ik gedaan?
   wat heb ik gedaan?
    - de VeganActivity heb ik gecombineerd met de V activty zodat de gebruiker minder schermen heeft
    - de zoekbalk in MealsActivity is niet gevoelig voorgebruik van kleine of hoofdletters
+   - besloten dat de hoeveelheden evenveel zijn als het plaatje
    
    veranderd? 
   - De Veganactivity is verwijderd 
   - Zoekfunctie meals activity niet hoofdletter gevoelig
+  - in de informatie knop uitleg over de hoeveelheid van de gerechten 
+  
+  Extra? 
+  - misschien ga ik nog een rekenmachine toevoegen voor de hoeveelheid
   
  
 
