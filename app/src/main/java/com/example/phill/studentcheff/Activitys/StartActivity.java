@@ -23,10 +23,12 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
+import android.widget.Toast;
 
 import com.example.phill.studentcheff.R;
 
 import java.io.File;
+import java.net.MalformedURLException;
 
 public class StartActivity extends AppCompatActivity {
 
@@ -88,6 +90,17 @@ public class StartActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    /**
+     * Open crome with site: https://www.themealdb.com/.
+     *
+     * @param view    Represents a view of the crome picture.
+     */
+    public void onInternet(View view) {
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("https://www.themealdb.com/"));
+            startActivity(browserIntent);
     }
 
 }
