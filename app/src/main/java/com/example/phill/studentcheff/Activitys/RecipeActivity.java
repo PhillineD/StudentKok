@@ -15,6 +15,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RatingBar;
@@ -304,6 +305,7 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
             measure18.setText(pieceRecipe.getMeasure18());
             ingregients18.setText(pieceRecipe.getIngredients18());
         }
+
         // download pictue en set image
         DownloadImageTask Image = new DownloadImageTask(picture);
         Image.execute(pieceRecipe.getPicture());
@@ -321,6 +323,5 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
     public void gotRecipeError(String message) {
         Toast.makeText(this, "Please try again", Toast.LENGTH_SHORT).show();
     }
-
 
 }
