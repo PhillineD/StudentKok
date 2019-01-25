@@ -14,7 +14,6 @@ package com.example.phill.studentcheff.Activitys;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -23,12 +22,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
-import android.widget.Toast;
 
 import com.example.phill.studentcheff.R;
-
-import java.io.File;
-import java.net.MalformedURLException;
 
 public class StartActivity extends AppCompatActivity {
 
@@ -60,7 +55,7 @@ public class StartActivity extends AppCompatActivity {
 
     /**
      * Give a pop up with information.
-     *
+     * code from: https://stackoverflow.com/questions/5944987/how-to-create-a-popup-window-popupwindow-in-android.
      * @param view    Represents a view of the i picture.
      */
     public void informationClick(View view) {

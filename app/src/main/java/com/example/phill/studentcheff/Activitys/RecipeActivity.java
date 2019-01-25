@@ -15,7 +15,6 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RatingBar;
@@ -28,7 +27,6 @@ import com.example.phill.studentcheff.Models.Meal;
 import com.example.phill.studentcheff.R;
 import com.example.phill.studentcheff.Requests.RecipeRequest;
 
-import java.sql.Time;
 import java.util.ArrayList;
 
 public class RecipeActivity extends AppCompatActivity implements RecipeRequest.Callback {
@@ -61,7 +59,7 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
      *
      * @param view    Represents a view of clicked item.
      */
-    public void clicktostart(View view) {
+    public void clickTostart(View view) {
 
         Intent intent = getIntent();
         String picture = intent.getStringExtra("picture");

@@ -9,7 +9,6 @@
  * This work complies with the JMU Honor Code.
  */
 
-
 package com.example.phill.studentcheff.Activitys;
 
 import android.content.Intent;

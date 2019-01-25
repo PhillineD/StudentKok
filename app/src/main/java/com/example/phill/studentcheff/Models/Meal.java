@@ -131,6 +131,48 @@ public class Meal {
         return measure8;
     }
 
+    public String getMeasure9() {
+        return measure9;
+    }
+
+    public String getMeasure10() {
+        return measure10;
+    }
+
+    public String getMeasure11() {
+        return measure11;
+    }
+
+    public String getMeasure12() {
+        return measure12;
+    }
+
+    public String getMeasure13() {
+        return measure13;
+    }
+
+    public String getMeasure14() {
+        return measure14;
+    }
+
+    public String getMeasure15() {
+        return measure15;
+    }
+
+    public String getMeasure16() {
+        return measure16;
+    }
+
+    public String getMeasure17() {
+        return measure17;
+    }
+
+    public String getMeasure18() {
+        return measure18;
+    }
+
+
+
     public String getIngredients1() {
         return Ingredients1;
     }
@@ -163,114 +205,113 @@ public class Meal {
         return Ingredients8;
     }
 
-
-    public String getMeasure9() {
-        return measure9;
-    }
-
-    public void setMeasure9(String measure9) {
-        this.measure9 = measure9;
-    }
-
     public String getIngredients9() {
         return Ingredients9;
-    }
-
-    public void setIngredients9(String ingredients9) {
-        Ingredients9 = ingredients9;
-    }
-
-    public String getMeasure10() {
-        return measure10;
-    }
-
-    public void setMeasure10(String measure10) {
-        this.measure10 = measure10;
     }
 
     public String getIngredients10() {
         return Ingredients10;
     }
 
-    public void setIngredients10(String ingredients10) {
-        Ingredients10 = ingredients10;
-    }
-
-    public String getMeasure11() {
-        return measure11;
-    }
-
-    public void setMeasure11(String measure11) {
-        this.measure11 = measure11;
-    }
-
-    public String getMeasure12() {
-        return measure12;
-    }
-
-    public void setMeasure12(String measure12) {
-        this.measure12 = measure12;
-    }
-
     public String getIngredients11() {
         return Ingredients11;
-    }
-
-    public void setIngredients11(String ingredients11) {
-        Ingredients11 = ingredients11;
     }
 
     public String getIngredients12() {
         return Ingredients12;
     }
 
-    public void setIngredients12(String ingredients12) {
-        Ingredients12 = ingredients12;
-    }
-
     public String getIngredients13() {
         return Ingredients13;
-    }
-
-    public void setIngredients13(String ingredients13) {
-        Ingredients13 = ingredients13;
     }
 
     public String getIngredients14() {
         return Ingredients14;
     }
 
+    public String getIngredients15() {
+        return Ingredients15;
+    }
+
+    public String getIngredients16() {
+        return Ingredients16;
+    }
+
+    public String getIngredients17() {
+        return Ingredients17;
+    }
+
+    public String getIngredients18() {
+        return Ingredients18;
+    }
+
+
+
+    public void setIngredients16(String ingredients16) {
+        Ingredients16 = ingredients16;
+    }
+    public void setIngredients17(String ingredients17) {
+        Ingredients17 = ingredients17;
+    }
+    public void setIngredients18(String ingredients18) {
+        Ingredients18 = ingredients18;
+    }
+
+    public void setMeasure9(String measure9) {
+        this.measure9 = measure9;
+    }
+    public void setIngredients9(String ingredients9) {
+        Ingredients9 = ingredients9;
+    }
+    public void setMeasure10(String measure10) {
+        this.measure10 = measure10;
+    }
+    public void setIngredients10(String ingredients10) {
+        Ingredients10 = ingredients10;
+    }
+    public void setMeasure11(String measure11) {
+        this.measure11 = measure11;
+    }
+    public void setMeasure12(String measure12) {
+        this.measure12 = measure12;
+    }
+    public void setIngredients11(String ingredients11) {
+        Ingredients11 = ingredients11;
+    }
+    public void setIngredients12(String ingredients12) {
+        Ingredients12 = ingredients12;
+    }
+
+
+    public void setIngredients13(String ingredients13) {
+        Ingredients13 = ingredients13;
+    }
+
+
+
     public void setIngredients14(String ingredients14) {
         Ingredients14 = ingredients14;
     }
 
-    public String getIngredients15() {
-        return Ingredients15;
-    }
+
 
     public void setIngredients15(String ingredients15) {
         Ingredients15 = ingredients15;
     }
 
-    public String getMeasure13() {
-        return measure13;
-    }
+
 
     public void setMeasure13(String measure13) {
         this.measure13 = measure13;
     }
 
-    public String getMeasure14() {
-        return measure14;
-    }
+
 
     public void setMeasure14(String measure14) {
         this.measure14 = measure14;
     }
 
-    public String getMeasure15() {
-        return measure15;
-    }
+
 
     public void setMeasure15(String measure15) {
         this.measure15 = measure15;
@@ -294,55 +335,15 @@ public class Meal {
     public void setHint(String hint) {
         Hint = hint;
     }
-
-
-
-    public String getMeasure16() {
-        return measure16;
-    }
-
     public void setMeasure16(String measure16) {
         this.measure16 = measure16;
     }
-
-    public String getMeasure17() {
-        return measure17;
-    }
-
     public void setMeasure17(String measure17) {
         this.measure17 = measure17;
     }
-
-    public String getMeasure18() {
-        return measure18;
-    }
-
     public void setMeasure18(String measure18) {
         this.measure18 = measure18;
     }
 
-    public String getIngredients16() {
-        return Ingredients16;
-    }
-
-    public void setIngredients16(String ingredients16) {
-        Ingredients16 = ingredients16;
-    }
-
-    public String getIngredients17() {
-        return Ingredients17;
-    }
-
-    public void setIngredients17(String ingredients17) {
-        Ingredients17 = ingredients17;
-    }
-
-    public String getIngredients18() {
-        return Ingredients18;
-    }
-
-    public void setIngredients18(String ingredients18) {
-        Ingredients18 = ingredients18;
-    }
 
 }
