@@ -84,14 +84,14 @@
 
                 <LinearLayout
                     android:layout_width="364dp"
-                    android:layout_height="260dp"
+                    android:layout_height="361dp"
                     android:layout_gravity="center"
                     android:background="@android:color/darker_gray"
                     android:orientation="horizontal">
 
                     <LinearLayout
                         android:layout_width="182dp"
-                        android:layout_height="260dp"
+                        android:layout_height="361dp"
                         android:orientation="vertical">
 
                         <TextView
@@ -260,6 +260,39 @@
                             android:paddingLeft="20dp"
                             android:text="TextView" />
 
+                        <TextView
+                            android:id="@+id/viewIngredients16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+                            android:paddingLeft="20dp"
+                            android:text="TextView" />
+
+                        <TextView
+                            android:id="@+id/viewIngredients17"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+                            android:paddingLeft="20dp"
+                            android:text="TextView" />
+
+                        <TextView
+                            android:id="@+id/viewIngredients18"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+                            android:paddingLeft="20dp"
+                            android:text="TextView" />
+
                     </LinearLayout>
 
                     <LinearLayout
@@ -409,6 +442,36 @@
 
                         <TextView
                             android:id="@+id/ViewMeasure15"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+                            android:text="TextView" />
+
+                        <TextView
+                            android:id="@+id/ViewMeasure16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+                            android:text="TextView" />
+
+                        <TextView
+                            android:id="@+id/ViewMeasure17"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+                            android:text="TextView" />
+
+                        <TextView
+                            android:id="@+id/ViewMeasure18"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"

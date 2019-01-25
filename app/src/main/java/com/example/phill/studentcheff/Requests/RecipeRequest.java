@@ -109,6 +109,9 @@ public class RecipeRequest implements Response.Listener<JSONObject>, Response.Er
                 String measure13 = mealItems.getString("strMeasure13");
                 String measure14 = mealItems.getString("strMeasure14");
                 String measure15 = mealItems.getString("strMeasure15");
+                String measure16 = mealItems.getString("strMeasure16");
+                String measure17 = mealItems.getString("strMeasure17");
+                String measure18 = mealItems.getString("strMeasure18");
 
                 String ingredient1 = mealItems.getString("strIngredient1");
                 String ingredient2 = mealItems.getString("strIngredient2");
@@ -125,6 +128,9 @@ public class RecipeRequest implements Response.Listener<JSONObject>, Response.Er
                 String ingredient13 = mealItems.getString("strIngredient13");
                 String ingredient14 = mealItems.getString("strIngredient14");
                 String ingredient15 = mealItems.getString("strIngredient15");
+                String ingredient16 = mealItems.getString("strIngredient16");
+                String ingredient17 = mealItems.getString("strIngredient17");
+                String ingredient18 = mealItems.getString("strIngredient18");
 
 
                 // new Mealitem
@@ -132,7 +138,8 @@ public class RecipeRequest implements Response.Listener<JSONObject>, Response.Er
                         measure1,ingredient2 , measure2, ingredient3 , measure3, ingredient4 , measure4,
                         ingredient5 , measure5, ingredient6 , measure6, ingredient7 , measure7, ingredient8 , measure8,
                         ingredient9 , measure9,ingredient10 , measure10, ingredient11 , measure11 , ingredient12 , measure12,
-                        ingredient13 , measure13, ingredient14 , measure14, ingredient15 , measure15, hit);
+                        ingredient13 , measure13, ingredient14 , measure14, ingredient15 , measure15, ingredient16 , measure16
+                        , ingredient17 , measure17, ingredient18 , measure18, hit);
                 recipeView.add(item);
             }
 

@@ -51,7 +51,7 @@
 
                     <TextView
                         android:id="@+id/textView4"
-                        android:layout_width="293dp"
+                        android:layout_width="match_parent"
                         android:layout_height="33dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="10dp"
@@ -87,22 +87,6 @@
                         android:textStyle="bold|italic" />
 
                     <TextView
-                        android:id="@+id/textView14"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:text="Vega: You will be guided to a page With a choice of Vega and vegan. When you have selected one of the options, options will appear. When you click on one of the options you will be guided to the recipe. " />
-
-                    <TextView
-                        android:id="@+id/textView11"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:text="Random: You will be guided to a random page. " />
-
-                    <TextView
                         android:id="@+id/textView13"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -117,6 +101,30 @@
                         android:layout_gravity="center"
                         android:gravity="center"
                         android:text="Fish: You will be guided to a page full of options with fish. When you click on one of the options you will be guided to the recipe. " />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Vega: You will be guided to a page full of vega options. When you click on one of the options you will be guided to the recipe. " />
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Vegan: You will be guided to a page full of vegan options. When you click on one of the options you will be guided to the recipe. " />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Random: You will be guided to a random page. " />
 
                     <TextView
                         android:id="@+id/textView15"
@@ -142,7 +150,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:gravity="center"
-                        android:text="The recipe includes the category (below the picture), supplies and instructions. When you click on the film picture, an explanation will be played. When you have created the dish, you must indicate how long you have done it and how many stars you are giving. " />
+                        android:text="The recipe includes the category (below the picture), ingredients and instructions. When you click on the film picture, an explanation will be played. When you have created the dish, you must indicate how long you have done it and how many stars you are giving. " />
 
                     <TextView
                         android:id="@+id/textView18"
@@ -160,7 +168,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:gravity="center"
-                        android:text="Here all the dishes you have already made appear. The dishes are sorted by the rating you gave at the time. You can also search through the dishes. it can be searched for the date and time when the court is made, the duration of the cooking and the title of the court.  Do you want to make the court again? Then click on the dish. Now the recipe will appear. " />
+                        android:text="Here all the dishes you have made appear. The dishes are sorted by the rating you gave at the time. You can also search through the dishes. There can be searched  in history for the date  when the recipe is made, the title and the categorie. Do you want to make the recipe again? Click on the dish. Now the recipe will appear. " />
 
                     <TextView
                         android:id="@+id/textView8"
@@ -179,9 +187,28 @@
                         android:text="The amounts are showed on the picture." />
 
                     <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="About"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
                         android:id="@+id/textView21"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="This app is made by Philline Dikker for a project from the UvA.  Thanks https://www.themealdb.com for recipes.  Happy cooking : ) " />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="20dp"
+                        app:srcCompat="@drawable/studentcheffpicture" />
                 </LinearLayout>
             </ScrollView>
         </LinearLayout>

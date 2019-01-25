@@ -28,13 +28,13 @@
     <LinearLayout
         android:id="@+id/linearLayout5"
         android:layout_width="183dp"
-        android:layout_height="232dp"
+        android:layout_height="227dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="70dp"
         android:foregroundGravity="center"
         android:gravity="center"
         android:orientation="vertical"
@@ -55,16 +55,6 @@
             android:textColor="@android:color/white" />
 
         <Button
-            android:id="@+id/fish"
-            android:layout_width="185dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:background="@color/colorPrimary"
-            android:onClick="clickFish"
-            android:text="Fish"
-            android:textColor="@android:color/white" />
-
-        <Button
             android:id="@+id/vega"
             android:layout_width="185dp"
             android:layout_height="wrap_content"
@@ -82,6 +72,16 @@
             android:background="@color/colorPrimary"
             android:onClick="clickVegan"
             android:text="Vegan"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/fish"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimary"
+            android:onClick="clickFish"
+            android:text="Fish"
             android:textColor="@android:color/white" />
 
     </LinearLayout>

@@ -19,6 +19,9 @@ public class Meal {
     String Hint;
     String Ingredients13, Ingredients14, Ingredients15;
     String measure13, measure14, measure15;
+    String measure16, measure17, measure18;
+    String Ingredients16, Ingredients17, Ingredients18;
+
 
 
     // contructer
@@ -37,6 +40,9 @@ public class Meal {
                 String Ingredients13, String measure13,
                 String Ingredients14, String measure14,
                 String Ingredients15, String measure15,
+                String Ingredients16, String measure16,
+                String Ingredients17, String measure17,
+                String Ingredients18, String measure18,
                 String hint
                 ){
         this.id = id;
@@ -75,6 +81,12 @@ public class Meal {
         this.measure14= measure14;
         this.Ingredients15 = Ingredients15;
         this.measure15 = measure15;
+        this.Ingredients16 = Ingredients16;
+        this.measure16 = measure16;
+        this.Ingredients17 = Ingredients17;
+        this.measure17 = measure17;
+        this.Ingredients18 = Ingredients18;
+        this.measure18 = measure18;
         this.Hint = hint;
     }
 
@@ -281,6 +293,56 @@ public class Meal {
 
     public void setHint(String hint) {
         Hint = hint;
+    }
+
+
+
+    public String getMeasure16() {
+        return measure16;
+    }
+
+    public void setMeasure16(String measure16) {
+        this.measure16 = measure16;
+    }
+
+    public String getMeasure17() {
+        return measure17;
+    }
+
+    public void setMeasure17(String measure17) {
+        this.measure17 = measure17;
+    }
+
+    public String getMeasure18() {
+        return measure18;
+    }
+
+    public void setMeasure18(String measure18) {
+        this.measure18 = measure18;
+    }
+
+    public String getIngredients16() {
+        return Ingredients16;
+    }
+
+    public void setIngredients16(String ingredients16) {
+        Ingredients16 = ingredients16;
+    }
+
+    public String getIngredients17() {
+        return Ingredients17;
+    }
+
+    public void setIngredients17(String ingredients17) {
+        Ingredients17 = ingredients17;
+    }
+
+    public String getIngredients18() {
+        return Ingredients18;
+    }
+
+    public void setIngredients18(String ingredients18) {
+        Ingredients18 = ingredients18;
     }
 
 }

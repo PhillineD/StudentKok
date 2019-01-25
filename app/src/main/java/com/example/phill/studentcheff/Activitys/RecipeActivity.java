@@ -140,6 +140,9 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         TextView measure13 = findViewById(R.id.ViewMeasure13);
         TextView measure14 = findViewById(R.id.ViewMeasure14);
         TextView measure15 = findViewById(R.id.ViewMeasure15);
+        TextView measure16 = findViewById(R.id.ViewMeasure16);
+        TextView measure17 = findViewById(R.id.ViewMeasure17);
+        TextView measure18 = findViewById(R.id.ViewMeasure18);
 
         TextView ingregients1 = findViewById(R.id.viewIngredients1);
         TextView ingregients2 = findViewById(R.id.viewIngredients2);
@@ -156,6 +159,9 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         TextView ingregients13 = findViewById(R.id.viewIngredients13);
         TextView ingregients14 = findViewById(R.id.viewIngredients14);
         TextView ingregients15 = findViewById(R.id.viewIngredients15);
+        TextView ingregients16 = findViewById(R.id.viewIngredients16);
+        TextView ingregients17 = findViewById(R.id.viewIngredients17);
+        TextView ingregients18 = findViewById(R.id.viewIngredients18);
 
 
 
@@ -272,6 +278,32 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
             ingregients15.setText(pieceRecipe.getIngredients15());
         }
 
+        if (pieceRecipe.getMeasure16()  == "null"){
+            measure16.setText("");
+            ingregients16.setText("");
+        }
+        else {
+            measure16.setText(pieceRecipe.getMeasure16());
+            ingregients16.setText(pieceRecipe.getIngredients16());
+        }
+
+        if (pieceRecipe.getMeasure17()  == "null"){
+            measure17.setText("");
+            ingregients17.setText("");
+        }
+        else {
+            measure17.setText(pieceRecipe.getMeasure17());
+            ingregients17.setText(pieceRecipe.getIngredients17());
+        }
+
+        if (pieceRecipe.getMeasure18()  == "null"){
+            measure18.setText("");
+            ingregients18.setText("");
+        }
+        else {
+            measure18.setText(pieceRecipe.getMeasure18());
+            ingregients18.setText(pieceRecipe.getIngredients18());
+        }
         // download pictue en set image
         DownloadImageTask Image = new DownloadImageTask(picture);
         Image.execute(pieceRecipe.getPicture());
