@@ -122,6 +122,18 @@ wat heb ik gedaan?
   Extra? 
   - misschien ga ik nog een rekenmachine toevoegen voor de hoeveelheid
   
+  # day 11
+  HACKATON
+  
+  # day 12
+  wat heb ik gedaan?
+  - je kunt zoeken naar delen van worden 
+  - je kunt naar de site van de db gaan via een icoontje
+  - ingredients aangepast
+  
+  veranderd?
+ - in de zoekfuncties kun je ook delen van worden zoeken
+ - de StartActivity.xml bevat ook een internet icoontje, als je daar op klikt wordt je doorgestuurd naar de site van de DB. 
  
 
  
