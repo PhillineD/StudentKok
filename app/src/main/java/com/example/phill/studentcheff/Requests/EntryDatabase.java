@@ -91,7 +91,7 @@ public class EntryDatabase extends SQLiteOpenHelper {
      * @param title        Serach on woord typed in by user.
      * @param rating       given rating for recipe
      * @param picture       Picture from recipe.
-     * @param Catergorie    The caterogie from recipe.
+     * @param categorie    The caterogie from recipe.
      * @param time          Cooked time for recipe.
      */
     public void insert(String id, String title, Float rating, String picture, String categorie, Float time){
