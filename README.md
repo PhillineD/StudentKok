@@ -44,8 +44,9 @@ Kookgeschiedenis
 -   Link naar youtube filmpje.
 
 <b>Schets:</b>
-![ontwerp](https://user-images.githubusercontent.com/43133057/48567161-b3c16a00-e8fc-11e8-968d-9a40754e775c.png)
-studentkok/doc/ontwerp
+![overzichtschermen](https://user-images.githubusercontent.com/43133057/51831563-afe59700-22f2-11e9-920d-35aebf17cbf1.png)
+![final_classes](https://user-images.githubusercontent.com/43133057/51831571-b3791e00-22f2-11e9-854d-b6eb81006df1.png)
+
 # Voorwaarden 
 
 <b>Data:</b>
