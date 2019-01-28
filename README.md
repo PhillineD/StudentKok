@@ -1,8 +1,9 @@
 # StudentIsDeKok 
 
 De kookapp voor studenten met gevarieede, goedkope, makkelijke en voedzame avondmaaltijden. 
+      
+<img src="https://user-images.githubusercontent.com/43133057/51832704-b6294280-22f5-11e9-8279-09b37c6b22bb.png" width="20%" height="20%"/
 
-  <img src=https://user-images.githubusercontent.com/43133057/51832704-b6294280-22f5-11e9-8279-09b37c6b22bb.png"  width="20%" height="20%"/>
 
 Philline Dikker 12317608 
 Native App Studio 
