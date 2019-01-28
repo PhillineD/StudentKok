@@ -1,3 +1,11 @@
+# Final Report
+
+- Student cheff
+- Philline Dikker
+- Minor Programmeren 
+- Universiteit van Amsterdam
+
+
 # Samenvatting
 
 De kookapp voor studenten met gevarieede, goedkope, makkelijke en voedzame avondmaaltijden. 
