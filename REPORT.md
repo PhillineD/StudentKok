@@ -7,9 +7,11 @@ De kookapp voor studenten met gevarieede, goedkope, makkelijke en voedzame avond
 # Technisch design
 
 <b>Overzicht</b>
+
 ![overzichtschermen](https://user-images.githubusercontent.com/43133057/51831563-afe59700-22f2-11e9-920d-35aebf17cbf1.png)
 
 <b>Uitwerking per functie</b>
+
 ![designeind1](https://user-images.githubusercontent.com/43133057/51837087-9ea48680-2302-11e9-8c26-ddc391eceeaa.png)
 ![designeind2](https://user-images.githubusercontent.com/43133057/51837089-9ea48680-2302-11e9-850b-2b98285a1ee8.png)
 ![designeind3](https://user-images.githubusercontent.com/43133057/51837090-9f3d1d00-2302-11e9-89de-897f10cb3512.png)
@@ -18,6 +20,7 @@ De kookapp voor studenten met gevarieede, goedkope, makkelijke en voedzame avond
 ![designeind6](https://user-images.githubusercontent.com/43133057/51837095-9f3d1d00-2302-11e9-9cf1-93e58c141c0d.png)
 
 <b>Samenwerking classes</b>
+
 ![final_classes](https://user-images.githubusercontent.com/43133057/51831571-b3791e00-22f2-11e9-854d-b6eb81006df1.png)
 
 
