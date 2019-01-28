@@ -13,6 +13,9 @@ De kookapp voor studenten met gevarieede, goedkope, makkelijke en voedzame avond
 <b>Uitwerking per functie</b>
 
 - Informatie pop-up en link naar internet site van database.
+      <img src="https://user-images.githubusercontent.com/43133057/51837087-9ea48680-2302-11e9-8c26-ddc391eceeaa.png" width="20%" height="20%">
+      
+      
 ![designeind1](https://user-images.githubusercontent.com/43133057/51837087-9ea48680-2302-11e9-8c26-ddc391eceeaa.png)
 
 - Keuze menu's.
