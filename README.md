@@ -36,13 +36,16 @@ Studenten willen goedkoop, makkelijk en voedzame avondmaaltijden, alleen ontbree
 -   Als je op een item in de geschiedenis klikt, krijgt je het recept, er zal nu weer een nieuwe kooktijd en rating moeten worden       toegevoegd.
 
 <b>Schets:</b>
+
 ![overzichtschermen](https://user-images.githubusercontent.com/43133057/51831563-afe59700-22f2-11e9-920d-35aebf17cbf1.png)
 
 <b>Data:</b>
+
 De gerechten zullen gehaald worden van de open API database: https://www.themealdb.com. 
 Hiernaast komt er een SQL-database waarin de recent gemaakte gerechten worden opgeslagen (wanneer, welke rating).
 
 <b>Libery's:</b>
+
 - API themealdb
 - SQLite database
 
