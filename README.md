@@ -45,7 +45,7 @@ Kookgeschiedenis
 
 <b>Schets:</b>
 ![overzichtschermen](https://user-images.githubusercontent.com/43133057/51831563-afe59700-22f2-11e9-920d-35aebf17cbf1.png)
-![final_classes](https://user-images.githubusercontent.com/43133057/51831571-b3791e00-22f2-11e9-854d-b6eb81006df1.png)
+
 
 # Voorwaarden 
 
