@@ -50,7 +50,7 @@ wat heb ik gedaan?
  veranderd?
  - vanuit history kun je naar het recept en de rating aanpassen
  
-  # day 5 
+  # day 6
 wat heb ik gedaan? 
  - je kunt nu zoeken naar een gerechtnaam in meals.activity
  
@@ -59,7 +59,7 @@ wat heb ik gedaan?
  - voor het zoeken door mijn database heb ik de classe: HistoryItem en SearchAdapterHistory aangemaakt
  
   
-  # day 6
+  # day 7
 wat heb ik gedaan? 
  -  gezocht naar de beste manier om te zoeken door database
  
@@ -71,7 +71,7 @@ wat heb ik gedaan?
   - classe MealItem aanpassen zodat de "tags"ook worden opgehaald
   - zoekfuncties hierop aanpassen
   
-  # day 7
+  # day 8
   wat heb ik gedaan ? 
   -  je kunt nu zoeken door je history naar de datum, catergorie of title van het recept
   - de layouts aangepaast zodat je een duidelijker overzicht hebt
@@ -79,7 +79,7 @@ wat heb ik gedaan?
   veranderd?
   - je kunt ook zoeken naar de datum waarop je een gerecht gemaakt hebt en naar een catergorie bv seafood. 
   
-  # day 8
+  # day 9
   wat heb ik gedaan ? 
   -  je kunt nu bij het maken van het recept aangeven hoe lang je erover gedaan hebt
   - je kunt nu zoeken in history naar een bepaalde duur. Bijvoorbeeld: we willen max 20 minuten besteden aan het koken van dit recept, geeft hij alle recepten die 20 minuten of minder duren. 
@@ -94,7 +94,7 @@ wat heb ik gedaan?
   - layout van een history item voor beter inzicht in het recept.
   - classes zitten in mappen, voor een beter overzicht
   
-  # day 9 
+  # day 10 
   wat heb ik gedaan?
   - alle documenten aangepast op de juist style
   - layout van history aangepast
@@ -107,7 +107,7 @@ wat heb ik gedaan?
   - check of het wel dat aantal ingeredienten heeft anders geeft hij is de app NULL maar nu word dat vakje leeg 
   - op het beginscherm staat nu een i knopje, als je hierop klikt komt er een pop upje met uitleg van de app. Dit geeft een duidelijker beeld wat de app kan. 
   
-  # day 10 
+  # day 11
   wat heb ik gedaan?
    - de VeganActivity heb ik gecombineerd met de V activty zodat de gebruiker minder schermen heeft
    - de zoekbalk in MealsActivity is niet gevoelig voorgebruik van kleine of hoofdletters
@@ -122,10 +122,10 @@ wat heb ik gedaan?
   Extra? 
   - misschien ga ik nog een rekenmachine toevoegen voor de hoeveelheid
   
-  # day 11
+  # day 12
   HACKATON
   
-  # day 12
+  # day 13
   wat heb ik gedaan?
   - je kunt zoeken naar delen van worden 
   - je kunt naar de site van de db gaan via een icoontje
@@ -134,6 +134,12 @@ wat heb ik gedaan?
   veranderd?
  - in de zoekfuncties kun je ook delen van worden zoeken
  - de StartActivity.xml bevat ook een internet icoontje, als je daar op klikt wordt je doorgestuurd naar de site van de DB. 
+ 
+ # day 14 
+ wat heb ik gedaan?
+ - designs voor report gemaakt
+ 
+ 
  
 
  
