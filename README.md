@@ -6,8 +6,11 @@ De kookapp voor studenten met gevarieede, goedkope, makkelijke en voedzame avond
 
 
 Philline Dikker 12317608 
+
 Native App Studio 
+
 Minor Programmeren  
+
 Universiteit van Amsterdam  
 
 # Doel
