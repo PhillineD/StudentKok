@@ -44,6 +44,28 @@ De kookapp voor studenten met gevarieede, goedkope, makkelijke en voedzame avond
 
 <b>API request</b>
 
+Afhankelijk van de gekozen catergorie worden deze API’s gebruikt. Uit deze lijst wordt een gerecht met een bepaald id gekozen.
+The Meal Database geeft ons verschillende catergorieen (c). Ik heb de bruikbare gekozen per catergorie, zie hieronder. 
+
+*Fish*
+  - https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood
+
+*Meat*  
+ - https://www.themealdb.com/api/json/v1/1/filter.php?c=Beef
+ - https://www.themealdb.com/api/json/v1/1/filter.php?c=Chicken
+ - https://www.themealdb.com/api/json/v1/1/filter.php?c=Lamb
+ - https://www.themealdb.com/api/json/v1/1/filter.php?c=Pork
+
+*Vegan*  
+ - https://www.themealdb.com/api/json/v1/1/filter.php?c=Vegan
+ 
+ *Vega*  
+ - https://www.themealdb.com/api/json/v1/1/filter.php?c=Vegeterain
+
+
+Het id wordt hieronder ingevuld. 
+ - https://www.themealdb.com/api/json/v1/1/lookup.php?=”MealId”
+
 
 <b>Database</b>
 
