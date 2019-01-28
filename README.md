@@ -57,24 +57,6 @@ Hiernaast komt er een SQL-database waarin de recent gemaakte gerechten worden op
 - API themealdb
 - SQLite database
 
-<b>Reviews:</b> 
-
-Ik ben opzoek gegaan naar speciaal een app voor studenten , maar die heb ik niet kunnen vinden. Er bestaan er wel veel kookapps die makkelijk in gebruik zijn, die studenten dus eventueel zouden kunnen gebruiken.
-
-- Receptenmaker: Je kunt je eigen recepten beheren en recepten toevoegen van de bekende receptensites. Je kunt je recept sorteren op categorie, bereidingstijd, ingredient, receptnaam en bereiding. Ook hebben ze een kookwekker functie en een geen idee knop.  
-    - Ik zou ook een kookwekker kunnen toevoegen, maar aangezien elke telefoon ook een stopwatch functie heeft lijkt me dit niet nodig. In mijn app kun je ook zoeken naar ingredienten en recepten, zoeken naar bereidingstijd lijkt me onnodig omdat ik alleen recepten sorteer uit mijn database die snel zijn. Ik heb geen "geen idee knop", dit lijkt me wel een goed idee als extra.
-    
-          
-         <img src="https://user-images.githubusercontent.com/43133057/50723956-98e1c980-10e5-11e9-94b0-f51d2f0be018.png" width="20%" height="20%"/>
-
-     
-
--  Fotokookboek: Fotokookboek is een app die aanvoelt als een kookcursus. Grote foto’s en begrijpelijke teksten laten je stap voor stap duidelijk zien welke ingrediënten je nodig hebt en hoe je ze bereidt. Fotokookboek leert je recepten uit de receptenverzameling Snel & simpel. Hier staan 60 recepten in die in 30 minuten of minder bereid kunnen worden. De app biedt nog negen andere kookboeken met ieder minimaal 60 recepten, zoals Italiaans, Aziatisch of Eenvoudig & lekker. Deze zijn niet gratis, maar wel per kookboek aan te schaffen in de app. De ingrediëntenlijst kan gedeeld worden met anderen.De lievelingsrecepten kan je bewaren als favoriet en ook kan je gemakkelijk notities toevoegen aan recepten. 
-    - In vergelijking met mijn app is het start concept hetzelfde namelijk makelijk in gebruik. Bij mij kun je recepten ook als favoriet bewaren door ze een hoge rating te geven, maar ik heb geen notities. Ik zou aan mijn app nog notities kunnen toevoegen. 
-    
-         <img src="https://user-images.githubusercontent.com/43133057/50724079-b879f180-10e7-11e9-9217-3e1d7bd90fa2.png" width="20%" height="20%"/>
-
-
     
 <b>Moeilijkheden:</b>
  - Het filteren van de database op goedkoop, makkelijk en voedzame avondmaaltijden. Ik wil dit gaan doen door het aantal ingredienten  en aantal kookstappen te tellen, als dit te lang is dan deze niet kiezen. Ook wil ik kijken naar de ingredienten, als er een duur ingredient in staat, word dit recept niet gebruikt. Als dit niet lukt ga ik opzoek naar een andere data-base, of maak ik er zelf een aan. De concenquentie zal dan wel zijn dat ik weinig gerechten heb omdat ik ze zelf allemaal in de data-base moet zetten;
