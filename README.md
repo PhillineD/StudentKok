@@ -51,6 +51,9 @@ Hiernaast komt er een SQL-database waarin de recent gemaakte gerechten worden op
 
 # Copyright
 
+<b>Public domain release</b>
+
+Code open voor gebruik. Data van https://www.themealdb.com. 
     
     
 
