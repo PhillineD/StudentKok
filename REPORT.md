@@ -48,6 +48,39 @@ De kookapp voor studenten met gevarieede, goedkope, makkelijke en voedzame avond
 <b>Samenwerking classes</b>
 
    <img src="https://user-images.githubusercontent.com/43133057/51831571-b3791e00-22f2-11e9-854d-b6eb81006df1.png" width="75%" height="75%">
+   
+*Activity’s* 
+- HistoryActivity
+	- history_activity.xml
+	- history_item.xml
+- MealsActivity
+	- meals_activity.xml
+	- meals_item.xml
+- MeatActivity
+	- meat_activity.xml
+- StartActivity
+	- start_activity.xml
+	- popup_history.xml
+- VActivity
+	- V_activity.xml
+- RecipeActivity
+	- recipe_activity.xml
+	
+*Adapters*
+- EntryAdapter
+- MealAdapter
+
+*Extra*
+- DowloadImageTask
+
+*Models*
+- Meal
+- MealItem
+
+*Request*
+- MealsRequest
+- RecipeRequest
+- EntryDatabase
 
 
 <b>API request</b>
