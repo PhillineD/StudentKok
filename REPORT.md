@@ -69,6 +69,43 @@ Het id wordt hieronder ingevuld.
 
 <b>Database</b>
 
+Om de gebruikersgeschiedenis op te slaan gaan we een SQLite Database aanmaken in de telefoon. Deze moet er als onderstaande tabel gaan uitzien.
+
+<table>
+	<tr>
+		<th>Meal id </th>
+		<th>Rating </th>
+		<th>Picture </th>
+            <th>Hint </th>
+            <th>Time </th>
+            <th>Timestamp </th>
+	</tr>
+	<tr>
+		<td> 12345      </td>
+	</tr>
+	<tr>
+		<td> 64576      </td>
+	</tr>
+	<tr>
+		<td> 92345      </td>
+	</tr>
+	<tr>
+		<td> 12775      </td>
+	</tr>
+      <tr>
+		<td> 12775      </td>
+	</tr>
+      <tr>
+		<td> 12775      </td>
+	</tr>
+</table>
+
+- Meal id als string;
+- Rating als integer; 
+- Picuture als string.
+- Hint als string;
+- Time als float;
+- Timestamp als TIME;
 
 
 # Uitdagingen 
