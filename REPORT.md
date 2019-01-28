@@ -82,22 +82,13 @@ Om de gebruikersgeschiedenis op te slaan gaan we een SQLite Database aanmaken in
 	</tr>
 	<tr>
 		<td> 12345      </td>
+		<td> 3.0    </td>
+		<td> url.png      </td>
+		<td> Seafood      </td>
+		<td> 132      </td>
+		<td> 22-08-2019      </td>
 	</tr>
-	<tr>
-		<td> 64576      </td>
-	</tr>
-	<tr>
-		<td> 92345      </td>
-	</tr>
-	<tr>
-		<td> 12775      </td>
-	</tr>
-      <tr>
-		<td> 12775      </td>
-	</tr>
-      <tr>
-		<td> 12775      </td>
-	</tr>
+
 </table>
 
 - Meal id als string;
