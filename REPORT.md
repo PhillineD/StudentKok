@@ -42,6 +42,13 @@ De kookapp voor studenten met gevarieede, goedkope, makkelijke en voedzame avond
    <img src="https://user-images.githubusercontent.com/43133057/51831571-b3791e00-22f2-11e9-854d-b6eb81006df1.png" width="75%" height="75%">
 
 
+<b>API request</b>
+
+
+<b>Database</b>
+
+
+
 # Uitdagingen 
 
 # Refelectie
