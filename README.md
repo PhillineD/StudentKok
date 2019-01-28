@@ -7,18 +7,18 @@ Native App Studio
 Minor Programmeren  
 Universiteit van Amsterdam  
 
-# Probleem
+# Doel
 
 Studenten willen goedkoop, makkelijk en voedzame avondmaaltijden, alleen ontbreek de kennis en vaardigheid. Vaak kost het te veel tijd om dit op te zoeken op internet. Daarnaast vergeten studenten ook wat ze hebben gemaakt. Ook hebben ze geen idee van smaken van andere cuturen. Er is nog geen oplossing in vorm van een app. De Studentisdekok-app biedt de oplossing. In deze app worden studenten-gerechten (goedkoop, makkelijk en voedzame avondmaaltijden) weergeven en is er een optie om te zien wat je al een keer hebt gemaakt en welke beoordeling je hieraan gegeven hebt. 
 
 # Oplossing/ gebruik
 
-Startscherm
+<b>Startscherm</b>
 -	Bieden van 2 opties: "Kookgeschiedenis" en "Probeer iets nieuws";
 -   Wanneer men op het internet icoontje klikt, opent TheMealsDatabase.com, waar alle gerechten vandaan komen;
 -   Wanneer men op het i klikt, opent een pop-up met informatie.
 
-Probeer iets nieuws
+<b>Probeer iets nieuws</b>
 -	Na het klikken op "Probeer iets nieuws" moet de gebruiker kunnen kiezen tussen vegetarisch, veganistisch, vis of vlees;
 -   Ook is er een mogelijkheid om een random categorie te kiezenl;
 -   Wanneer men klikt op vlees, verschijnen de verschillende opties voor vlees;
@@ -29,29 +29,25 @@ Probeer iets nieuws
 -   De gebruiker kan een rating geven aan een bepaald gerecht door de ratingbar;
 -   Wanneer de gebruiker klaar is en op het opslaan icoontje klikt, wordt ook dit gerecht toegevoegd aan de kookgeschiedenis. 
 
-Kookgeschiedenis
+<b>Kookgeschiedenis</b>
 -   Kookgeschiedenis geeft de gemaakte gerechten met datum van maken gesorteerd op rating die tijdends het maken is gegeven;
 -   Als het recept in de kookgeschiedenis vaker is gemaakt dan staat de meeste recente datum, rating  en kooktijd erin;
 -   Kookgeschiedenis heeft ook een zoekfunctie waarmee gezocht kan worden naar receptnamen, categorieen en hoe lang het koken duurde; 
 -   Als je op een item in de geschiedenis klikt, krijgt je het recept, er zal nu weer een nieuwe kooktijd en rating moeten worden       toegevoegd.
 
-
 <b>Schets:</b>
 ![overzichtschermen](https://user-images.githubusercontent.com/43133057/51831563-afe59700-22f2-11e9-920d-35aebf17cbf1.png)
 
-
-# Voorwaarden 
-
 <b>Data:</b>
-
-De gerechten zullen gehaald worden van de open API database: https://www.themealdb.com. Hier staan allerlei gerechten in. Door er zelf een filter op te zetten ga ik er voor zorgen dat die alleen de goedkope, makkelijke en voedzame eruit haalt. 
-Hiernaast komt er een SQL-database waarin de recent gemaakte gerechten worden opgeslagen (wanneer, welke rating). Ook gaat moet een een formule komen die kan berekenen voor hoeveel personen het gerecht is, dit staat namelijk niet in de database. 
+De gerechten zullen gehaald worden van de open API database: https://www.themealdb.com. 
+Hiernaast komt er een SQL-database waarin de recent gemaakte gerechten worden opgeslagen (wanneer, welke rating).
 
 <b>Libery's:</b>
 - API themealdb
 - SQLite database
 
-    
+# Copyright
+
     
     
 
