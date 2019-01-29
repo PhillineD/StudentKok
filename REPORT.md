@@ -1,7 +1,7 @@
 # Final Report
 
 *Student cheff*                                                                                                                          
-Philline Dikker                                                                                                                                  
+Philline Dikker   12317608                                                                                                                               
 Minor Programmeren                                                                                                                         
 Universiteit van Amsterdam                                                                                                                  
 
