@@ -61,8 +61,8 @@ public class MealsActivity extends Activity implements MealsRequest.Callback{
 
 
     /**
-     * Set meals and  set on query listener.
-     *
+     *      * Set meals and  set on query listener.
+     *      *
      * @param  "ArrayList<MealItem> meals"  List of meal items.
      * @return  false
      */

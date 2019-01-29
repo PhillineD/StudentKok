@@ -40,7 +40,8 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         // get id from de meal you chosen
         Intent intent = getIntent();
         String id = intent.getStringExtra("id");
-//        String picture = intent.getStringExtra("picture");
+
+        // new recipequest with id
         RecipeRequest ArrayAdapter = new RecipeRequest(this);
         ArrayAdapter.getRecipe(this, id);
     }

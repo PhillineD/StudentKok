@@ -87,6 +87,7 @@ public class StartActivity extends AppCompatActivity {
 
     }
 
+
     /**
      * Open crome with site: https://www.themealdb.com/.
      *
