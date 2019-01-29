@@ -1,9 +1,9 @@
 # Final Report
 
-- Student cheff
-- Philline Dikker
-- Minor Programmeren 
-- Universiteit van Amsterdam
+*Student cheff* 
+Philline Dikker                                                                                                                                  
+Minor Programmeren                                                                                                                         
+Universiteit van Amsterdam                                                                                                                  
 
 
 # Samenvatting
