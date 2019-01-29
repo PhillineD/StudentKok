@@ -50,14 +50,28 @@ De kookapp voor studenten met gevarieede, goedkope, makkelijke en voedzame avond
    <img src="https://user-images.githubusercontent.com/43133057/51831571-b3791e00-22f2-11e9-854d-b6eb81006df1.png" width="75%" height="75%">
    
 *Activity’s* 
+
+- StartActivity:
+	- navigatie naar "try something new";
+	- nagigatie naar "history";
+	- pop-up van informatie;
+	- intent naar internet voor site van database;
+
 - HistoryActivity
-	- history_activity.xml
-	- history_item.xml
+	- vult de listview van history_activity.xml met history_item.xml door middel van de EntryAdapter.java;
+	- onclick, voor als op een history_item.xml wordt geklikt, id woord doorgegeven;
+	- zoekfunctie, door middel van de functie "filterData" van EntryDatabase;
+	
 - MealsActivity
-	- meals_activity.xml
-	- meals_item.xml
+	- aan de hand van een gekregen categorie, een MealsRequest;
+	- on click, voor als op  meals_item.xml is geklikt;
+	- gotMeals, als de mealsrequest is gelukt, vult listview van meals_activity.xml met gekregen meals_item.xml
+	- got MealsError, als het ophalen van meals mislukt is; 
+	- in de gotMeals, als er getypt word in de zoekbalk, filter functie vanuit MealAdapter
+	
 - MeatActivity
-	- meat_activity.xml
+	- het doorgeven van de juiste categorie aan de hand van de geklikte button op meat_activity.xml;
+	
 - StartActivity
 	- start_activity.xml
 	- popup_history.xml
@@ -82,6 +96,18 @@ De kookapp voor studenten met gevarieede, goedkope, makkelijke en voedzame avond
 - RecipeRequest
 - EntryDatabase
 
+	
+*Layouts*
+
+- history_activity.xml
+- history_item.xml
+- meals_activity.xml
+- meals_item.xml
+- meat_activity.xml
+- start_activity.xml
+- popup_history.xml
+- V_activity.xml
+- recipe_activity.xml
 
 <b>API request</b>
 
