@@ -194,16 +194,24 @@ Om de gebruikersgeschiedenis op te slaan gaan we een SQLite Database aanmaken in
 	Uit deze opties kan weer gekozen worden, zodat er minder gerechten verschijnen en dat de recepten specifieker zijn. 
 	Het klikken op het filmpje bij recept moet een filmpje geven, dit maakt ze app gebruiksvriendelijker;
 - De video kan bekeken worden door op de knop video te klikken, dan is het duidelijk hoe de gebruiker aan de video komt;
-- Vanuit een item in de history, kun je door het klikken weer naar het recept van het aangeklikte item gaan. Hierdoor hoeft de gebruiker niet meer in de gerechten te gaan zoeken om naar een recept te gaan;
-- Random knoppen bij de keuzes, maakt het kiezen makkelijker;
-- Als je vanuit history of vanuit “try something new” bij een recept komt, moet je een nieuwe rating aangeven. Dit doe je omdat als je een gerecht voor de tweede keer maakt, hij lekkerder kan zijn; 
-- De zoekboxen worden edittexten, omdat je dan al na het typen van 1 letter kan zoeken. Dit is makkelijker en sneller voor de gebruiker;
-- In history kun je ook zoeken naar de categorie van een gerecht bijvoorbeeld vega, makkelijker een gerecht terug vinden;
-- Het zoeken van in de history word gedaan door een Edittext en een knop, omdat dit beter werkt voor databases;
-- Je kunt bij het recept aangeven hoe lang je erover hebt gedaan, dit word daarna (als de rating ook is ingevuld) ook weergeven in history. Zo kunnen gebruikers gelijk zien hoeveel tijd het waarschijnlijk gaat kosten;
-- De VeganActivity is gecombineerd met de V activty zodat de gebruiker minder schermen heeft;
-- Er zal worden aangenomen dat de hoeveelheden gelijk zijn aan de hoeveelheden op het plaatje, omdat er in de database daar nergens iets over staat;
-- StartActivity heeft een internet knop, als je hier op klikt word je doorverwezen naar de site van de data. Hierdoor weet de gebruiker war alle gerechten vandaan komen.
-
-
-# Refelectie
+	- eerst moest er op het plaatje geklikt worden, dit is niet duidelijk.
+- Vanuit een item in de history, kun je door het klikken weer naar het recept van het aangeklikte item gaan. 
+	- Hierdoor hoeft de gebruiker niet meer in de gerechten te gaan zoeken om naar een recept te gaan;
+- Random knoppen bij de keuzes;
+	- maakt het kiezen makkelijker;
+- Als je vanuit history of vanuit “try something new” bij een recept komt, moet je een nieuwe rating aangeven. 
+	- Dit doe je omdat als je een gerecht voor de tweede keer maakt, hij lekkerder kan zijn. De oude rating zal niet weergeven zijn omdat dit de nieuwe rating eventueel kan beinvloeden;
+- De zoekboxen worden edittexten, omdat je dan al na het typen van 1 letter kan zoeken. 
+	- Dit is makkelijker en sneller voor de gebruiker;
+- In history kun je ook zoeken naar de categorie van een gerecht bijvoorbeeld vega
+	- Hierdoor kun je makkelijker een gerecht terug vinden;
+- Het zoeken van in de history word gedaan door een Edittext en een knop
+	- Werkt beter voor databases;
+- Je kunt bij het recept aangeven hoe lang je erover hebt gedaan, dit word daarna (als de rating ook is ingevuld) ook weergeven in history. 
+	- Zo kunnen gebruikers gelijk zien hoeveel tijd het waarschijnlijk gaat kosten;
+- De VeganActivity is gecombineerd met de V activty 
+	- Minder schermen voor de gebruiker;
+- Er zal worden aangenomen dat de hoeveelheden gelijk zijn aan de hoeveelheden op het plaatje;
+	- In de dataset staat hier niks over, voor duidelijke van de gebruiker zal er toch iets over gezegd moeten worden;
+- StartActivity heeft een internet knop, als je hier op klikt word je doorverwezen naar de site van de data. 
+	- Hierdoor weet de gebruiker waar alle gerechten vandaan komen.
