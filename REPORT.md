@@ -119,7 +119,6 @@ De kookapp voor studenten met gevarieede, goedkope, makkelijke en voedzame avond
 
 	
 *Layouts*
-
 - history_activity.xml
 - history_item.xml
 - meals_activity.xml
