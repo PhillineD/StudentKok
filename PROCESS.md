@@ -139,6 +139,10 @@ wat heb ik gedaan?
  wat heb ik gedaan?
  - designs voor report gemaakt
  
+  # day 15
+ wat heb ik gedaan?
+ - video gemaakt en op youtube gezet
+ 
  
  
 
