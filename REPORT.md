@@ -79,24 +79,43 @@ De kookapp voor studenten met gevarieede, goedkope, makkelijke en voedzame avond
 	- met gekregen id een RecipeRequest aanvragen;
 	- navigatie naar Youtube als er gelikt is op het video'tje;
 	- onclick on van afrondingsknop, vult een item in de database (EntryDatabase) en checkt of alles goed is ingevuld; 
-	-
-	- recipe_activity.xml
+	- gotRecipe voor als RecipeRequest goed is gegaan, vult de scrollview in van recipe_activity.xml;
+	- gotRecipeError voor als request fout is gegaan;
 	
 *Adapters*
 - EntryAdapter
+	- aan de hand van een view het vullen van history_item.xml;
+	
 - MealAdapter
-
+	- aan de hand van een view het vullen van meals_item.xml;
+	- filterfunctie voor de SearchView in meals_activity.xml;
+	
 *Extra*
 - DowloadImageTask
+	- weergeven van plaatjes in heel de app;
+	
 
 *Models*
 - Meal
-- MealItem
+	- model voor het recept;
 
+- MealItem
+	- model voor het gerecht;
+	
 *Request*
 - MealsRequest
+	- getMeals voor jsonObjectRequest met juiste categorie;
+	- onResponse het krijgen van JSONArray en het vullen van MealItems;
+	
 - RecipeRequest
+	- getRecipe voor jsonObjectRequest met juiste id van het recept;
+	- onResponse het krijgen van JSONArray en het vullen van Meal;
+	
 - EntryDatabase
+	- maakt een database;
+	- insert voor toevoegen aan database;
+	- filterData voor het zoeken in history_activity.xml;
+	
 
 	
 *Layouts*
