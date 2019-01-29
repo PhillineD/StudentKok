@@ -54,7 +54,7 @@ De kookapp voor studenten met gevarieede, goedkope, makkelijke en voedzame avond
 - StartActivity:
 	- navigatie naar "try something new";
 	- nagigatie naar "history";
-	- pop-up van informatie;
+	- pop-up van informatie, popup_history.xml;
 	- intent naar internet voor site van database;
 
 - HistoryActivity
@@ -70,14 +70,16 @@ De kookapp voor studenten met gevarieede, goedkope, makkelijke en voedzame avond
 	- in de gotMeals, als er getypt word in de zoekbalk, filter functie vanuit MealAdapter
 	
 - MeatActivity
-	- het doorgeven van de juiste categorie aan de hand van de geklikte button op meat_activity.xml;
-	
-- StartActivity
-	- start_activity.xml
-	- popup_history.xml
+	- het doorgeven van de juiste categorie ( Beef, Pork, Chicken, Lamb of Random) aan de hand van de geklikte button op meat_activity.xml;
+
 - VActivity
-	- V_activity.xml
+	- het doorgeven van de juiste gekozen catergorie ( Random, Meat, Fish, Vega, Vegan) aan de hand van de geklikte bbutton op V_activity.xml ;
+	
 - RecipeActivity
+	- met gekregen id een RecipeRequest aanvragen;
+	- navigatie naar Youtube als er gelikt is op het video'tje;
+	- onclick on van afrondingsknop, vult een item in de database (EntryDatabase) en checkt of alles goed is ingevuld; 
+	-
 	- recipe_activity.xml
 	
 *Adapters*
