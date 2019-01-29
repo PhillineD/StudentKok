@@ -1,6 +1,6 @@
 # Final Report
 
-*Student cheff* 
+*Student cheff*                                                                                                                          
 Philline Dikker                                                                                                                                  
 Minor Programmeren                                                                                                                         
 Universiteit van Amsterdam                                                                                                                  
