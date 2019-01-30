@@ -101,7 +101,7 @@ Als we naar app/java/com.example.phill.studentcheff gaan zie je verschillende ma
 	- gotMealsError, als het ophalen van meals mislukt is; 
 	- in de gotMeals, als er getypt word in de zoekbalk, filter functie vanuit MealAdapter.
 	
-- MeatActivit;
+- MeatActivity;
 	- het doorgeven van de juiste categorie ( Beef, Pork, Chicken, Lamb of Random) aan de hand van de geklikte button op meat_activity.xml.
 
 - VActivity;
@@ -149,7 +149,7 @@ Als we naar app/java/com.example.phill.studentcheff gaan zie je verschillende ma
 	- filterData voor het zoeken in history_activity.xml.
 	
 
-In app/res staan de layouts van mijn app:	
+In app/res/layouts staan de layouts van mijn app:	
 - history_activity.xml;
 - history_item.xml;
 - meals_activity.xml;
