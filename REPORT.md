@@ -72,7 +72,15 @@ De kookapp voor studenten met gevarieede, goedkope, makkelijke en voedzame avond
 <b>Samenwerking classes</b>
 
    <img src="https://user-images.githubusercontent.com/43133057/51831571-b3791e00-22f2-11e9-854d-b6eb81006df1.png" width="75%" height="75%">
-   
+
+
+Als we naar app/java/com.example.phill.studentcheff gaan zie je verschillende mapjes: 
+- Activity's; 
+- Adapters;
+- Extra;
+- Models;
+- Request.
+
 *Activity’s* 
 
 - StartActivity;
@@ -141,8 +149,7 @@ De kookapp voor studenten met gevarieede, goedkope, makkelijke en voedzame avond
 	- filterData voor het zoeken in history_activity.xml.
 	
 
-	
-*Layouts*
+In app/res staan de layouts van mijn app:	
 - history_activity.xml;
 - history_item.xml;
 - meals_activity.xml;
