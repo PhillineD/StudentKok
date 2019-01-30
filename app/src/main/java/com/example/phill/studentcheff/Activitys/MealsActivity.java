@@ -17,6 +17,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.Toast;
@@ -59,7 +60,6 @@ public class MealsActivity extends Activity implements MealsRequest.Callback{
         }
     }
 
-
     /**
      *      * Set meals and  set on query listener.
      *      *
@@ -69,27 +69,15 @@ public class MealsActivity extends Activity implements MealsRequest.Callback{
     @Override
     public void gotMeals(final ArrayList<MealItem> meals) {
 
-        final MealAdapter adapter = new MealAdapter(this, meals);
+        MealAdapter adapter = new MealAdapter(this, meals);
         ListView listView = findViewById(R.id.MealsListView);
         listView.setAdapter(adapter);
+        listView.getAdapter();
         listView.setOnItemClickListener(new Clicked());
 
         // find searchview
         textBox = (SearchView) findViewById(R.id.editText);
-        textBox.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String arg0) {
-                return false;
-            }
-
-            // if typed call getFilter()
-            @Override
-            public boolean onQueryTextChange(String query) {
-                adapter.getFilter().filter(query);
-                return false;
-            }
-        });
-
+        textBox.setOnQueryTextListener(new searchMeal());
     }
 
     /**
@@ -100,5 +88,25 @@ public class MealsActivity extends Activity implements MealsRequest.Callback{
     @Override
     public void gotMealsError(String message) {
         Toast.makeText(this, "Something went wrong, try again", Toast.LENGTH_SHORT).show();
+    }
+
+    /**
+     * Search meal in adapter and filter it.
+     *
+     */
+    public class searchMeal implements SearchView.OnQueryTextListener{
+
+        @Override
+        public boolean onQueryTextSubmit(String query) {
+            return false;
+        }
+
+        @Override
+        public boolean onQueryTextChange(String newText) {
+            ListView list = (ListView) findViewById(R.id.MealsListView);
+            MealAdapter adapter = (MealAdapter) list.getAdapter();
+            adapter.getFilter().filter(newText);
+            return false;
+        }
     }
 }
