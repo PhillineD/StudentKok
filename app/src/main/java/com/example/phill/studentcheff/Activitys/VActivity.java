@@ -28,70 +28,63 @@ public class VActivity extends AppCompatActivity {
     }
 
     /**
-     * Navigation to MeatActivity, parse the categorie.
+     * Navigation to the right Activity, parse the categorie.
      *
-     * @param view    Represents a view of the button "Meat".
+     * @param v   Represents a view of the button "Meat".
      */
-    public void clickMeat(View view) {
-        Intent intent = new Intent(getApplicationContext(), MeatActivity.class);
-        intent.putExtra("categorie", "meat");
-        startActivity(intent);
-        finish();
-    }
+    public void onClick(View v) {
 
-    /**
-     * Navigation to MealsActivity, parse the categorie.
-     *
-     * @param view    Represents a view of the button "Fish".
-     */
-    public void clickFish(View view) {
-        Intent intent = new Intent(getApplicationContext(), MealsActivity.class);
-        intent.putExtra("categorie", "seafood");
-        startActivity(intent);
-        finish();
-    }
+        // get random categorie and navigate
+        if (v.getId() == R.id.randomv){
+            List<String> givenList = Arrays.asList("meat", "seafood", "Vegetarian","Vegan");
 
-    /**
-     * Navigation to MealsActivity, parse the categorie.
-     *
-     * @param view    Represents a view of the button "Vega".
-     */
-    public void clickVega(View view) {
-        Intent intent = new Intent(getApplicationContext(), MealsActivity.class);
-        intent.putExtra("categorie", "Vegetarian");
-        startActivity(intent);
-    }
+            // get random categorie
+            Random rand = new Random();
+            String randomElement = givenList.get(rand.nextInt(givenList.size()));
 
-    /**
-     * Navigation to MealsActivity, parse the categorie.
-     *
-     * @param view    Represents a view of the button "Vegan".
-     */
-    public void clickVegan(View view) {
-        Intent intent = new Intent(getApplicationContext(), MealsActivity.class);
-        intent.putExtra("categorie", "Vegan");
-        startActivity(intent);
-    }
+            if (randomElement == "meat") {
+                Intent intent = new Intent(getApplicationContext(), MeatActivity.class);
+                intent.putExtra("categorie", "meat");
+                startActivity(intent);
+                finish();
+            }
+            else{
+                Intent intent = new Intent(getApplicationContext(), MealsActivity.class);
+                intent.putExtra("categorie", randomElement);
+                startActivity(intent);
+                finish();
+            }
+        }
 
-    /**
-     * Navigation to random Activity, parse the categorie.
-     *
-     * @param view    Represents a view of the buttons.
-     */
-    public void randomV(View view) {
-        List<String> givenList = Arrays.asList("meat", "seafood", "Vegetarian","Vegan");
-        Random rand = new Random();
-        String randomElement = givenList.get(rand.nextInt(givenList.size()));
-        if (randomElement == "meat") {
+        // navigate to MeatActivity parse categorie
+        else if (v.getId() == R.id.meat){
             Intent intent = new Intent(getApplicationContext(), MeatActivity.class);
             intent.putExtra("categorie", "meat");
             startActivity(intent);
             finish();
         }
-        else{
-            Intent intent = new Intent(getApplicationContext(), MealsActivity.class);
-            intent.putExtra("categorie", randomElement);
-            startActivity(intent);
+
+        // navigate to MealsActivity parse categorie
+        else if (v.getId() == R.id.seafood){
+            Intent intent1 = new Intent(getApplicationContext(), MealsActivity.class);
+            intent1.putExtra("categorie", "seafood");
+            startActivity(intent1);
+            finish();
+        }
+
+        // navigate to MealsActivity parse categorie
+        else if (v.getId() == R.id.Vegan){
+            Intent intent3 = new Intent(getApplicationContext(), MealsActivity.class);
+            intent3.putExtra("categorie", "Vegan");
+            startActivity(intent3);
+            finish();
+        }
+
+        // navigate to MealsActivity parse categorie
+        else if (v.getId() == R.id.Vegetarian){
+            Intent intent2 = new Intent(getApplicationContext(), MealsActivity.class);
+            intent2.putExtra("categorie", "Vegetarian");
+            startActivity(intent2);
             finish();
         }
     }

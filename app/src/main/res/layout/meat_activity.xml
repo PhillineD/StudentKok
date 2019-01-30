@@ -18,7 +18,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:background="@color/colorPrimary"
-        android:onClick="randomClick"
+        android:onClick="onClick"
         android:text="random"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
@@ -51,7 +51,7 @@
             android:layout_width="170dp"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
-            android:onClick="clickBeef"
+            android:onClick="onClick"
             android:text="Beef"
             android:textColor="@android:color/white" />
 
@@ -61,7 +61,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:background="@color/colorPrimary"
-            android:onClick="clickChicken"
+            android:onClick="onClick"
             android:text="Chicken"
             android:textColor="@android:color/white" />
 
@@ -91,7 +91,7 @@
             android:layout_width="170dp"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
-            android:onClick="clickLam"
+            android:onClick="onClick"
             android:text="Lam"
             android:textColor="@android:color/white" />
 
@@ -101,7 +101,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:background="@color/colorPrimary"
-            android:onClick="clickPork"
+            android:onClick="onClick"
             android:text="Pork"
             android:textColor="@android:color/white" />
     </LinearLayout>

@@ -31,74 +31,61 @@ public class MeatActivity extends AppCompatActivity {
     }
 
     /**
-     * Navigation to Mealsactivity, parse the categorie.
+     * Navigation to right activity, parse the categorie.
      *
-     * @param view    Represents a view of the button beef.
+     * @param v    Represents a view of the button beef.
      */
-    public void clickBeef(View view) {
-        Intent intent = new Intent(getApplicationContext(), MealsActivity.class);
-        intent.putExtra("categorie", "Beef");
-        startActivity(intent);
-        finish();
+    public void onClick(View v) {
+        switch (v.getId()) {
+
+            // get random meat element and navigate
+            case R.id.randommeat:
+                // list with all posible categories
+                List<String> givenList = Arrays.asList("Beef", "Chicken", "Lamb", "Pork");
+
+                // get a random element from the list
+                Random rand = new Random();
+                String randomElement = givenList.get(rand.nextInt(givenList.size()));
+
+                // dependent on random element, navigate to MealsActivity with right categorie
+                Intent intent = new Intent(getApplicationContext(), MealsActivity.class);
+                intent.putExtra("categorie", randomElement);
+                startActivity(intent);
+                finish();
+                break;
+
+            // navigate to MealsActivity parse categorie
+            case R.id.Lam:
+                Intent intent1 = new Intent(getApplicationContext(), MealsActivity.class);
+                intent1.putExtra("categorie", "Lamb");
+                startActivity(intent1);
+                finish();
+                break;
+
+            // navigate to MealsActivity parse categorie
+            case R.id.Chicken:
+                Intent intent2 = new Intent(getApplicationContext(), MealsActivity.class);
+                intent2.putExtra("categorie", "Chicken");
+                startActivity(intent2);
+                finish();
+                break;
+
+            // navigate to MealsActivity parse categorie
+            case R.id.Pork:
+                Intent intent3 = new Intent(getApplicationContext(), MealsActivity.class);
+                intent3.putExtra("categorie", "Pork");
+                startActivity(intent3);
+                finish();
+                break;
+
+            // navigate to MealsActivity parse categorie
+            case R.id.Beef:
+                Intent intent4 = new Intent(getApplicationContext(), MealsActivity.class);
+                intent4.putExtra("categorie", "Beef");
+                startActivity(intent4);
+                finish();
+                break;
+
+        }
     }
-
-    /**
-     * Navigation to Mealsactivity, parse the categorie.
-     *
-     * @param view    Represents a view of the button chicken.
-     */
-    public void clickChicken(View view) {
-        Intent intent = new Intent(getApplicationContext(), MealsActivity.class);
-        intent.putExtra("categorie", "Chicken");
-        startActivity(intent);
-        finish();
-    }
-
-    /**
-     * Navigation to Mealsactivity, parse the categorie.
-     *
-     * @param view    Represents a view of the button lam.
-     */
-    public void clickLam(View view) {
-        Intent intent = new Intent(getApplicationContext(), MealsActivity.class);
-        intent.putExtra("categorie", "Lamb");
-        startActivity(intent);
-        finish();
-    }
-
-
-    /**
-     * Navigation to Mealsactivity, parse the categorie.
-     *
-     * @param view    Represents a view of the button pork.
-     */
-    public void clickPork(View view) {
-        Intent intent = new Intent(getApplicationContext(), MealsActivity.class);
-        intent.putExtra("categorie", "Pork");
-        startActivity(intent);
-        finish();
-    }
-
-    /**
-     * Navigation to a random activity, parse the categorie.
-     *
-     * @param view    Represents a view of the button random.
-     */
-    public void randomClick(View view) {
-
-        // list with all posible categories
-        List<String> givenList = Arrays.asList("Beef", "Chicken", "Lamb", "Pork");
-
-        // get a random element from the list
-        Random rand = new Random();
-        String randomElement = givenList.get(rand.nextInt(givenList.size()));
-
-        // dependent on random element, navigate to MealsActivity with right categorie
-        Intent intent = new Intent(getApplicationContext(), MealsActivity.class);
-        intent.putExtra("categorie", randomElement);
-        startActivity(intent);
-        finish();
-
-    }
-
 }
