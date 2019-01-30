@@ -75,83 +75,83 @@ De kookapp voor studenten met gevarieede, goedkope, makkelijke en voedzame avond
    
 *Activity’s* 
 
-- StartActivity:
+- StartActivity;
 	- navigatie naar "try something new";
-	- nagigatie naar "history";
+	- navigatie naar "history";
 	- pop-up van informatie, popup_history.xml;
-	- intent naar internet voor site van database;
+	- navigatie naar internet voor site van database;
 
-- HistoryActivity
+- HistoryActivity;
 	- vult de listview van history_activity.xml met history_item.xml door middel van de EntryAdapter.java;
 	- onclick, voor als op een history_item.xml wordt geklikt, id woord doorgegeven;
-	- zoekfunctie, door middel van de functie "filterData" van EntryDatabase;
+	- zoekfunctie, door middel van de functie "filterData" van EntryDatabase.
 	
-- MealsActivity
+- MealsActivity;
 	- aan de hand van een gekregen categorie, een MealsRequest;
 	- on click, voor als op  meals_item.xml is geklikt;
-	- gotMeals, als de mealsrequest is gelukt, vult listview van meals_activity.xml met gekregen meals_item.xml
-	- got MealsError, als het ophalen van meals mislukt is; 
-	- in de gotMeals, als er getypt word in de zoekbalk, filter functie vanuit MealAdapter
+	- gotMeals, als de mealsrequest is gelukt, vult listview van meals_activity.xml met gekregen meals_item.xml;
+	- gotMealsError, als het ophalen van meals mislukt is; 
+	- in de gotMeals, als er getypt word in de zoekbalk, filter functie vanuit MealAdapter.
 	
-- MeatActivity
-	- het doorgeven van de juiste categorie ( Beef, Pork, Chicken, Lamb of Random) aan de hand van de geklikte button op meat_activity.xml;
+- MeatActivit;
+	- het doorgeven van de juiste categorie ( Beef, Pork, Chicken, Lamb of Random) aan de hand van de geklikte button op meat_activity.xml.
 
-- VActivity
-	- het doorgeven van de juiste gekozen catergorie ( Random, Meat, Fish, Vega, Vegan) aan de hand van de geklikte bbutton op V_activity.xml ;
+- VActivity;
+	- het doorgeven van de juiste gekozen catergorie ( Random, Meat, Fish, Vega, Vegan) aan de hand van de geklikte bbutton op V_activity.xml.
 	
-- RecipeActivity
+- RecipeActivity.
 	- met gekregen id een RecipeRequest aanvragen;
 	- navigatie naar Youtube als er gelikt is op het video'tje;
 	- onclick on van afrondingsknop, vult een item in de database (EntryDatabase) en checkt of alles goed is ingevuld; 
 	- gotRecipe voor als RecipeRequest goed is gegaan, vult de scrollview in van recipe_activity.xml;
-	- gotRecipeError voor als request fout is gegaan;
+	- gotRecipeError voor als request fout is gegaan.
 	
 *Adapters*
-- EntryAdapter
-	- aan de hand van een view het vullen van history_item.xml;
+- EntryAdapter;
+	- aan de hand van een view het vullen van history_item.xml.
 	
-- MealAdapter
+- MealAdapter.
 	- aan de hand van een view het vullen van meals_item.xml;
-	- filterfunctie voor de SearchView in meals_activity.xml;
+	- filterfunctie voor de SearchView in meals_activity.xml.
 	
 *Extra*
-- DowloadImageTask
-	- weergeven van plaatjes in heel de app;
+- DowloadImageTask.
+	- weergeven van plaatjes in heel de app.
 	
 
 *Models*
-- Meal
+- Meal;
 	- model voor het recept;
 
-- MealItem
-	- model voor het gerecht;
+- MealItem.
+	- model voor het gerecht.
 	
 *Request*
-- MealsRequest
+- MealsRequest;
 	- getMeals voor jsonObjectRequest met juiste categorie;
-	- onResponse het krijgen van JSONArray en het vullen van MealItems;
+	- onResponse het krijgen van JSONArray en het vullen van MealItems.
 	
-- RecipeRequest
+- RecipeRequest;
 	- getRecipe voor jsonObjectRequest met juiste id van het recept;
-	- onResponse het krijgen van JSONArray en het vullen van Meal;
+	- onResponse het krijgen van JSONArray en het vullen van Meal.
 	
-- EntryDatabase
+- EntryDatabase.
 	- maakt een database;
 	- insert voor toevoegen aan database;
-	- filterData voor het zoeken in history_activity.xml;
+	- filterData voor het zoeken in history_activity.xml.
 	
 
 	
 *Layouts*
-- history_activity.xml
-- history_item.xml
-- meals_activity.xml
-- meals_item.xml
-- meat_activity.xml
-- start_activity.xml
-- popup_history.xml
-- V_activity.xml
-- recipe_activity.xml
+- history_activity.xml;
+- history_item.xml;
+- meals_activity.xml;
+- meals_item.xml;
+- meat_activity.xml;
+- start_activity.xml;
+- popup_history.xml;
+- V_activity.xml;
+- recipe_activity.xml.
 
 <b>API request</b>
 
@@ -180,7 +180,7 @@ Het id wordt hieronder ingevuld.
 
 <b>Database</b>
 
-Om de gebruikersgeschiedenis op te slaan gaan we een SQLite Database aanmaken in de telefoon. Deze moet er als onderstaande tabel gaan uitzien.
+Om de gebruikersgeschiedenis op te slaan word er een SQLite Database aangemaakt in de telefoon. Deze ziet er als volgt uit:
 
 <table>
 	<tr>
@@ -239,3 +239,5 @@ Om de gebruikersgeschiedenis op te slaan gaan we een SQLite Database aanmaken in
 	- In de dataset staat hier niks over, voor duidelijke van de gebruiker zal er toch iets over gezegd moeten worden;
 - StartActivity heeft een internet knop, als je hier op klikt word je doorverwezen naar de site van de data. 
 	- Hierdoor weet de gebruiker waar alle gerechten vandaan komen.
+- Als er meerder OnClick in één class staan, deze combineren in 1 Onclick methode
+	- Leesbaarheid van de code is beter en overzichterlijker.
