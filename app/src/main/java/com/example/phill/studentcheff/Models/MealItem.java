@@ -3,11 +3,12 @@
  *
  *
  * @author      Philline Dikker
- * @version
+ * @version     1
  *
  *
  * This work complies with the JMU Honor Code.
  */
+
 package com.example.phill.studentcheff.Models;
 
 public class MealItem {
@@ -44,7 +45,5 @@ public class MealItem {
     public void setPicture(String picture) {
         Picture = picture;
     }
-
-
 
 }

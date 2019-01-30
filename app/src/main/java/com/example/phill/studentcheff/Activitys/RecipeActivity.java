@@ -3,7 +3,7 @@
  *
  *
  * @author      Philline Dikker
- * @version
+ * @version     1
  *
  *
  * This work complies with the JMU Honor Code.
@@ -20,14 +20,13 @@ import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
+import java.util.ArrayList;
 
 import com.example.phill.studentcheff.Extra.DownloadImageTask;
 import com.example.phill.studentcheff.Requests.EntryDatabase;
 import com.example.phill.studentcheff.Models.Meal;
 import com.example.phill.studentcheff.R;
 import com.example.phill.studentcheff.Requests.RecipeRequest;
-
-import java.util.ArrayList;
 
 public class RecipeActivity extends AppCompatActivity implements RecipeRequest.Callback {
 
@@ -162,8 +161,6 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         TextView ingregients16 = findViewById(R.id.viewIngredients16);
         TextView ingregients17 = findViewById(R.id.viewIngredients17);
         TextView ingregients18 = findViewById(R.id.viewIngredients18);
-
-
 
         // set views
         title.setText(pieceRecipe.getitle());

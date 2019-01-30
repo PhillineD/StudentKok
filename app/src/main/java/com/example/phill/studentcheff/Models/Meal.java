@@ -3,7 +3,7 @@
  *
  *
  * @author      Philline Dikker
- * @version
+ * @version     1
  *
  *
  * This work complies with the JMU Honor Code.
@@ -21,8 +21,6 @@ public class Meal {
     String measure13, measure14, measure15;
     String measure16, measure17, measure18;
     String Ingredients16, Ingredients17, Ingredients18;
-
-
 
     // contructer
     public Meal(String id, String Ingredients1, String Instruction, String Youtubelink, String Picture, String title, String measure1,
@@ -262,8 +260,6 @@ public class Meal {
     public void setHint(String hint) {
         Hint = hint;
     }
-
-
 
 
 }

@@ -3,7 +3,7 @@
  *
  *
  * @author      Philline Dikker
- * @version
+ * @version     1
  *
  *
  * This work complies with the JMU Honor Code.
@@ -36,7 +36,6 @@ public class EntryDatabase extends SQLiteOpenHelper {
         db.execSQL(message);
 
     }
-
 
     /**
      * Get instance from database.
@@ -82,7 +81,6 @@ public class EntryDatabase extends SQLiteOpenHelper {
                 "OR INSTR(lower(hint), '"+search+"') " , null);
 
     }
-
 
     /**
      * Method to insert a history item.

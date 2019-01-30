@@ -3,7 +3,7 @@
  *
  *
  * @author      Philline Dikker
- * @version
+ * @version     1
  *
  *
  * This work complies with the JMU Honor Code.
@@ -86,7 +86,6 @@ public class StartActivity extends AppCompatActivity {
         });
 
     }
-
 
     /**
      * Open crome with site: https://www.themealdb.com/.

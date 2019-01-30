@@ -3,7 +3,7 @@
  *
  *
  * @author      Philline Dikker
- * @version
+ * @version     1
  *
  *
  * This work complies with the JMU Honor Code.
@@ -36,7 +36,6 @@ public class MealAdapter extends BaseAdapter implements Filterable {
     ArrayList<MealItem> filterList;
     CustomFilter filter;
     Context c;
-
 
     public MealAdapter(Context context, ArrayList<MealItem> meals   ) {
         this.meals = meals;
@@ -139,10 +138,7 @@ public class MealAdapter extends BaseAdapter implements Filterable {
         {
             filter=new CustomFilter();
         }
-
         return filter;
-
     }
-
 
 }

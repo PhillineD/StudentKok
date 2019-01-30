@@ -3,7 +3,7 @@
  *
  *
  * @author      Philline Dikker
- * @version
+ * @version     1
  *
  *
  * This work complies with the JMU Honor Code.
@@ -27,7 +27,6 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 
 public class MealsRequest implements Response.Listener<JSONObject>, Response.ErrorListener{
-
 
     private Callback activity;
     private Context context;
@@ -67,7 +66,6 @@ public class MealsRequest implements Response.Listener<JSONObject>, Response.Err
         this.activity.gotMealsError(error.getMessage());
     }
 
-
     /**
      * Get meal items from API.
      *
@@ -92,7 +90,6 @@ public class MealsRequest implements Response.Listener<JSONObject>, Response.Err
                 MealItem item = new MealItem(id,picture,titlerecipe);
                 mealsview.add(item);
             }
-
             this.activity.gotMeals(mealsview);
 
         } catch (JSONException e) {

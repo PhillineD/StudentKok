@@ -3,15 +3,15 @@
  *
  *
  * @author      Philline Dikker
- * @version
+ * @version     1
  *
  *
  * This work complies with the JMU Honor Code.
  */
 
 package com.example.phill.studentcheff.Requests;
+
 import android.content.Context;
-import android.util.Log;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -56,7 +56,6 @@ public class RecipeRequest implements Response.Listener<JSONObject>, Response.Er
         queue.add(jsonObjectRequest);
     }
 
-
     /**
      * Send error message if requst went wrong.
      *
@@ -66,8 +65,6 @@ public class RecipeRequest implements Response.Listener<JSONObject>, Response.Er
     public void onErrorResponse(VolleyError error) {
         this.activity.gotRecipeError(error.getMessage());
     }
-
-
 
     /**
      * Get recipe items from API.

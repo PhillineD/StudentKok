@@ -2,8 +2,7 @@
  * Download the images.
  * Code from: https://medium.com/@crossphd/android-image-loading-from-a-string-url-6c8290b82c5e
  *
- * @author      Philline Dikker
- * @version
+ * @version     1
  *
  *
  * This work complies with the JMU Honor Code.

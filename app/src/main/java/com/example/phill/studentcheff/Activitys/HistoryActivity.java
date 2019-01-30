@@ -3,7 +3,7 @@
  *
  *
  * @author      Philline Dikker
- * @version
+ * @version     1
  *
  *
  * This work complies with the JMU Honor Code.
@@ -97,7 +97,6 @@ public class HistoryActivity extends AppCompatActivity {
         adapter.swapCursor(ncursor);
     }
 
-
     /**
      * Navigation to RecipeActivity, if clicked on item.
      */
@@ -117,6 +116,4 @@ public class HistoryActivity extends AppCompatActivity {
             finish();
         }
     }
-
-
 }

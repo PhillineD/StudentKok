@@ -3,7 +3,7 @@
  *
  *
  * @author      Philline Dikker
- * @version
+ * @version     1
  *
  *
  * This work complies with the JMU Honor Code.
@@ -23,12 +23,10 @@ import android.widget.TextView;
 import com.example.phill.studentcheff.Extra.DownloadImageTask;
 import com.example.phill.studentcheff.R;
 
-
 public class EntryAdapter extends ResourceCursorAdapter implements Filterable{
     public EntryAdapter(Context context, int layout, Cursor cursor) {
         super(context, layout, cursor);
     }
-
 
     /**
      * Set history item in listview.
@@ -72,10 +70,7 @@ public class EntryAdapter extends ResourceCursorAdapter implements Filterable{
         int timeCooking = timeCook.intValue();
         String cooked = Integer.toString(timeCooking);
         time.setText(cooked);
-
     }
-
-
 }
 
 
