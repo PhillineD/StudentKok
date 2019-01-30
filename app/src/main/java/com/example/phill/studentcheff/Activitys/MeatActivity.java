@@ -33,7 +33,7 @@ public class MeatActivity extends AppCompatActivity {
     /**
      * Navigation to right activity, parse the categorie.
      *
-     * @param v    Represents a view of the button beef.
+     * @param v    Represents a view of the buttons.
      */
     public void onClick(View v) {
         switch (v.getId()) {
