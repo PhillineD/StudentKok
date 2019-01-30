@@ -94,30 +94,11 @@ public class MeatActivity extends AppCompatActivity {
         String randomElement = givenList.get(rand.nextInt(givenList.size()));
 
         // dependent on random element, navigate to MealsActivity with right categorie
-        if (randomElement == "Beef") {
-            Intent intent = new Intent(getApplicationContext(), MealsActivity.class);
-            intent.putExtra("categorie", "Beef");
-            startActivity(intent);
-            finish();
-        }
-        else if (randomElement == "Chicken"){
-            Intent intent = new Intent(getApplicationContext(), MealsActivity.class);
-            intent.putExtra("categorie", "Chicken");
-            startActivity(intent);
-            finish();
-        }
-        else if (randomElement == "Lamb"){
-            Intent intent = new Intent(getApplicationContext(), MealsActivity.class);
-            intent.putExtra("categorie", "Lamb");
-            startActivity(intent);
-            finish();
-        }
-        else if (randomElement == "Pork"){
-            Intent intent = new Intent(getApplicationContext(), MealsActivity.class);
-            intent.putExtra("categorie", "Pork");
-            startActivity(intent);
-            finish();
-        }
+        Intent intent = new Intent(getApplicationContext(), MealsActivity.class);
+        intent.putExtra("categorie", randomElement);
+        startActivity(intent);
+        finish();
+
     }
 
 }

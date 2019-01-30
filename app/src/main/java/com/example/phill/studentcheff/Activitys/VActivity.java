@@ -62,7 +62,6 @@ public class VActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-
     /**
      * Navigation to MealsActivity, parse the categorie.
      *
@@ -77,10 +76,10 @@ public class VActivity extends AppCompatActivity {
     /**
      * Navigation to random Activity, parse the categorie.
      *
-     * @param view    Represents a view of the button "Random".
+     * @param view    Represents a view of the buttons.
      */
     public void randomV(View view) {
-        List<String> givenList = Arrays.asList("meat", "seafood", "vega", "vegan");
+        List<String> givenList = Arrays.asList("meat", "seafood", "Vegetarian","Vegan");
         Random rand = new Random();
         String randomElement = givenList.get(rand.nextInt(givenList.size()));
         if (randomElement == "meat") {
@@ -89,21 +88,9 @@ public class VActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
         }
-        else if (randomElement == "seafood"){
+        else{
             Intent intent = new Intent(getApplicationContext(), MealsActivity.class);
-            intent.putExtra("categorie", "seafood");
-            startActivity(intent);
-            finish();
-        }
-        else if (randomElement == "vega"){
-            Intent intent = new Intent(getApplicationContext(), MealsActivity.class);
-            intent.putExtra("categorie", "Vegetarian");
-            startActivity(intent);
-            finish();
-        }
-        else if (randomElement == "vegan"){
-            Intent intent = new Intent(getApplicationContext(), MealsActivity.class);
-            intent.putExtra("categorie", "Vegan");
+            intent.putExtra("categorie", randomElement);
             startActivity(intent);
             finish();
         }

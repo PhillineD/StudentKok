@@ -92,7 +92,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:gravity="center"
-                        android:text="Meat: You will be guided to a page With a choice of meat types. When you have selected one of the options, options will appear. When you click on one of the options you will be guided to the recipe. " />
+                        android:text="Meat: You will be guided to a page with a choices  of differant meat types. When you selected one of the options, options will appear. When you click on one of the options you will be guided to the recipe. " />
 
                     <TextView
                         android:id="@+id/textView12"
@@ -150,7 +150,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:gravity="center"
-                        android:text="The recipe includes the category (below the picture), ingredients and instructions. When you click on the film picture, an explanation will be played. When you have created the dish, you must indicate how long you have done it and how many stars you are giving. " />
+                        android:text="The recipe includes the category (below the picture), ingredients and instructions. When you click on the video icon, a video will be played on youtube. When you created the dish, you have to indicate how long you cooked and how many stars you are giving the dish. " />
 
                     <TextView
                         android:id="@+id/textView18"
@@ -168,7 +168,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:gravity="center"
-                        android:text="Here all the dishes you have made appear. The dishes are sorted by the rating you gave at the time. You can also search through the dishes. There can be searched  in history for the date  when the recipe is made, the title and the categorie. Do you want to make the recipe again? Click on the dish. Now the recipe will appear. " />
+                        android:text="Here all the dishes you have made appear. The dishes are sorted by the rating you gave at the time. You can also search through the dishes. There can be searched in history for the date when the recipe is made, the title and the categorie. Do you want to make the recipe again? Click on the dish. Now the recipe will appear. " />
 
                     <TextView
                         android:id="@+id/textView8"
