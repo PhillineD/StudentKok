@@ -43,14 +43,14 @@ public class StartActivity extends AppCompatActivity {
 
             // navigation to Vactivity
             case R.id.newmeal:
-                Intent intent = new Intent(getApplicationContext(), VActivity.class);
-                startActivity(intent);
+                Intent intentNew = new Intent(getApplicationContext(), VActivity.class);
+                startActivity(intentNew);
                 break;
 
             // navigation to History
             case R.id.history:
-                Intent intent1 = new Intent(getApplicationContext(), HistoryActivity.class);
-                startActivity(intent1);
+                Intent intentHistory = new Intent(getApplicationContext(), HistoryActivity.class);
+                startActivity(intentHistory);
                 break;
 
             // open browser with database site

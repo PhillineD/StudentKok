@@ -58,33 +58,33 @@ public class VActivity extends AppCompatActivity {
 
         // navigate to MeatActivity parse categorie
         else if (v.getId() == R.id.meat){
-            Intent intent = new Intent(getApplicationContext(), MeatActivity.class);
-            intent.putExtra("categorie", "meat");
-            startActivity(intent);
+            Intent intentMeat = new Intent(getApplicationContext(), MeatActivity.class);
+            intentMeat.putExtra("categorie", "meat");
+            startActivity(intentMeat);
             finish();
         }
 
         // navigate to MealsActivity parse categorie
         else if (v.getId() == R.id.seafood){
-            Intent intent1 = new Intent(getApplicationContext(), MealsActivity.class);
-            intent1.putExtra("categorie", "seafood");
-            startActivity(intent1);
+            Intent intentSeafood = new Intent(getApplicationContext(), MealsActivity.class);
+            intentSeafood.putExtra("categorie", "seafood");
+            startActivity(intentSeafood);
             finish();
         }
 
         // navigate to MealsActivity parse categorie
         else if (v.getId() == R.id.Vegan){
-            Intent intent3 = new Intent(getApplicationContext(), MealsActivity.class);
-            intent3.putExtra("categorie", "Vegan");
-            startActivity(intent3);
+            Intent intentVegan = new Intent(getApplicationContext(), MealsActivity.class);
+            intentVegan.putExtra("categorie", "Vegan");
+            startActivity(intentVegan);
             finish();
         }
 
         // navigate to MealsActivity parse categorie
         else if (v.getId() == R.id.Vegetarian){
-            Intent intent2 = new Intent(getApplicationContext(), MealsActivity.class);
-            intent2.putExtra("categorie", "Vegetarian");
-            startActivity(intent2);
+            Intent intentVegetarian = new Intent(getApplicationContext(), MealsActivity.class);
+            intentVegetarian.putExtra("categorie", "Vegetarian");
+            startActivity(intentVegetarian);
             finish();
         }
     }

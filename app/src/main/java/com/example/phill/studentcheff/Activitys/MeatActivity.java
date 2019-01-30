@@ -56,33 +56,33 @@ public class MeatActivity extends AppCompatActivity {
 
             // navigate to MealsActivity parse categorie
             case R.id.Lam:
-                Intent intent1 = new Intent(getApplicationContext(), MealsActivity.class);
-                intent1.putExtra("categorie", "Lamb");
-                startActivity(intent1);
+                Intent intentLam = new Intent(getApplicationContext(), MealsActivity.class);
+                intentLam.putExtra("categorie", "Lamb");
+                startActivity(intentLam);
                 finish();
                 break;
 
             // navigate to MealsActivity parse categorie
             case R.id.Chicken:
-                Intent intent2 = new Intent(getApplicationContext(), MealsActivity.class);
-                intent2.putExtra("categorie", "Chicken");
-                startActivity(intent2);
+                Intent intentChicken = new Intent(getApplicationContext(), MealsActivity.class);
+                intentChicken.putExtra("categorie", "Chicken");
+                startActivity(intentChicken);
                 finish();
                 break;
 
             // navigate to MealsActivity parse categorie
             case R.id.Pork:
-                Intent intent3 = new Intent(getApplicationContext(), MealsActivity.class);
-                intent3.putExtra("categorie", "Pork");
-                startActivity(intent3);
+                Intent intentPork = new Intent(getApplicationContext(), MealsActivity.class);
+                intentPork.putExtra("categorie", "Pork");
+                startActivity(intentPork);
                 finish();
                 break;
 
             // navigate to MealsActivity parse categorie
             case R.id.Beef:
-                Intent intent4 = new Intent(getApplicationContext(), MealsActivity.class);
-                intent4.putExtra("categorie", "Beef");
-                startActivity(intent4);
+                Intent intentBeef = new Intent(getApplicationContext(), MealsActivity.class);
+                intentBeef.putExtra("categorie", "Beef");
+                startActivity(intentBeef);
                 finish();
                 break;
 

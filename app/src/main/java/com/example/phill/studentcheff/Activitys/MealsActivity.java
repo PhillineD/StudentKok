@@ -70,7 +70,6 @@ public class MealsActivity extends Activity implements MealsRequest.Callback{
         MealAdapter adapter = new MealAdapter(this, meals);
         ListView listView = findViewById(R.id.MealsListView);
         listView.setAdapter(adapter);
-        listView.getAdapter();
         listView.setOnItemClickListener(new Clicked());
 
         // find searchview

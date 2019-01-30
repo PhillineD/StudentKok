@@ -41,8 +41,8 @@ public class RecipeActivity extends AppCompatActivity implements RecipeRequest.C
         String id = intent.getStringExtra("id");
 
         // new recipequest with id
-        RecipeRequest ArrayAdapter = new RecipeRequest(this);
-        ArrayAdapter.getRecipe(this, id);
+        RecipeRequest recipePiece = new RecipeRequest(this);
+        recipePiece.getRecipe(this, id);
     }
 
     /**

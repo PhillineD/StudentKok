@@ -104,7 +104,9 @@ public class HistoryActivity extends AppCompatActivity {
 
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
             Cursor clicked = (Cursor) parent.getItemAtPosition(position);
+
             String number = clicked.getString(clicked.getColumnIndex("_id"));
             String url = clicked.getString(clicked.getColumnIndex("picture"));
 
