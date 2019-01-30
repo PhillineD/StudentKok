@@ -146,7 +146,7 @@ wat heb ik gedaan?
    # day 16
  wat heb ik gedaan?
  - meatactivity kunnen de 4 ifjes voor de verschillende categorieen samen in 3 regels die in een keer de randomelement invult.
- 
+ - hetzelfde geld voor Vactivity
  
 
  
