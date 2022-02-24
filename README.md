@@ -30,20 +30,20 @@ Studenten willen goedkoop, makkelijk en voedzame avondmaaltijden, alleen ontbree
 
 <b>Probeer iets nieuws</b>
 -	Na het klikken op "Probeer iets nieuws" moet de gebruiker kunnen kiezen tussen vegetarisch, veganistisch, vis of vlees;
--   Ook is er een mogelijkheid om een random categorie te kiezenl;
+-   Ook is er een mogelijkheid om een random categorie te kiezen;
 -   Wanneer men klikt op vlees, verschijnen de verschillende opties voor vlees;
 -	Afhankelijk van de gekozen categorie moeten er gerechten verschijnen (naam van gerecht en foto) waar de gebruiker uit kan kiezen;
 -	De gebruiker moet door de gerechten kunnen zoeken op (deel van) receptnaam;
--	Door op een gerecht te klikken verschijnt de benodigdheden, de instructies, ratingbar, vakje om in te vullen hoe lang je er over         gedaan hebt;
+-	Door op een gerecht te klikken verschijnt de benodigdheden, de instructies, ratingbar, vakje om in te vullen hoe lang je er over gedaan hebt;
 -   Door op het video icoontje te klikken, opent er een video van het recept in Youtube;
 -   De gebruiker kan een rating geven aan een bepaald gerecht door de ratingbar;
--   Wanneer de gebruiker klaar is en op het opslaan icoontje klikt, wordt ook dit gerecht toegevoegd aan de kookgeschiedenis. 
+-   Wanneer de gebruiker klaar is en op het opslaan icoontje klikt, word ook dit gerecht toegevoegd aan de kookgeschiedenis. 
 
 <b>Kookgeschiedenis</b>
--   Kookgeschiedenis geeft de gemaakte gerechten met datum van maken gesorteerd op rating die tijdends het maken is gegeven;
--   Als het recept in de kookgeschiedenis vaker is gemaakt dan staat de meeste recente datum, rating  en kooktijd erin;
+-   Kookgeschiedenis geeft de gemaakte gerechten met datum van maken gesorteerd op rating die tijdens het maken is gegeven;
+-   Als het recept in de kookgeschiedenis vaker is gemaakt dan staat de meeste recente datum, rating en kooktijd erin;
 -   Kookgeschiedenis heeft ook een zoekfunctie waarmee gezocht kan worden naar receptnamen, categorieen en hoe lang het koken duurde; 
--   Als je op een item in de geschiedenis klikt, krijgt je het recept, er zal nu weer een nieuwe kooktijd en rating moeten worden       toegevoegd.
+-   Als je op een item in de geschiedenis klikt, krijgt je het recept, er zal nu weer een nieuwe kooktijd en rating moeten worden toegevoegd.
 
 <b>Schets</b>
 
@@ -51,8 +51,8 @@ Studenten willen goedkoop, makkelijk en voedzame avondmaaltijden, alleen ontbree
 
 <b>Data</b>
 
-De gerechten zullen gehaald worden van de open API database: https://www.themealdb.com. 
-Hiernaast komt er een SQL-database waarin de recent gemaakte gerechten worden opgeslagen (wanneer, welke rating).
+De gerechten komen van de open API database: https://www.themealdb.com. 
+Hiernaast is er een SQL-database waarin de recent gemaakte gerechten worden opgeslagen (wanneer, welke rating).
 
 <b>Libery's</b>
 
