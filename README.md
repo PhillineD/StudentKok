@@ -34,7 +34,7 @@ Studenten willen goedkoop, makkelijk en voedzame avondmaaltijden, alleen ontbree
 -   Wanneer men klikt op vlees, verschijnen de verschillende opties voor vlees;
 -	Afhankelijk van de gekozen categorie moeten er gerechten verschijnen (naam van gerecht en foto) waar de gebruiker uit kan kiezen;
 -	De gebruiker moet door de gerechten kunnen zoeken op (deel van) receptnaam;
--	Door op een gerecht te klikken verschijnt de benodigdheden, de instructies, ratingbar, vakje om in te vullen hoe lang je er over gedaan hebt;
+-	Door op een gerecht te klikken verschijnen de benodigdheden, de instructies, ratingbar, vakje om in te vullen hoe lang je er over gedaan hebt;
 -   Door op het video icoontje te klikken, opent er een video van het recept in Youtube;
 -   De gebruiker kan een rating geven aan een bepaald gerecht door de ratingbar;
 -   Wanneer de gebruiker klaar is en op het opslaan icoontje klikt, word ook dit gerecht toegevoegd aan de kookgeschiedenis. 
